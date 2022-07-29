@@ -1,5 +1,6 @@
-### ⚠️**Warning**
-This is a repository for managing the [CTT discord server](http://dsc.gg/CTT) more than it is a pre-baked solution like my other projects such as [Smoothie](https://github.com/couleur-tweak-tips/Smoothie) or [TweakList](https://github.com/couleur-tweak-tips/TweakList), though feel free to fork and fiddle around with it 😋
+> **Warning**
+> 
+> This is a repository for managing the [CTT discord server](http://dsc.gg/CTT) more than it is a pre-baked solution like my other projects such as [Smoothie](https://github.com/couleur-tweak-tips/Smoothie) or [TweakList](https://github.com/couleur-tweak-tips/TweakList), though feel free to fork and fiddle around with it 😋
 
 
 ### 🗺️ **The plan**
