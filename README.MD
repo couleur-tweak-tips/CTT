@@ -5,5 +5,5 @@
 
 ### 🗺️ **The plan**
 *probably easier said than done lmao*
-- Each .md markdown file is parsed by the parser (wrote in Powershell) and converts them to a discord embed, formatted as a JSON file (which exists temporarily in the CI)
+- Each markdown file (.md) is converted via a script (wrote in Powershell) into a discord embed, formatted as a JSON file (which exists temporarily in the CI)
 - The webhook URLs are decrypted via the GPG key that's stored in the repo's secrets, then pushed to the channel.
