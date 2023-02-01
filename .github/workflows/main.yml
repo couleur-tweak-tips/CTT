@@ -18,7 +18,7 @@ jobs:
         # Install-Module -Name powershell-yaml
         run: |
           
-          Invoke-WebRequest -Uri https://discord.com/api/webhooks/1002572530906833047/${{ secrets.SUPER_SECRET }} -Method Post -Body '{"content":"webhooks balls"}'  -Headers @{ "Content-Type" = "application/json" }
+          Invoke-WebRequest -Uri "https://discord.com/api/webhooks/1002572530906833047/$env:SUPER_SECRET" -Method Post -Body '{"content":"webhooks balls"}'  -Headers @{ "Content-Type" = "application/json" }
 
       - name: Commit modifications
         uses: stefanzweifel/git-auto-commit-action@v4
