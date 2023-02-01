@@ -24,7 +24,7 @@ function Post-Webhook {
         Headers = @{ "Content-Type" = "application/json" }
     }
 
-    
+    if ($env:COULEUR){Wait-Debugger}
 
     Write-Debug ($Parameters | ConvertTo-Yaml)
 
