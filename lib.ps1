@@ -11,10 +11,10 @@ function Post-Webhook {
             "Webhook needs the following keys: secret, message_link and channel"
         }
     }
-    Write-Warning ([bool]$env:FUCK2)
+    Write-Warning ([bool])
 
     $channel = $Payload.channel
-    $Token = (Get-Item -Path ("env:FUCK2") -ErrorAction Stop).Name
+    $Token = $env:FUCK2
     $message_id = $Payload.message_id
     
     $Parameters = @{
