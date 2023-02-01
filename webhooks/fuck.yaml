@@ -1,36 +1,11 @@
 {
+    "username": "Test!",
+    "content": "balls!",
     "embeds": [
         {
-            "fields": [
-                {
-                    "name": "Field 1",
-                    "value": "Fields can be used to create simple tables with multiple columns.",
-                    "inline": true
-                },
-                {
-                    "name": "Field 2",
-                    "value": "Fields can be aligned next to each other (inline) or below each other.",
-                    "inline": true
-                },
-                {
-                    "name": "hi",
-                    "value": "yo",
-                    "inline": false
-                },
-                {
-                    "name": "a",
-                    "value": "b",
-                    "inline": true
-                },
-                {
-                    "name": "c",
-                    "value": "d",
-                    "inline": true
-                }
-            ],
             "title": "Embeds",
-            "description": "**This is an embed!** It's the primary way to style your message! \n\nYou can change the text, add images, and structure your content.",
-            "url": "https://embed.link",
+            "description": "**Hey that's embeds!!** It's the primary way to style your message! \n\nYou can change the text, add images, and structure your content.",
+            "url": "https://ctt.cx",
             "color": 3092790,
             "footer": {
                 "text": "Embeds are pretty cool in my opinion!",
@@ -46,20 +21,19 @@
                 "name": "Couleur",
                 "url": "https://couleur.tech",
                 "icon_url": "https://cdn.discordapp.com/guilds/774315187183288411/users/352830597778898944/avatars/3d6b27178de8eb2502b966923d41124d.webp"
-            }
+            },
+            "fields": []
         },
         {
-            "fields": [],
+            "title": "HI!",
             "author": {
                 "name": "Couleur"
             },
-            "title": "HI!"
+            "fields": []
         }
     ],
     "secret": "FUCK2",
     "message_id": "1002572511483002940",
     "channel": "1002572511483002940",
-    "components": [],
-    "username": "Test!",
-    "content": "balls!"
+    "components": []
 }
