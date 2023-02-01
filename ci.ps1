@@ -2,7 +2,9 @@ $ErrorAction = 'Stop'
 $DebugPreference = 'Continue'
 
 if (!(Get-Module powershell-yaml)){
-    Install-Module powershell-yaml -Force -Verbose
+    Write-Host "Getting PowerShell-YAML.. " -NoNewLine
+    Install-Module powershell-yaml -Force
+    Write-Host "Done"
 }
 
 . ./lib.ps1
