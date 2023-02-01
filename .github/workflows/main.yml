@@ -14,7 +14,7 @@ jobs:
       - name: 🛠 Run the build script
         shell: pwsh
         env:
-          SUPER_SECRET: ${{ secrets.FUCK2 }}
+          FUCK2: ${{ secrets.FUCK2 }}
         # Install-Module -Name powershell-yaml
         run: ./ci.ps1
 

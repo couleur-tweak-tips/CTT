@@ -14,7 +14,7 @@ function Post-Webhook {
     Write-Warning ([bool])
 
     $channel = $Payload.channel
-    $Token = $env:FUCK2
+    $Token = (Get-Item "env:$($Payload.secret)" -ErrorAction Stop).Value
     $message_id = $Payload.message_id
     
     $Parameters = @{
