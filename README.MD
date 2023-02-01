@@ -1,9 +1,8 @@
 > **Warning**
 > 
-> This is a repository for managing the [CTT discord server](http://dsc.gg/CTT) more than it is a pre-baked solution like my other projects such as [Smoothie](https://github.com/couleur-tweak-tips/Smoothie) or [TweakList](https://github.com/couleur-tweak-tips/TweakList), though feel free to fork and fiddle around with it 😋
+> This is a repository for managing the [CTT discord server](http://dsc.gg/CTT)'s documentation more than it is a pre-baked solution like my other projects such as [Smoothie](https://github.com/couleur-tweak-tips/Smoothie) or [TweakList](https://github.com/couleur-tweak-tips/TweakList).
 
 
 ### 🗺️ **The plan**
-*probably easier said than done lmao*
-- Each markdown file (.md) is converted via a script (wrote in Powershell) into a discord embed, formatted as a JSON file (which exists temporarily in the CI)
-- The webhook URLs are decrypted via the GPG key that's stored in the repo's secrets, then pushed to the channel.
+- Each YAML file (could also be .JSON) is converted via a script into a Markdown file
+- The webhook URLs are stored in the GitHub secrets, which are then pushed to the channel/edited.
