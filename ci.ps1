@@ -1,5 +1,7 @@
 $ErrorAction = 'Stop'
 
+Get-Module powershell-yaml || Install-Module powershell-yaml -Force
+
 Import-Module ./lib.ps1 -DisableNameChecking
 
 Get-ChildItem ./webhooks/ -Recurse -File | ForEach-Object {
