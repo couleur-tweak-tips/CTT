@@ -22,6 +22,8 @@ function Post-Webhook {
         Headers = @{ "Content-Type" = "application/json" }
     }
 
+    Write-Warning ([bool]$env:FUCK2)
+
     Write-Debug ($Parameters | ConvertTo-Yaml)
 
     Invoke-WebRequest @Parameters
