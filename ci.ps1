@@ -1,6 +1,8 @@
 $ErrorAction = 'Stop'
 
-Get-Module powershell-yaml || Install-Module powershell-yaml -Force
+if (!(Get-Module powershell-yaml)){
+    Install-Module powershell-yaml -Force -Verbose
+}
 
 Import-Module ./lib.ps1 -DisableNameChecking
 
