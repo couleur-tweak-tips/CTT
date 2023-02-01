@@ -29,7 +29,6 @@ function Post-Webhook {
     Write-Debug ($Parameters | ConvertTo-Yaml)
 
     Invoke-WebRequest @Parameters
-
     
 }
 
@@ -65,9 +64,9 @@ function ConvertFrom-WebHook {
     
     $Webhook.embeds | Where-Object Title | ForEach-Object {
 
-        if ($author = $_.author -and $_.author.name){
+        if (($author = $_.author) -and $_.author.name){
 
-            $author_str = ""
+            $author_str = "`n"
 
             if ($author.icon_url){
                 $author_str += "<img class='author' src=`"$($author.icon_url)`" alt=`"author`" width=`"16`"/> "
