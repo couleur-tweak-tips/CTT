@@ -12,7 +12,7 @@ function Post-Webhook {
         }
     }
     $channel = $Payload.channel
-    $Token = (Get-Item -Path ("env:" -f $Payload.secret) -ErrorAction Stop).Name
+    $Token = (Get-Item -Path ("env:FUCK2") -ErrorAction Stop).Name
     $message_id = $Payload.message_id
     
     $Parameters = @{
