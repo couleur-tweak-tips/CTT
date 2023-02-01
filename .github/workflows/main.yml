@@ -1,0 +1,24 @@
+name: build
+
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: 🛠 Run the build script
+        shell: pwsh
+        # Install-Module -Name powershell-yaml
+        run: |
+          
+          Invoke-WebRequest -Uri https://discord.com/api/webhooks/${{ secrets.FUCK }} -Method Post -Body '{"content":"webhooks balls"}'  -Headers @{ "Content-Type" = "application/json" }
+
+      - name: Commit modifications
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Autobuild
