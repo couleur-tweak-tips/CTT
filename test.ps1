@@ -1,1 +1,1 @@
-Invoke-WebRequest -Uri "https://discord.com/api/webhooks/1002572530906833047/${{ secrets.FUCK2 }}" -Method Post -Body '{"content":"super webhook balls"}'  -Headers @{ "Content-Type" = "application/json" }
+Invoke-WebRequest -Uri "https://discord.com/api/webhooks/1002572530906833047/$env:SUPER_SECRET" -Method Post -Body '{"content":"super webhook balls"}'  -Headers @{ "Content-Type" = "application/json" }
