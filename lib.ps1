@@ -42,7 +42,7 @@ function Filter-Pings { # void
             exit 1
         }
     }
-    if ([Regex]::Matches ($Payload, "<@\d{18}>").count -gt 5){
+    if ([Regex]::Matches($Payload, "<@\d{18}>").count -gt 5){
         throw "Pinged abve 5 users, aborting"
         exit 1
     }
