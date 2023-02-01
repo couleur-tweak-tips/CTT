@@ -1,4 +1,5 @@
 $ErrorAction = 'Stop'
+$DebugPreference = 'Continue'
 
 if (!(Get-Module powershell-yaml)){
     Install-Module powershell-yaml -Force -Verbose
