@@ -16,7 +16,7 @@ jobs:
         env:
           SUPER_SECRET: ${{ secrets.FUCK2 }}
         # Install-Module -Name powershell-yaml
-        run: . ./ci.ps1
+        run: ./ci.ps1
 
       - name: Commit modifications
         uses: stefanzweifel/git-auto-commit-action@v4
