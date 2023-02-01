@@ -11,6 +11,8 @@ function Post-Webhook {
             "Webhook needs the following keys: secret, message_link and channel"
         }
     }
+    Write-Warning ([bool]$env:FUCK2)
+
     $channel = $Payload.channel
     $Token = (Get-Item -Path ("env:FUCK2") -ErrorAction Stop).Name
     $message_id = $Payload.message_id
@@ -22,7 +24,7 @@ function Post-Webhook {
         Headers = @{ "Content-Type" = "application/json" }
     }
 
-    Write-Warning ([bool]$env:FUCK2)
+    
 
     Write-Debug ($Parameters | ConvertTo-Yaml)
 
