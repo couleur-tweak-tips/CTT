@@ -4,7 +4,7 @@
     "embeds": [
         {
             "title": "Embeds",
-            "description": "**Hey that's embeds!!** It's the primary way to style your message! \n\nYou can change the text, add images, and structure your content.",
+            "description": "**Hey that's heals2!!!** It's the primary way to style your message! \n\nYou can change the text, add images, and structure your content.",
             "url": "https://ctt.cx",
             "color": 3092790,
             "footer": {
@@ -33,5 +33,7 @@
         }
     ],
     "channel": "FUCK2",
+    "message_link": "1071495457425072189",
+    "thread_id": "1071152022226731089",
     "components": []
 }
