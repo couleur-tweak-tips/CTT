@@ -17,6 +17,7 @@ jobs:
           FUCK2: ${{ secrets.FUCK2 }}
           PROTO_BAR: ${{ secrets.PROTO_BAR }}
           PROTO_FOO: ${{ secrets.PROTO_FOO }}
+          PROTO_ABOUT: ${{ secrets.PROTO_ABOUT }}
           PROTO_INSTRUCTIONS: ${{ secrets.PROTO_INSTRUCTIONS }}
 
         # Install-Module -Name powershell-yaml
