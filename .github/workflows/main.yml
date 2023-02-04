@@ -11,14 +11,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: 🛠 Run the build script
+      - name: /CTT CI
         shell: pwsh
         env:
           FUCK2: ${{ secrets.FUCK2 }}
+          PROTO_BAR: ${{ secrets.PROTO_BAR }}
+          PROTO_FOO: ${{ secrets.PROTO_FOO }}
+          PROTO_INSTRUCTIONS: ${{ secrets.PROTO_INSTRUCTIONS }}
+
         # Install-Module -Name powershell-yaml
         run: ./ci.ps1
 
-      - name: Commit modifications
+      - name: Commit modifications of /docs/
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Autobuild
