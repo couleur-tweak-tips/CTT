@@ -1,6 +1,8 @@
 $ErrorAction = 'Stop'
 $DebugPreference = 'Continue'
 
+Push-Location $PSScriptRoot
+
 if (!(Get-Module powershell-yaml)){
     Write-Host "Getting PowerShell-YAML.. " -NoNewLine
     Install-Module powershell-yaml -Force
@@ -27,3 +29,5 @@ foreach ($embed in $webhooks){
     
    
 }
+
+Pop-Location
