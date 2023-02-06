@@ -1,0 +1,11 @@
+{
+  "content": null,
+  "embeds": [
+    {
+      "description": "hello, this is the foo, i put \"foo\" in the \"channel\" key",
+      "color": null
+    }
+  ],
+  "attachments": [],
+  "channel": "bar"
+}
