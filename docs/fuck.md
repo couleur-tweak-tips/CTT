@@ -6,7 +6,7 @@ balls!
 <img align="right" src="https://message.style/logo128.png" />
 
 
-**Hey that's embeds!!** It's the primary way to style your message! 
+**Hey that's heals2!!!** It's the primary way to style your message! 
 
 You can change the text, add images, and structure your content.
 

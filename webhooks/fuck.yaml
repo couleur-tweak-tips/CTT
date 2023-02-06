@@ -4,7 +4,7 @@
     "embeds": [
         {
             "title": "Embeds",
-            "description": "**Hey that's heals2!!!** It's the primary way to style your message! \n\nYou can change the text, add images, and structure your content.",
+            "description": "**Hey that's balls!!!**",
             "url": "https://ctt.cx",
             "color": 3092790,
             "footer": {
@@ -18,7 +18,7 @@
                 "url": "https://message.style/logo128.png"
             },
             "author": {
-                "name": "Couleur",
+                "name": "Couleur Twerk Tips",
                 "url": "https://couleur.tech",
                 "icon_url": "https://cdn.discordapp.com/guilds/774315187183288411/users/352830597778898944/avatars/3d6b27178de8eb2502b966923d41124d.webp"
             },
@@ -27,13 +27,13 @@
         {
             "title": "HI!",
             "author": {
-                "name": "Couleur"
+                "name": "Couleur Twerk Tips"
             },
             "fields": []
         }
     ],
     "channel": "FUCK2",
-    "message_link": "1071495457425072189",
+    "message_link": "1070184725580349440",
     "thread_id": "1071152022226731089",
     "components": []
 }
