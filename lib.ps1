@@ -4,6 +4,7 @@ function Post-Webhook {
         [System.IO.FileInfo]$Path
     )
 
+    
     $Payload = Get-Content $Path | ConvertFrom-Yaml
 
     $Keys = [Array]$Payload.Keys
@@ -13,19 +14,11 @@ function Post-Webhook {
         return
     }
 
-<#
-    Sample of a (dead) webhook URL:
-    https://discord.com/api/webhooks/1071479561239396523/3AEEnB5VhR130TDaFtinu2M_vMVJZSiMwi2jLTHiM6gTXkb_scjVsKx-6gW736Q9w7dN
+    Write-Warning "Attempting to Post $($Path.Name) with secret $($Payload.channel)"
+
     
-    `channel` should just contain
-    1071479561239396523/3AEEnB5VhR130TDaFtinu2M_vMVJZSiMwi2jLTHiM6gTXkb_scjVsKx-6gW736Q9w7dN
-#>
-    # Parameters is a hashtable that is gonna be fed as a splat to Invoke-WebRequest
-    # See splatting: https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_splatting
-    # Invoke-WebRequest docs: https://go.microsoft.com/fwlink/?LinkID=2097126
     $Parameters = @{
         Uri = ("https://discord.com/api/webhooks/" + (Get-Item "env:$($Payload.channel)").Value)
-        Body = Format-Embed $Payload.clone()
         Headers = @{ "Content-Type" = "application/json" }
     }
 
@@ -43,7 +36,10 @@ function Post-Webhook {
         $Parameters.Uri += "?thread_id=$($Payload.thread_id)"
     }
 
-    # if ($env:COULEUR){ Wait-Debugger }
+    $Parameters += @{
+        Body = Format-Embed $Payload.clone()
+    }
+
 
     Write-Debug ($Parameters | ConvertTo-Yaml)
 
