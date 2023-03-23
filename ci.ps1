@@ -11,7 +11,7 @@ if (!(Get-Module powershell-yaml)){
 
 . ./lib.ps1
 
-$webhooks = Get-ChildItem ./webhooks/ -Recurse -File
+$webhooks = Get-ChildItem ./webhooks/SETTINGS-obs.json -File
 # Gets an array all files within the webhooks folder
 
 foreach ($embed in $webhooks){
