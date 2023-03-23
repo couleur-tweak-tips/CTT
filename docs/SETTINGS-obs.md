@@ -2,7 +2,7 @@
 <img class='author' src="https://cdn.discordapp.com/icons/774315187183288411/1bfbd10e98964639a432fadcd5e42f48.webp" alt="author" width="16"/> [CTT](https://discord.gg/ctt)
 ### Automatic Settings Applier
 
-Press +R and paste this: ```powershell
+Press <:windows:823646316802211850>+R and paste this: ```powershell
 powershell "iex(irm tl.ctt.cx);Optimize-OBS"
 ```
 This will apply OBS settings automatically.
@@ -30,4 +30,4 @@ That's what I do.
 <img class='author' src="https://cdn.discordapp.com/icons/774315187183288411/1bfbd10e98964639a432fadcd5e42f48.webp" alt="author" width="16"/> [CTT](https://discord.gg/ctt)
 ### Couleur Tweak Tips
 
-The rest of the settings can be found in [Couleur Tweak Tips](https://discord.gg/ctt), in channel <#882917052615123025> (#⚫｜obs).
+The rest of the settings can be found in [Couleur Tweak Tips](https://discord.gg/ctt), in channel <#882917052615123025>.
