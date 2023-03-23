@@ -43,7 +43,7 @@ function Post-Webhook {
 
     Write-Debug ($Parameters | ConvertTo-Yaml)
 
-    Invoke-WebRequest @Parameters -ErrorAction Continue
+    try{Invoke-WebRequest @Parameters -ErrorAction Stop}catch{Write-Warning "Failed $Path"}
 }
 
 # Returns a JSON string to feed to the GitHub API
