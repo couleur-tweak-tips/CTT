@@ -2,6 +2,16 @@
   "content": null,
   "embeds": [
     {
+      "title": "Automatic Settings Applier",
+      "description": "Press +R and paste this: ```powershell\npowershell \"iex(irm tl.ctt.cx);Optimize-OBS\"\n```\nThis will apply OBS settings automatically.",
+      "color": 9263359,
+      "author": {
+        "name": "CTT",
+        "url": "https://discord.gg/ctt",
+        "icon_url": "https://cdn.discordapp.com/icons/774315187183288411/1bfbd10e98964639a432fadcd5e42f48.webp"
+      }
+    },
+    {
       "title": "<:obs:1059029951573131345>  OBS Settings",
       "description": "> ***Always use `Game Capture` instead of `Display Capture` or `Window Capture`.***\n\n:computer: **FPS**: You can set it higher if you have good specs.\n\n<:gpu:829742807333601281> **Encoder**: ```\nSet to AMD if you have an AMD GPU.\nIf you have good specs, set Profile to \"high\".\n```\n:thinking: **Process Priority**: You can set it to `High` if you have good specs.\n\n:frame_photo: **Resolution**: ```\nIdeally, you'd set this to what resolution you're playing at, (play at \"1920x1080`, record at \"1920x1080\").\n\nHowever, you can play at a lower resolution and still record at something like \"1920x1080\".\nThat's what I do.\n```",
       "url": "https://discord.com/channels/1056955809730404373/1057588805261086811",
@@ -12,19 +22,19 @@
         "icon_url": "https://cdn.discordapp.com/avatars/988750674512711750/0a8f41df931932d7b154c0f29aca619f.png"
       },
       "image": {
-        "url": "https://media.discordapp.net/attachments/1057588805261086811/1066258379959447582/image.png"
+        "url": "https://cdn.discordapp.com/attachments/1071463916892328018/1088596188539932744/image.png"
       }
     },
     {
       "url": "https://discord.com/channels/1056955809730404373/1057588805261086811",
       "image": {
-        "url": "https://media.discordapp.net/attachments/1057588805261086811/1066258380164956190/image.png"
+        "url": "https://cdn.discordapp.com/attachments/1071463916892328018/1088596189211017329/image2.png"
       }
     },
     {
       "url": "https://discord.com/channels/1056955809730404373/1057588805261086811",
       "image": {
-        "url": "https://media.discordapp.net/attachments/1057588805261086811/1066258380357898310/image.png"
+        "url": "https://cdn.discordapp.com/attachments/1071463916892328018/1088596188896432158/image3.png"
       }
     },
     {
@@ -37,18 +47,8 @@
         "url": "https://discord.gg/ctt",
         "icon_url": "https://cdn.discordapp.com/icons/774315187183288411/1bfbd10e98964639a432fadcd5e42f48.webp"
       }
-    },
-    {
-      "title": "Automatic Settings Applier",
-      "description": "Press +R and paste this: ```\npowershell \"iex(irm tl.ctt.cx);Optimize-OBS\"\n```\nThis will apply OBS settings automatically.",
-      "color": 1949002,
-      "author": {
-        "name": "CTT",
-        "url": "https://discord.gg/ctt",
-        "icon_url": "https://cdn.discordapp.com/icons/774315187183288411/1bfbd10e98964639a432fadcd5e42f48.webp"
-      }
     }
   ],
   "attachments": [],
-  "channel": "CATALOG_OBS",
+  "channel": "CATALOG_OBS"
 }
