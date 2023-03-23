@@ -43,7 +43,7 @@ function Post-Webhook {
 
     Write-Debug ($Parameters | ConvertTo-Yaml)
 
-    Invoke-WebRequest @Parameters
+    Invoke-WebRequest @Parameters -ErrorAction Continue
 }
 
 # Returns a JSON string to feed to the GitHub API
