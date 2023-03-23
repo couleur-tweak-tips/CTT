@@ -1,0 +1,42 @@
+{
+  "content": "||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||https://cdn.discordapp.com/attachments/1088605093538046044/1088605206188675152/voukquicktut2.mp4",
+  "embeds": [
+    {
+      "title": "Couleur Tweak Tips",
+      "description": "More **information** about <:voukoder:908044222391808011> **Voukoder** can be found at [Couleur Tweak Tips](https://discord.gg/ctt), in channel <#1022959674477252699>.",
+      "color": 9263359,
+      "author": {
+        "name": "CTT",
+        "url": "https://discord.gg/ctt",
+        "icon_url": "https://cdn.discordapp.com/icons/774315187183288411/1bfbd10e98964639a432fadcd5e42f48.webp"
+      }
+    },
+    {
+      "title": "Important Note",
+      "description": "Voukoder settings assume the FPS you want to render in (e.g 60/30) from your project properties, set it accordingly before rendering.",
+      "color": 16711680,
+      "author": {
+        "name": "Couleur",
+        "url": "https://discord.com/users/352830597778898944",
+        "icon_url": "https://cdn.discordapp.com/avatars/352830597778898944/2bfa2454fa93d7771c93e90931f93c49.png?size=1024"
+      },
+      "image": {
+        "url": "https://cdn.discordapp.com/attachments/1088605093538046044/1088605290045390848/image.png"
+      }
+    },
+    {
+      "title": "<:voukoder:908044222391808011>  Voukoder",
+      "description": "Voukoder is an encoding software that supports various modern encoders and also provides a set of post processing filters.\n\n**Advantages** to <:voukoder:908044222391808011> **Voukoder** vs. <:vegas:1059031220589174844> Vegas is that\n<:dot:827258674144739370>Updated codecs (more efficient thus smaller)\n\n<:dot:827258674144739370>More encoding settings (though you're unlikely to mess with them, my presets do 👍)\n\n<:dot:827258674144739370>Automatic 4K upscaling with nearest neighbor, makes .bat upscale scripts useless\n\n<:dot:827258674144739370>`.MKV` codec option, if VEGAS crashes/the render hasn't finished __you can watch what has been rendered so far even before VEGAS finishes rendering__\n\n**Tutorial**\nBelow is a tutorial on how to install Voukoder along with presets, provided by [Couleur Tweak Tips](https://discord.gg/ctt)'s [TweakList](https://github.com/couleur-tweak-tips/TweakList).",
+      "color": 5814783,
+      "author": {
+        "name": "Couleur",
+        "url": "https://discord.com/users/352830597778898944",
+        "icon_url": "https://cdn.discordapp.com/avatars/352830597778898944/2bfa2454fa93d7771c93e90931f93c49.png?size=1024"
+      }
+    }
+  ],
+  "username": "the settings catalog",
+  "avatar_url": "https://cdn.discordapp.com/icons/1056955809730404373/bc6d25427198302fe6bc1f0a563c8c82.webp?size=96",
+  "attachments": [],
+  "key": "CATALOG_VOUK"
+}
