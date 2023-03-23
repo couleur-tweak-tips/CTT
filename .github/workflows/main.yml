@@ -19,6 +19,7 @@ jobs:
           PROTO_FOO: ${{ secrets.PROTO_FOO }}
           PROTO_ABOUT: ${{ secrets.PROTO_ABOUT }}
           PROTO_INSTRUCTIONS: ${{ secrets.PROTO_INSTRUCTIONS }}
+          CATALOG_OBS: ${{ secrets.CATALOG_OBS }}
 
         # Install-Module -Name powershell-yaml
         run: ./ci.ps1
