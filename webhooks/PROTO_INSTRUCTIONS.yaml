@@ -1,0 +1,63 @@
+{
+  "content": "yes that's webhook has been posted by /CTT <:content:872181153510096936>",
+  "embeds": [
+    {
+      "title": "Generate an embed and get it's raw JSON form",
+      "description": "Go over on [Discohook](https://discohook.org) to write an embed\n\nOnce you're done scroll down on the left pane and can click on ``JSON Data Editor`` to get the JSON code which you'll paste in that new file you created in your fork of /CTT",
+      "color": 3092790,
+      "image": {
+        "url": "https://files.catbox.moe/ztsbit.png"
+      }
+    },
+    {
+      "title": "Fork /CTT on GitHub to feed your embed",
+      "description": "With a [GitHub account](https://github.com/signup) you can easily fork [`couleur-tweak-tips/CTT`](https://github.com/couleur-tweak-tips/CTT) and make a pull request to have your very own sample documentation be pushed as markdown in `/docs/` and in one of the channels\n\nGo in the [`/webhooks/`](https://github.com/couleur-tweak-tips/CTT/tree/main/webhooks) channel and click `Create new file`",
+      "color": 3092790,
+      "image": {
+        "url": "https://files.catbox.moe/m3g22t.png"
+      }
+    },
+    {
+      "title": "Add /CTT's special JSON fields",
+      "description": "Before pushing (uploading) this to GitHub, add these values to the JSON files:\n\n\n```JSON\n# ...\n        }\n    ],\n    \"secret\": \"FUCK2\",\n    \"message_id\": \"1070357568007966840\",\n    \"channel\": \"1002572530906833047\",\n    \"components\": []\n}\n```",
+      "color": 3092790,
+      "fields": [
+        {
+          "name": "``channel`` (mandatory)",
+          "value": "I've already put token for <#1071474677849002135> and <#1071474688942940190> in my GitHub repo's secrets, choose any channels that are in the EXAMPLES category by putting their name there",
+          "inline": true
+        },
+        {
+          "name": "``message_id`` (optional)",
+          "value": "If you wish to edit an existing message\n\nGet a message's ID by get the last chunk of numbers from what is copied to your clipboard after right clicking on a message -> ``Copy Message Link``",
+          "inline": true
+        },
+        {
+          "name": "`thread_id`",
+          "value": "The ID of the thread \n\nIf you don't see it enable developer mode and right click a channel -> `Copy ID`",
+          "inline": true
+        },
+        {
+          "name": "About the empty `components` key",
+          "value": "You can ignore it 👍"
+        },
+        {
+          "name": "Regarding the JSON format",
+          "value": "JSON is meant to be wrapped in a single line, with each value being strictly limited by quotes, separated by commas (except for the last one, see the example above)",
+          "inline": true
+        }
+      ]
+    },
+    {
+      "title": "Create a Pull Request",
+      "description": "In __**your OWN forked repository**__ create a Pull Request and follow the prompts, give a name to the PR and submit",
+      "color": 3092790,
+      "image": {
+        "url": "https://files.catbox.moe/iohv53.png"
+      }
+    }
+  ],
+  "channel": "PROTO_INSTRUCTIONS",
+  "message_link": "1071504697166405745",
+  "attachments": []
+}

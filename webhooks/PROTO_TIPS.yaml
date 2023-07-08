@@ -1,0 +1,11 @@
+{
+  "content": null,
+  "embeds": [
+    {
+      "title": "Espanso",
+      "description": "Here's my [Espanso](https://espanso.org/) config which \n\nLearn more about it in <#898186544882520104> on [CTT](https://discord.com/invite/aPVMJy78Pa)\n\nCreates a hyperlink (expects URL to be in your clipboard)\n```yml\n- trigger: ;lnk\n  replace: \"[$|$]({{clipboard}})\"\n  vars:\n    - name: clipboard\n      type: clipboard\n```  \n\nWraps the user (`<@...>` or channel (`<#...>`) ID in your clipboard\n```yml\n- trigger: ;dc\n  replace: \"<#{{clipboard}}>\"\n  vars:\n    - name: clipboard\n      type: clipboard\n  \n- trigger: ;du\n  replace: \"<@{{clipboard}}>\"\n  vars:\n    - name: clipboard\n      type: clipboard\n```  \n\nI always go back to find this body color\n```yml\n- trigger: ;ebg\n  replace: 2f3136\n```  \n\nMiscellaneous: creates a new trigger for you to use in your code\n```yml\n- trigger: ;trig\n  replace: \"  - trigger: $|$\\n    replace: \"\n```",
+      "color": 3092790
+    }
+  ],
+  "attachments": []
+}

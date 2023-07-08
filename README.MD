@@ -1,6 +1,24 @@
+# temporary header: *While we wait on Discord's markdown update*
+
+Headers and hyperlinks have made this repo's code logic was totally outdated, but this is great news for me to take interest in again, instead of messing with embeds' JSON schema it will literally synchronize markdown
+
+#### Q: what about when you got multiple \!\[image\]\(links\), that just can't be done in Discord..?
+A: 
+
+Split the markdown file into an array at every occurence of any sort of media, and when POSTing the webhooks just dispatch it in separate messages
+
+This means if you want multiple medias you'll need to have to get multiple webhooks, but once set up it *should 🤞* be maintainable as long as you prepare enough invisible message links👍 
+
+## rest of the readme:
+
 > **Warning**
 > 
 > This is a prototype repository for managing the [CTT discord server](http://dsc.gg/CTT)'s documentation, not a ready-to-use product for server owners (though for the curious ones reading this feel free to poke around with it and [come have a chat!](https://discord.gg/SQjE9qUmcD)).
+
+
+
+
+
 
 There's always been a dilemma for hosting my documentation: stay on Discord or build a website, this repository hopes to fix that by making both possible at once
 

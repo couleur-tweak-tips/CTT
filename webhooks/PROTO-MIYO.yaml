@@ -1,0 +1,22 @@
+{
+  "content": null,
+  "embeds": [
+    {
+      "title": "Fork /CTT on GitHub",
+      "description": "You can fork [`couleur-tweak-tips/CTT`](https://github.com/couleur-tweak-tips/CTT) by clicking [here](https://github.com/couleur-tweak-tips/CTT/fork)\n\nChange to Repository name to whatever you want 👍",
+      "color": 3092790,
+      "image": {
+        "url": "https://files.catbox.moe/kvckeg.png"
+      }
+    },
+    {
+      "title": "Making it feel like home",
+      "description": "You'll need to add a new secret each time you add a new webhook\n\nHopefully GitHub makes it easy with this link\n<https://github.com/couleur-tweak-tips/CTT/settings/secrets/actions/new>\n(replace your username and repo name)\n\nWhich opens to:",
+      "color": 3092790,
+      "image": {
+        "url": "https://files.catbox.moe/mb2u3p.png"
+      }
+    }
+  ],
+  "attachments": []
+}
