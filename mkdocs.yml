@@ -1,0 +1,51 @@
+site_name: Couleur Tweak Tips
+
+nav:
+  - Home:
+    - Home: index.md
+  - Video & renders:
+    - OBS: OBS.md
+
+copyright: "mmh ah yes tweak tips 👍"
+
+theme:
+  name: material
+  logo: images/logo.png
+  favicon: images/favicon.png
+
+  palette:
+   - scheme: default
+     primary: custom
+     accent: custom
+     toggle:
+       icon: material/lightbulb
+       name: Switch to dark mode
+   # Palette toggle for dark mode
+   - scheme: slate
+     primary: custom
+     accent: custom
+     toggle:
+       icon: material/lightbulb-outline
+       name: Switch to light mode
+       
+
+extra:
+  #homepage: https://ctt.cx
+  social:
+  - icon: fontawesome/brands/discord
+    link: https://discord.com/invite/aPVMJy78Pa
+    name: The Couleur Tweak Tips Discord server
+
+  - icon: fontawesome/brands/github
+    link: https://github.com/couleur-tweak-tips
+    name: Couleur Tweak Tips on GitHub
+
+  - icon: fontawesome/brands/telegram
+    link: https://t.me/Couleur
+    name: contact couleur on telegram
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
