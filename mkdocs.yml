@@ -9,7 +9,7 @@ nav:
   - Home:
     - Home: index.md
   - Video & renders:
-    - OBS: OBS.md
+    - OBS: video-and-renders/OBS.md
 
 copyright: "mmh ah yes tweak tips 👍"
 
