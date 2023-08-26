@@ -7,6 +7,6 @@ plugins:
       cache: false
       cards_layout: default/variant
       cards_layout_options:
-        background_color: "#2A2A2A"
-        color: "#9C00FF"
+        background_color: "#131313"
+        color: "#BF6BFF"
         font_family: Inter
