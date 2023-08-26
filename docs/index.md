@@ -1,5 +1,5 @@
 ---
-description: The Couleur Tweak Tips wiki
+description: The official Couleur Tweak Tips wiki
 icon: material/home
 ---
 

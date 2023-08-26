@@ -1,5 +1,5 @@
 ---
-description: An introduction to video and renders
+description: An introduction to video & renders
 icon: material/video-box
 ---
 

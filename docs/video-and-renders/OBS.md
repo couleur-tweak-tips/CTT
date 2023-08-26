@@ -1,5 +1,5 @@
 ---
-description: How to initially configure OBS
+description: Initially configuring OBS
 icon: simple/obsstudio
 ---
 
