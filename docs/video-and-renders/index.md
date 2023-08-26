@@ -10,7 +10,7 @@ This section of the wiki will show you how to optimally configure software to he
 ## :material-book: Definitions
 
 ### :material-run-fast: Motion blur
-For motion blur, a process is commonly used called frame blending, **which combines frames together to produce a motion blur effect**. Commonly this is done from a very high FPS (e.g. 540) down to a common FPS, like 60 or 30, without any smearing of HUDs or general artifacting.
+For motion blur, a process is commonly used called frame blending, **which combines frames together to produce a motion blur effect**, without any smearing of HUDs or general artifacting. Commonly this is done from a very high FPS (e.g. 540) down to a common FPS, i.e. 60 or 30.
 
 In general, the higher the input FPS, the smoother the final output would be, due to more blur frames making the blur look more seamless. Blur frames are how many frames are blended together, so `input fps / output fps`.
 

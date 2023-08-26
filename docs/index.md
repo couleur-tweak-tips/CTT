@@ -12,6 +12,6 @@ Couleur Tweak Tips (shortened to CTT) is a Discord server and wiki, dedicated to
 We recommend checking out our primary pages first:
 
 - [OBS (Open Broadcasting Software) Configuration](/video-and-renders/obs/) for high performance recording and more
-- [blur Configuration](/blur/) for applying motion blur to videos
+<!-- - [blur Configuration](/blur/) for applying motion blur to videos
 - [Programs](/programs/) for software that we find useful
-- [Minecraft](/minecraft/) for configuring Minecraft for QoL and performance
+- [Minecraft](/minecraft/) for configuring Minecraft for QoL and performance -->

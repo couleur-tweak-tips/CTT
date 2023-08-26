@@ -83,17 +83,6 @@ extra:
     link: https://t.me/Couleur
     name: Contact Couleur on Telegram
 
-
-plugins:
-  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-social-cards
-  - social:
-      cards_layout: default/variant
-      cards_layout_options:
-        background_color: "#9B00FF"
-        color: "#FFFFFF"
-        font_family: Inter
-
-
 #
 # Python Markdown
 # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown

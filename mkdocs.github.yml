@@ -1,0 +1,10 @@
+INHERIT: mkdocs.yml
+
+plugins:
+  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-social-cards
+  - social:
+      cards_layout: default/variant
+      cards_layout_options:
+        background_color: "#B849FF"
+        color: "#FFFFFF"
+        font_family: Inter
