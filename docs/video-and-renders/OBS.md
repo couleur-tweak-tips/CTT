@@ -23,7 +23,12 @@ You should the latest versiono of OBS from the official [downloads page](https:/
 
     * Flathub (recommended): `flatpak install flathub com.obsproject.Studio`
     * Arch-based distros: `pacman -S obs-studio`
-    * Ubuntu-based distros: `choco install obs-studio`
+    * Ubuntu-based distros (copied from OBS download page):
+      ```bash
+      sudo add-apt-repository ppa:obsproject/obs-studio
+      sudo apt update
+      sudo apt install ffmpeg obs-studio
+      ```
 
 === "macOS"
 
