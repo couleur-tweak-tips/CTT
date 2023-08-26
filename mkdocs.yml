@@ -12,7 +12,11 @@ nav:
   - Video & renders:
     - Video & Renders: video-and-renders/index.md
     - Open Broadcaster Software:
-      - Introduction: video-and-renders/OBS.md
+      - Introduction: video-and-renders/obs/introduction.md
+      - NVIDIA NVENC: video-and-renders/obs/nvenc.md
+      - AMD AMF: video-and-renders/obs/amd.md
+      - Intel QuickSync: video-and-renders/obs/intel.md
+      - CPU x264: video-and-renders/obs/x264.md
 
 copyright: "mmh ah yes tweak tips 👍"
 
@@ -47,6 +51,7 @@ theme:
     - content.code.copy
     - content.code.select
     - content.code.annotate
+    - content.tooltips
     # - header.autohide
 
   # a custom colour scheme could be good in the future

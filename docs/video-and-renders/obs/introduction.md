@@ -1,5 +1,5 @@
 ---
-description: Initially configuring OBS
+description: Initial OBS configuration for all configurations
 icon: simple/obsstudio
 ---
 
@@ -32,6 +32,9 @@ You should the latest versiono of OBS from the official [downloads page](https:/
 
 === "macOS"
 
+    !!! warning "Unsupported"
+        At the moment, OBS settings for macOS aren't considered in the documentation.
+
     * Homebrew: `brew install --cask obs`
 
 ## :material-cog: Initial configuration
@@ -39,11 +42,9 @@ You should the latest versiono of OBS from the official [downloads page](https:/
 ??? tip "Video Walkthrough"
     <center>
         <video width="720" height="405" controls>
-            <source src="/assets/videos/video-and-renders/obs/obs-initial-config.mp4" type="video/mp4">
+            <source id="mp4" src="/CTT/assets/videos/video-and-renders/obs/obs-initial-config.mp4" type="video/mp4">
         </video>
     </center>
-
-For an initial configuration of OBS, you should:
 
 1. Click **Cancel** on the **Auto-Configuration Wizard** to skip it
 2. Open **Settings :material-arrow-right: Video**
@@ -55,4 +56,26 @@ For an initial configuration of OBS, you should:
 8. Adjust the **Audio Mixer** to your liking
 9. Add a **Display Capture** source
 10. At the top, go to **Docks :material-arrow-right: Stats**, then drag it to the side of the preview to dock it, then adjust the sizing how you'd like
-    - This is used for monitoring if your OBS is having any trouble keeping up with your configuration
+
+
+### :octicons-graph-16: Stats dock
+The stats dock is used for monitoring if your OBS settings can keep up with your computer, as well as other statistics shown.
+
+The main two statistics to indicate lag are encoding lag and rendering lag. If one of these statistics are increasing when recording your game in movement, then you should adjust your OBS settings.
+
+## :material-account-question: Where to go from here
+
+!!! warning "Ranking"
+    NVIDIA's encoder (NVENC) is by far the best for recording, as it is fast and not resource intensive, unless you push it to its limits. Other encoders may struggle to record very high FPS, such as 240 FPS and over.
+
+From here, you'll want to go to the page which fits [your GPU](https://www.microsoft.com/en-us/windows/learning-center/how-to-check-gpu "How to check your GPU in Windows").
+
+- :simple-nvidia: [**NVIDIA NVENC**](/videos-and-renders/obs/nvidia-nvenc)
+- :custom-amd: [**AMD AMF**](/videos-and-renders/obs/amd-amf)
+- :simple-intel: [**Intel QuickSync**](/videos-and-renders/obs/intel-quicksync)
+
+### :octicons-cpu-16: Software Encoding
+
+These are much slower and more resource intensive than the GPU/hardware-accelerated encoders listed above, but they're also universally compatible and much more efficient.
+
+- :octicons-cpu-16: [**CPU x264**](/videos-and-renders/obs/x264)

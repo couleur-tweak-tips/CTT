@@ -1,5 +1,5 @@
 ---
-description: The official Couleur Tweak Tips wiki
+description: The Couleur Tweak Tips (CTT) wiki
 icon: material/home
 ---
 

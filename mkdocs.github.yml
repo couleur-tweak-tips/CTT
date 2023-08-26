@@ -6,6 +6,6 @@ plugins:
   - social:
       cards_layout: default/variant
       cards_layout_options:
-        background_color: "#000000"
+        background_color: "#131313"
         color: "#BF6BFF"
         font_family: Inter
