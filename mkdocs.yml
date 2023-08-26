@@ -9,7 +9,9 @@ nav:
   - Home:
     - Home: index.md
   - Video & renders:
-    - OBS: video-and-renders/OBS.md
+    - Video & Renders: video-and-renders/index.md
+    - Open Broadcaster Software:
+      - Introduction: video-and-renders/OBS.md
 
 copyright: "mmh ah yes tweak tips 👍"
 
