@@ -15,8 +15,8 @@ copyright: "mmh ah yes tweak tips 👍"
 
 theme:
   name: material
-  logo: images/logo.png
-  favicon: images/favicon.png
+  logo: assets/logos/logo.png
+  favicon: assets/logos/favicon.png
   custom_dir: overrides
 
   features:
