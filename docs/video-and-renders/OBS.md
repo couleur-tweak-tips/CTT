@@ -1,4 +1,5 @@
 ---
+description: How to initially configure OBS
 icon: simple/obsstudio
 ---
 
@@ -49,3 +50,4 @@ For an initial configuration of OBS, you should:
 8. Adjust the **Audio Mixer** to your liking
 9. Add a **Display Capture** source
 10. At the top, go to **Docks :material-arrow-right: Stats**, then drag it to the side of the preview to dock it, then adjust the sizing how you'd like
+    - This is used for monitoring if your OBS is having any trouble keeping up with your configuration
