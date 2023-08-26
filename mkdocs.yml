@@ -1,4 +1,5 @@
 site_name: Couleur Tweak Tips
+site_url: https://he3als.xyz/ctt
 
 # https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository
 repo_url: https://github.com/he3als/CTT
@@ -81,6 +82,16 @@ extra:
   - icon: fontawesome/brands/telegram
     link: https://t.me/Couleur
     name: contact couleur on telegram
+
+
+plugins:
+  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-social-cards
+  - social:
+      cards_layout: default/variant
+      cards_layout_options:
+        background_color: "#A443FF"
+        color: "#FFFFFF"
+        font_family: Bricolage Grotesque
 
 #
 # Python Markdown
