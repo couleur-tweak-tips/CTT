@@ -20,6 +20,6 @@ Video editors such as [Vegas Pro](/placeholder/) and [Adobe Premiere Pro](/place
 
 Video interpolation is a video processing technique that creates new frames between existing ones, effectively increasing the video's frames per second (FPS) using algorithms or AI.
 
-[RIFE](https://github.com/megvii-research/ECCV2022-RIFE) and [SVP](https://www.svp-team.com/) are commonly implemented into frame blending applications to interpolate.
+[RIFE](https://github.com/megvii-research/ECCV2022-RIFE) and [SVP](https://www.svp-team.com) are commonly implemented into frame blending applications to interpolate.
 
 However, interpolation isn't perfect. The lower input FPS you give it, the generally worse result it will produce, meaning that in our case for motion blur, you still will need to record in the highest FPS that your hardware will allow it to.

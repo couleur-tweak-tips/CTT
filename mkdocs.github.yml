@@ -4,9 +4,8 @@ plugins:
   # Currently, not all features are avaliable in non-insider, but they're set anyways for future-proofing
   # https://squidfunk.github.io/mkdocs-material/setup/setting-up-social-cards
   - social:
-      cache: false
       cards_layout: default/variant
       cards_layout_options:
-        background_color: "#131313"
+        background_color: "#000000"
         color: "#BF6BFF"
         font_family: Inter
