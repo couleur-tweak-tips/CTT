@@ -1,8 +1,8 @@
 INHERIT: mkdocs.yml
 
 plugins:
-  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-social-cards
   # Currently, not all features are avaliable in non-insider, but they're set anyways for future-proofing
+  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-social-cards
   - social:
       cache: false
       cards_layout: default/variant
