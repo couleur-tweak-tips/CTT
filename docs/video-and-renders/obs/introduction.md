@@ -9,7 +9,7 @@ icon: simple/obsstudio
 [Open Broadcaster Software (OBS)](https://obsproject.com) is a free and open-source software for live streaming and recording. Here you'll learn how to initially configure and install OBS.
 
 ## :material-package-down: Installing OBS
-You should the latest versiono of OBS from the official [downloads page](https://obsproject.com/download). This page provides multiple sources from which you can install it.
+You should the latest version of OBS from the official [downloads page](https://obsproject.com/download). This page provides multiple sources from which you can install it.
 
 ### Alternative sources
 
