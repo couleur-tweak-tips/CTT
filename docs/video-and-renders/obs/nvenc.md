@@ -1,8 +1,14 @@
 ---
 description: OBS configuration for NVIDIA GPUs
 icon: simple/nvidia
-template: show_toc.html
 ---
+
+<!-- enable table of contents on sidebar -->
+<style>
+	.md-nav--primary .md-nav__link[for=__toc] ~ .md-nav {
+		display: block !important;
+	}
+</style>
 
 # :simple-nvidia: NVENC OBS Configuration
 
