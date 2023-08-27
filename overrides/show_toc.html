@@ -1,0 +1,10 @@
+{% extends "main.html" %}
+
+{% block extrahead %}
+    {{ super() }}
+    <style>
+        .md-nav--primary .md-nav__link[for=__toc] ~ .md-nav {
+            display: flex !important;
+        }
+    </style>
+{% endblock %}
