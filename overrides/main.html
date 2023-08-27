@@ -7,13 +7,16 @@
         </span>
         Construction:
     </strong>
-    <style>
-      .md-nav--primary .md-nav__link[for=__toc] ~ .md-nav {
-        display: none;
-      }
-    </style>
     The CTT wiki is under construction, for enthusiasts, check out the
     <a href="https://discord.gg/SQjE9qUmcD">CTT prototype Discord</a>
     and for the rest, see the
     <a href="https://discord.gg/CTT">main Discord</a>.
+{% endblock %}
+
+{% block extrahead %}
+<style>
+  .md-nav--primary .md-nav__link[for=__toc] ~ .md-nav {
+    display: none;
+  }
+</style>
 {% endblock %}
