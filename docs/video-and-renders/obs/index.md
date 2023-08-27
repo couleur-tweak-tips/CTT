@@ -54,9 +54,8 @@ You should the latest version of OBS from the official [downloads page](https://
 6. Go to the **Audio** tab, and under **Global Audio Devices**, configure your audio devices
 7. Click **OK** on the Settings window
 8. Adjust the **Audio Mixer** to your liking
-9. Add a **Display Capture** source
+9. Add a **Display Capture** source (unless you're on [Linux](/CTT/video-and-renders/obs/linux/))
 10. At the top, go to **Docks :material-arrow-right: Stats**, then drag it to the side of the preview to dock it, then adjust the sizing how you'd like
-
 
 ### :octicons-graph-16: Stats dock
 The stats dock is used for monitoring if your OBS settings can keep up with your computer, as well as other statistics shown.
