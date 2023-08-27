@@ -14,8 +14,8 @@ nav:
     - Open Broadcaster Software:
       - Introduction: video-and-renders/obs/introduction.md
       - NVIDIA NVENC: video-and-renders/obs/nvenc.md
-      - AMD AMF: video-and-renders/obs/amd.md
-      - Intel QuickSync: video-and-renders/obs/intel.md
+      - AMD AMF: video-and-renders/obs/amf.md
+      - Intel QuickSync: video-and-renders/obs/quicksync.md
       - CPU x264: video-and-renders/obs/x264.md
 
 copyright: "mmh ah yes tweak tips 👍"
