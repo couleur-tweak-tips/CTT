@@ -54,9 +54,8 @@ You should the latest version of OBS from the official [downloads page](https://
 6. Go to the **Audio** tab, and under **Global Audio Devices**, configure your audio devices
 7. Click **OK** on the Settings window
 8. Adjust the **Audio Mixer** to your liking
-9. Add a **Display Capture** source
+9. Add a **Display Capture** source (unless you're on [Linux](/CTT/video-and-renders/obs/linux/))
 10. At the top, go to **Docks :material-arrow-right: Stats**, then drag it to the side of the preview to dock it, then adjust the sizing how you'd like
-
 
 ### :octicons-graph-16: Stats dock
 The stats dock is used for monitoring if your OBS settings can keep up with your computer, as well as other statistics shown.
@@ -70,12 +69,12 @@ The main two statistics to indicate lag are encoding lag and rendering lag. If o
 
 From here, you'll want to go to the page which fits [your GPU](https://www.microsoft.com/en-us/windows/learning-center/how-to-check-gpu "How to check your GPU in Windows").
 
-- :simple-nvidia: [**NVIDIA NVENC**](/videos-and-renders/obs/nvidia-nvenc)
-- :custom-amd: [**AMD AMF**](/videos-and-renders/obs/amd-amf)
-- :simple-intel: [**Intel QuickSync**](/videos-and-renders/obs/intel-quicksync)
+- :simple-nvidia: [**NVIDIA NVENC**](/CTT/video-and-renders/obs/nvenc)
+- :custom-amd: [**AMD AMF**](/CTT/video-and-renders/obs/amf)
+- :simple-intel: [**Intel QuickSync**](/CTT/video-and-renders/obs/quicksync)
 
 ### :octicons-cpu-16: Software Encoding
 
 These are much slower and more resource intensive than the GPU/hardware-accelerated encoders listed above, but they're also universally compatible and much more efficient.
 
-- :octicons-cpu-16: [**CPU x264**](/videos-and-renders/obs/x264)
+- :octicons-cpu-16: [**CPU x264**](/CTT/video-and-renders/obs/x264/)
