@@ -78,7 +78,6 @@ theme:
         icon: material/weather-sunny
         name: Switch to light mode
 
-
 extra:
   #homepage: https://ctt.cx
   social:
@@ -94,11 +93,10 @@ extra:
     link: https://t.me/Couleur
     name: Contact Couleur on Telegram
 
-
 plugins:
   # https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-search
   - search
-
+  - glightbox
 
 #
 # Python Markdown

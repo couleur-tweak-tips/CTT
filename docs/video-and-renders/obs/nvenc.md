@@ -21,10 +21,12 @@ icon: simple/nvidia
 	- Replay buffer  
 	Use **MPEG-4 (.mp4)**.  (1)
 	- Recording  
-	Use **Matroska Video (.mkv)**.
-	??? info "Remux a video to .mp4"
-		**Remux a video from a different container to .mp4 (don't bother if the programs you use don't require it).**
-		 ![NVENC Settings](/CTT/assets/images/video-and-renders/obs/nvenc/how_to_remux.gif)
+	Use **Matroska Video (.mkv)**.  
+	!!! info "Remux a video to .mp4"
+
+		Remux a video from a different container to .mp4 (don't bother if the programs you use don't require it).  
+
+		![How to remux](/CTT/assets/images/video-and-renders/obs/nvenc/how_to_remux.gif){ width="600" }
 
 - **Video Encoder**
 
@@ -45,22 +47,18 @@ Keep this disabled, if you want to rescale then do it later using FFmpeg.
 
 ## Encoder Settings
 
-
 ### Maximum performance (FPS)
 
-:material-information-slab-circle-outline: These settings are intended for maximum recording performance at high FPS.  
+:material-information-slab-circle-outline: These settings are intended for maximum recording performance at high FPS. 
 
-
-  
 - **Rate Control**  
 It's preferable to use **CQP** for best efficiency, as it will adapt the bitrate per frame.  
-
 -  **CQ Level**  
 The CQ Level ranges from 1 (practically lossless, huge file) to 30 (very lossy, small)  
 From testing, it was found that the sweet spot was between **15-18**.  
     
 	??? info "Quality vs CQ Level Graph"
-    	![NVENC Settings](/CTT/assets/images/video-and-renders/obs/nvenc/quality_vs_cqp.png)
+    	![Quality vs CQP Level Graph](/CTT/assets/images/video-and-renders/obs/nvenc/quality_vs_cqp.png)
 
 -  **Keyframe Interval**  
 Leave to **0 (auto)** for the best performance.  
@@ -96,7 +94,5 @@ HEVC is more efficient and harder to encode. (worse performance!)
 Same goes for AV1 on the RTX 40 series.
 3. :material-account-question: Why should I only use 1?  
 Having multiple Audio Tracks enabled will impact performance quite a bit, and sometimes it'll say "Stopping Recording..." forever.
-
-
 
 ### Smallest filesize
