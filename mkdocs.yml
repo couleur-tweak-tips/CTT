@@ -30,6 +30,8 @@ theme:
   logo: assets/logos/logo.png
   favicon: assets/logos/favicon.png
   custom_dir: overrides
+  icon:
+    annotation: material/alpha-i-circle
 
   features:
     # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#setting-up-navigation
