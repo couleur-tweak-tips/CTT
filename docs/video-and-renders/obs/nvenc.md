@@ -14,7 +14,10 @@ icon: simple/nvidia
 
 <div class="annotate" markdown>
 
-## Recording Settings
+## General Settings
+:material-information-slab-circle-outline: These settings apply to everyone regardless of the specific use case.  
+
+### Recording Settings
 
 - **Recording Format**  
 
@@ -22,34 +25,30 @@ icon: simple/nvidia
 	Use **MPEG-4 (.mp4)**.  (1)
 	- Recording  
 	Use **Matroska Video (.mkv)**.  
-	!!! info "Remux a video to .mp4"
+	??? info "Remux a video to .mp4"
 
 		Remux a video from a different container to .mp4 (don't bother if the programs you use don't require it).  
 
 		![How to remux](/CTT/assets/images/video-and-renders/obs/nvenc/how_to_remux.gif){ width="600" }
 
-- **Video Encoder**
-
-	- High FPS:  
-	Use **NVIDIA NVENC H.264**. (2)  
-	  
-	- Smallest filesize:  
-	Use **NVIDIA NVENC HEVC** (**NVIDIA NVENC AV1** If you have a 40 series GPU.)
-
 - **Audio Encoder**  
 Use **FFmpeg AAC**.
-
-- **Audio Track**  
-When recording in high FPS, make sure to only have 1 checked. (3)
 
 - **Rescale Output**  
 Keep this disabled, if you want to rescale then do it later using FFmpeg.
 
-## Encoder Settings
-
-### Maximum performance (FPS)
-
+## Maximum Performance  
 :material-information-slab-circle-outline: These settings are intended for maximum recording performance at high FPS. 
+
+### Recording Settings  
+
+- **Video Encoder**  
+Use **NVIDIA NVENC H.264**. (2) 
+
+- **Audio Track**  
+When recording in high FPS, make sure to only have 1 checked. (3)
+
+### Encoder Settings
 
 - **Rate Control**  
 It's preferable to use **CQP** for best efficiency, as it will adapt the bitrate per frame.  
@@ -85,6 +84,19 @@ Leave **off**, these settings were not intended for max performance and fps.
 Leave GPU to 0 if you only have one GPU.  
 Leave Max-B-frames to 0 in this context.
 
+## Best Filesize  
+:material-information-slab-circle-outline: These settings are optimized for achieving the smallest possible file size without compromising video quality.
+
+### Recording Settings
+
+- **Video Encoder**  
+Use **NVIDIA NVENC HEVC** (**NVIDIA NVENC AV1** If you have a 40 series GPU.)
+
+### Encoder Settings
+
+-  **CQ Level**  
+Use values between **18-20**.  
+
 </div>
 1. :material-account-question: Why not Fragmented MP4/MKV?  
 .mkv and fragmented .mp4 will require remuxing to work in certain programs, there's no point in adding more steps to your workflow.
@@ -94,5 +106,3 @@ HEVC is more efficient and harder to encode. (worse performance!)
 Same goes for AV1 on the RTX 40 series.
 3. :material-account-question: Why should I only use 1?  
 Having multiple Audio Tracks enabled will impact performance quite a bit, and sometimes it'll say "Stopping Recording..." forever.
-
-### Smallest filesize
