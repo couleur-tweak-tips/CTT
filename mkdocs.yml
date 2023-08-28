@@ -95,6 +95,9 @@ extra:
     link: https://t.me/Couleur
     name: Contact Couleur on Telegram
 
+extra_css:
+  - assets/css/extra.css
+
 plugins:
   # https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-search
   - search
