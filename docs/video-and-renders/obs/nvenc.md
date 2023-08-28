@@ -12,15 +12,45 @@ icon: simple/nvidia
 
 # :simple-nvidia: NVENC OBS Configuration
 
-### General settings
-
 <div class="annotate" markdown>
 
-### Maximum performance
+## Recording Settings
+
+- **Recording Format**  
+
+	- Replay buffer  
+	Use **MPEG-4 (.mp4)**.  (1)
+	- Recording  
+	Use **Matroska Video (.mkv)**.
+	??? info "Remux a video to .mp4"
+		**Remux a video from a different container to .mp4 (don't bother if the programs you use don't require it).**
+		 ![NVENC Settings](/CTT/assets/images/video-and-renders/obs/nvenc/how_to_remux.gif)
+
+- **Video Encoder**
+
+	- High FPS:  
+	Use **NVIDIA NVENC H.264**. (2)  
+	  
+	- Smallest filesize:  
+	Use **NVIDIA NVENC HEVC** (**NVIDIA NVENC AV1** If you have a 40 series GPU.)
+
+- **Audio Encoder**  
+Use **FFmpeg AAC**.
+
+- **Audio Track**  
+When recording in high FPS, make sure to only have 1 checked. (3)
+
+- **Rescale Output**  
+Keep this disabled, if you want to rescale then do it later using FFmpeg.
+
+## Encoder Settings
+
+
+### Maximum performance (FPS)
+
 :material-information-slab-circle-outline: These settings are intended for maximum recording performance at high FPS.  
 
-- **Video Encoder**  
-Use **NVIDIA NVENC H.264** (1)
+
   
 - **Rate Control**  
 It's preferable to use **CQP** for best efficiency, as it will adapt the bitrate per frame.  
@@ -58,7 +88,15 @@ Leave GPU to 0 if you only have one GPU.
 Leave Max-B-frames to 0 in this context.
 
 </div>
-1. :material-account-question: Why should you use H.264?  
-It's cool, idk man
+1. :material-account-question: Why not Fragmented MP4/MKV?  
+.mkv and fragmented .mp4 will require remuxing to work in certain programs, there's no point in adding more steps to your workflow.
+(If a power outage or similar happens, you'll only lose footage that was being saved aas it happened.)
+2. :material-account-question: Why should you use H.264?  
+HEVC is more efficient and harder to encode. (worse performance!)
+Same goes for AV1 on the RTX 40 series.
+3. :material-account-question: Why should I only use 1?  
+Having multiple Audio Tracks enabled will impact performance quite a bit, and sometimes it'll say "Stopping Recording..." forever.
 
-### Best filesize
+
+
+### Smallest filesize
