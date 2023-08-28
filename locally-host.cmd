@@ -1,5 +1,5 @@
 @echo off
-title Locally Hosting Atlas Documentation
+title Locally Hosting CTT Documentation
 
 where mkdocs > nul 2>&1 || (
 	echo It doesn't seem like MkDocs Material is installed, as it wasn't found in PATH.
