@@ -21,7 +21,7 @@ icon: simple/nvidia
 
 - **Recording Format**
 
-	- Replay buffer: Use **MPEG-4 (.mp4)**.  (1)
+	- Replay buffer: Use **MPEG-4 (.mp4)**. (1)  
 	- Recording: Use **Matroska Video (.mkv)**.
 
 		??? info "Remux a video to .mp4"
@@ -33,6 +33,10 @@ icon: simple/nvidia
 
 - **Rescale Output:** Keep disabled. Rescale later with FFmpeg if needed.
 
+### Encoder Settings
+
+- **Rate Control:** Use **CQP** for efficiency. It adapts bitrate per frame.
+
 ## Maximum Performance  
 
 :material-information-slab-circle: These settings maximize recording performance at high FPS.
@@ -43,9 +47,9 @@ icon: simple/nvidia
 
 	![Maximum performance recording settings](/CTT/assets/images/video-and-renders/obs/nvenc/recording_performance.png){ width="600" }
 
-- **Video Encoder:** Use **NVIDIA NVENC H.264**. (2)
+- **Video Encoder:** Use **NVIDIA NVENC H.264**. (2)  
 
-- **Audio Track:** Only enable 1 track when recording high FPS. (3)
+- **Audio Track:** Only enable 1 track when recording high FPS. (3)  
 
 ### Encoder Settings
 
@@ -53,24 +57,16 @@ icon: simple/nvidia
 
 	![Maximum performance encoder settings](/CTT/assets/images/video-and-renders/obs/nvenc/encoder_performance.png){ width="600" }
 
-- **Rate Control:** Use **CQP** for efficiency. It adapts bitrate per frame.
-
 - **CQ Level:** Ranges 1 (lossless, huge files) to 30 (very lossy, small).  
-From testing it was found that sweet spot is **15-18**.
-
-	??? info "Quality vs CQ Level Graph"
-		![Quality vs CQP Level Graph](/CTT/assets/images/video-and-renders/obs/nvenc/quality_vs_cqp.png)
+From testing, it was found that sweet spot for maximum performance was **15-18**. (8)
 
 - **Keyframe Interval:** Leave at **0 (auto)** for best performance.
 
-- **Preset:** Use **P1: Fastest** for highest FPS.
-
-	- P1-P3 prioritize FPS over efficiency  
-	- P4-P7 prioritize smaller files over FPS
+- **Preset:** Use **P1: Fastest** for highest FPS. (4)  
 
 - **Tuning:** Leave on **High Quality**.
 
-- **Profile:** On newer cards, **baseline** can reduce lag at 1080p500+FPS but increases filesize. Does not affect quality.
+- **Profile:** Use **baseline**. (6)  
 
 - **Look Ahead & Psycho Visual Tuning:** Leave **off** for max performance. 
 
@@ -86,7 +82,11 @@ From testing it was found that sweet spot is **15-18**.
 
 ### Encoder Settings
 
-- **CQ Level:** Use **18-20**.
+- **CQ Level:** Use **18-20**. (9)  
+
+- **Preset:** Use **P7**. (5)  
+
+- **Profile:** Use **high**. (7)  
 
 </div>
 1. :material-account-question: Why not Fragmented MP4/MKV?  
@@ -95,3 +95,15 @@ From testing it was found that sweet spot is **15-18**.
 HEVC is more efficient but harder to encode, leading to worse performance. The same applies to AV1 on the RTX 40 series GPUs.
 3. :material-account-question: Why should I only use 1?  
 Enabling multiple Audio Tracks can significantly impact performance, and may occasionally cause the "Stopping Recording..." message to display indefinitely.
+4. 
+	- P1-P3 prioritize FPS over efficiency  
+    - P4-P7 prioritize smaller files over FPS
+4. 
+	- P1-P3 prioritize FPS over efficiency  
+    - P4-P7 prioritize smaller files over FPS
+6. On newer cards, **baseline** can reduce lag at 1080p500+FPS but increases filesize. Does not affect quality.
+7. On newer cards, **baseline** can reduce lag at 1080p500+FPS but increases filesize. Does not affect quality.
+8. Quality vs CQ Level Graph
+	![Quality vs CQP Level Graph](/CTT/assets/images/video-and-renders/obs/nvenc/quality_vs_cqp.png)
+8. Quality vs CQ Level Graph
+	![Quality vs CQP Level Graph](/CTT/assets/images/video-and-renders/obs/nvenc/quality_vs_cqp.png)
