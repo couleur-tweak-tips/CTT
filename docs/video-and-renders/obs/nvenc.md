@@ -3,10 +3,11 @@ description: OBS configuration for NVIDIA GPUs
 icon: simple/nvidia
 ---
 
-<!-- enable table of contents on sidebar -->
+<!-- dsiable table of contents on sidebar -->
+
 <style>
 	.md-nav--primary .md-nav__link[for=__toc] ~ .md-nav {
-		display: block !important;
+		display: none;
 	}
 </style>
 
