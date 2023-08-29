@@ -1,3 +1,4 @@
+/* makes admonitions be the width of the content */
 .md-typeset .admonition, .md-typeset details {
     width: fit-content;
 }

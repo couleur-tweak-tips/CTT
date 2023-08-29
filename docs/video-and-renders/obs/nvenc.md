@@ -63,26 +63,26 @@ icon: simple/nvidia
     - **Profile:** Use **high**. (6)  
 
 </div>
-1. ### :material-account-question: Why should you use H.264?  
+1. <font size="3">**:material-account-question: Why should you use H.264?**</font>  
 HEVC is more efficient but harder to encode, leading to worse performance. The same applies to AV1 on the RTX 40 series GPUs.
-2. ### :material-account-question: Why should I only use 1?  
+2. <font size="3">**:material-account-question: Why should I only use 1?**</font>  
 Enabling multiple Audio Tracks can significantly impact performance, and may occasionally cause the "Stopping Recording..." message to display indefinitely.
-3. ### :material-account-question: Why this preset?  
+3. <font size="3">**:material-account-question: Why this preset?**</font>  
 Despite the name it doesn't affect your video quality. Our testing showed that "P1: Fastest (Lowest Quality)" results in the least encoding lag, but produces a bigger filesize. While "P7: Slowest (Best Quality)" significantly reduces the FPS you can record at, but results in a smaller filesize.
-3. ### :material-account-question: Why this preset?  
+3. <font size="3">**:material-account-question: Why this preset?**</font>  
 Despite the name it doesn't affect your video quality. Our testing showed that "P1: Fastest (Lowest Quality)" results in the least encoding lag, but produces a bigger filesize. While "P7: Slowest (Best Quality)" significantly reduces the FPS you can record at, but results in a smaller filesize.
-5. ### :material-account-question: Why this profile?  
+5. <font size="3">**:material-account-question: Why this profile?**</font>  
 On newer GPUs, "baseline" may reduce encoding lag when recording at high FPS at the cost of the bigger file size. This won't affect your video quality.
-6. ### :material-account-question: Why this profile?    
+6. <font size="3">**:material-account-question: Why this profile?**</font>    
 Using "high" profile on newer GPUs may limit the fps you can record at, but it effectively reduces the file size. This won't affect your video quality.
-7. ### :material-account-question: Why these particular values?  
+7. <font size="3">**:material-account-question: Why these particular values?**</font>  
 The CQ Level ranges from **1** (lossless, resulting in huge files) to **30** (very lossy, resulting in small files).  
 Our testing has shown a certain sweet spot within this range:
 
     !!! image "Quality vs CQ Level Graph"
         ![Quality vs CQP Level Graph](/CTT/assets/images/video-and-renders/obs/nvenc/quality_vs_cqp.png)
 
-8. ### :material-account-question: Why these particular values?  
+8. <font size="3">**:material-account-question: Why these particular values?**</font>  
 The CQ Level ranges from **1** (lossless, resulting in huge files) to **30** (very lossy, resulting in small files).  
 Our testing has shown a certain sweet spot within this range:
 

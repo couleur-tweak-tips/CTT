@@ -31,7 +31,7 @@ icon: material/cog
 - **Rate Control:** Use **CQP**. (2)
 
 </div>
-1. ### :material-account-question: Why not Fragmented MP4/MKV?  
+1. <font size="3">**:material-account-question: Why not Fragmented MP4/MKV?**</font>  
 .mkv and fragmented .mp4 may require remuxing to work in certain programs, adding unnecessary steps to your workflow. (In the event of a power outage or similar, you'll only lose footage that was being saved at that moment.)
-2. ### :material-account-question: Why CQP over CBR and VBR?  
-It adapts the bitrate per frame. This results in better overall video quality and efficient file size management compared to CBR and VBR which use a fixed bitrate throughout the video.
+2. <font size="3">**:material-account-question: Why CQP over CBR and VBR?** </font>  
+It adjusts the bitrate for **each individual frame**, resulting in better video quality. Compared to CBR which uses a fixed bitrate, and VBR which varies the bitrate based on the complexity of the video, CQP can provide more efficient file size management.
