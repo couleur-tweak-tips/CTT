@@ -17,6 +17,8 @@ icon: simple/nvidia
 ## General Settings
 :material-information-slab-circle: These settings apply to everyone regardless of the specific use case.  
 
+---
+
 ### Recording Settings
 
 - **Recording Format**
@@ -40,6 +42,8 @@ icon: simple/nvidia
 ## Maximum Performance  
 
 :material-information-slab-circle: These settings maximize recording performance at high FPS.
+
+---
 
 ### Recording Settings  
 
@@ -76,9 +80,11 @@ From testing, it was found that sweet spot for maximum performance was **15-18**
 
 :material-information-slab-circle: These settings optimize for smallest files without quality loss. 
 
+---
+
 ### Recording Settings
 
-- **Video Encoder:** Use **NVIDIA NVENC HEVC** (or **AV1** if 40 series GPU).
+- **Video Encoder:** Use **NVIDIA NVENC HEVC** (or **AV1** if you have a 40 series GPU).
 
 ### Encoder Settings
 
