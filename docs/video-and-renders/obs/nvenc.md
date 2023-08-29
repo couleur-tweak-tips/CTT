@@ -14,85 +14,77 @@ icon: simple/nvidia
 
 <div class="annotate" markdown>
 
-## General Settings
-:material-information-slab-circle: These settings apply to everyone regardless of the specific use case.  
+=== "General Settings"
+    :material-information-slab-circle: These settings apply to everyone regardless of the specific use case.  
 
----
+    ### Recording Settings
 
-### Recording Settings
+    - **Recording Format**
 
-- **Recording Format**
+        - Replay buffer: Use **MPEG-4 (.mp4)**. (1)  
+        - Recording: Use **Matroska Video (.mkv)**.
 
-	- Replay buffer: Use **MPEG-4 (.mp4)**. (1)  
-	- Recording: Use **Matroska Video (.mkv)**.
+            ??? info "Remux a video to .mp4"
+                Remux a video from a different container to .mp4 (don't bother if the programs you use don't require it).  
 
-		??? info "Remux a video to .mp4"
-			Remux a video from a different container to .mp4 (don't bother if the programs you use don't require it).  
+                ![How to remux](/CTT/assets/images/video-and-renders/obs/nvenc/how_to_remux.gif){ width="600" }
 
-			![How to remux](/CTT/assets/images/video-and-renders/obs/nvenc/how_to_remux.gif){ width="600" }
+    - **Audio Encoder:** Use **FFmpeg AAC**.
 
-- **Audio Encoder:** Use **FFmpeg AAC**.
+    - **Rescale Output:** Keep disabled. Rescale later with FFmpeg if needed.
 
-- **Rescale Output:** Keep disabled. Rescale later with FFmpeg if needed.
+    ### Encoder Settings
 
-### Encoder Settings
+    - **Rate Control:** Use **CQP** for efficiency. It adapts bitrate per frame.
 
-- **Rate Control:** Use **CQP** for efficiency. It adapts bitrate per frame.
+=== "Maximum Performance"
+    :material-information-slab-circle: These settings maximize recording performance at high FPS.
 
-## Maximum Performance  
+    ### Recording Settings  
 
-:material-information-slab-circle: These settings maximize recording performance at high FPS.
+    ??? image "Screenshot"
 
----
+        ![Maximum performance recording settings](/CTT/assets/images/video-and-renders/obs/nvenc/recording_performance.png){ width="600" }
 
-### Recording Settings  
+    - **Video Encoder:** Use **NVIDIA NVENC H.264**. (2)  
 
-??? image "Screenshot"
+    - **Audio Track:** Only enable 1 track when recording high FPS. (3)  
 
-	![Maximum performance recording settings](/CTT/assets/images/video-and-renders/obs/nvenc/recording_performance.png){ width="600" }
+    ### Encoder Settings
 
-- **Video Encoder:** Use **NVIDIA NVENC H.264**. (2)  
+    ??? image "Screenshot"
 
-- **Audio Track:** Only enable 1 track when recording high FPS. (3)  
+        ![Maximum performance encoder settings](/CTT/assets/images/video-and-renders/obs/nvenc/encoder_performance.png){ width="600" }
 
-### Encoder Settings
+    - **CQ Level:** Ranges 1 (lossless, huge files) to 30 (very lossy, small).  
+    From testing, it was found that sweet spot for maximum performance was **15-18**. (8)
 
-??? image "Screenshot"
+    - **Keyframe Interval:** Leave at **0 (auto)** for best performance.
 
-	![Maximum performance encoder settings](/CTT/assets/images/video-and-renders/obs/nvenc/encoder_performance.png){ width="600" }
+    - **Preset:** Use **P1: Fastest** for highest FPS. (4)  
 
-- **CQ Level:** Ranges 1 (lossless, huge files) to 30 (very lossy, small).  
-From testing, it was found that sweet spot for maximum performance was **15-18**. (8)
+    - **Tuning:** Leave on **High Quality**.
 
-- **Keyframe Interval:** Leave at **0 (auto)** for best performance.
+    - **Profile:** Use **baseline**. (6)  
 
-- **Preset:** Use **P1: Fastest** for highest FPS. (4)  
+    - **Look Ahead & Psycho Visual Tuning:** Leave **off** for max performance. 
 
-- **Tuning:** Leave on **High Quality**.
+    - **GPU & Max B-Frames:** Leave GPU at 0 if single GPU. Leave B-Frames at 0.
 
-- **Profile:** Use **baseline**. (6)  
+=== "Best Filesize"
+    :material-information-slab-circle: These settings optimize for smallest files without quality loss. 
 
-- **Look Ahead & Psycho Visual Tuning:** Leave **off** for max performance. 
+    ### Recording Settings
 
-- **GPU & Max B-Frames:** Leave GPU at 0 if single GPU. Leave B-Frames at 0.
+    - **Video Encoder:** Use **NVIDIA NVENC HEVC** (or **AV1** if you have a 40 series GPU).
 
-## Best Filesize
+    ### Encoder Settings
 
-:material-information-slab-circle: These settings optimize for smallest files without quality loss. 
+    - **CQ Level:** Use **18-20**. (9)  
 
----
+    - **Preset:** Use **P7**. (5)  
 
-### Recording Settings
-
-- **Video Encoder:** Use **NVIDIA NVENC HEVC** (or **AV1** if you have a 40 series GPU).
-
-### Encoder Settings
-
-- **CQ Level:** Use **18-20**. (9)  
-
-- **Preset:** Use **P7**. (5)  
-
-- **Profile:** Use **high**. (7)  
+    - **Profile:** Use **high**. (7)  
 
 </div>
 1. :material-account-question: Why not Fragmented MP4/MKV?  
@@ -104,12 +96,12 @@ Enabling multiple Audio Tracks can significantly impact performance, and may occ
 4. 
 	- P1-P3 prioritize FPS over efficiency  
     - P4-P7 prioritize smaller files over FPS
-4. 
+5. 
 	- P1-P3 prioritize FPS over efficiency  
     - P4-P7 prioritize smaller files over FPS
 6. On newer cards, **baseline** can reduce lag at 1080p500+FPS but increases filesize. Does not affect quality.
 7. On newer cards, **baseline** can reduce lag at 1080p500+FPS but increases filesize. Does not affect quality.
 8. Quality vs CQ Level Graph
 	![Quality vs CQP Level Graph](/CTT/assets/images/video-and-renders/obs/nvenc/quality_vs_cqp.png)
-8. Quality vs CQ Level Graph
+9. Quality vs CQ Level Graph
 	![Quality vs CQP Level Graph](/CTT/assets/images/video-and-renders/obs/nvenc/quality_vs_cqp.png)
