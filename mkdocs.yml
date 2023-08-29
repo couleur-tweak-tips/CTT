@@ -14,6 +14,7 @@ nav:
     - Open Broadcaster Software:
       - Initial Configuration:
         - Index: video-and-renders/obs/index.md
+        - General (All encoders): video-and-renders/obs/general.md
         - NVIDIA NVENC: video-and-renders/obs/nvenc.md
         - AMD AMF: video-and-renders/obs/amf.md
         - Intel QuickSync: video-and-renders/obs/quicksync.md

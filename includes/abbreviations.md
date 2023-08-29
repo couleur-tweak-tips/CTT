@@ -8,3 +8,5 @@
 *[encoder]: Something that converts a certain visual format (e.g. screen capture or another video file) into a compressed video format.
 *[decoding]: The process of converting a compressed digital video file into a usable and viewable format.
 *[decoder]: Something that converts a compressed video format into a recognizable visual format (e.g., screen display) for playback or editing purposes.
+*[CBR]: Constant Bit Rate
+*[VBR]: Variable Bit Rate
