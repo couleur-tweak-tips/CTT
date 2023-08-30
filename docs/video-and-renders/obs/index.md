@@ -46,11 +46,22 @@ You should the latest version of OBS from the official [downloads page](https://
         </video>
     </center>
 
+??? info "Recording formats"
+    - **MPEG-4 (.mp4)** has the best compatibility, and will work for Discord embeds and in pretty much any video editor
+    - **Matroska Video (.mkv)** has decent compatibility, but won't work for Discord embeds. However, if OBS suddenly closes or your computer unexpectedly shuts down, your recording will be saved, unlike `.mp4`.
+        - You can convert `.mkv` and other formats to regular `.mp4` videos within OBS using remuxing.
+    
+    ??? tip "How to use remuxing"
+        <center>
+            ![How to remux](/CTT/assets/images/video-and-renders/obs/nvenc/how_to_remux.gif){ width="600" }
+        </center>
+
 1. Click **Cancel** on the **Auto-Configuration Wizard** to skip it
 2. Open **Settings :material-arrow-right: Video**
 3. Change the **Output (Scaled) Resolution** to exactly match your **Base (Canvas) Resolution**
 4. Switch **Common FPS Values :material-arrow-right: Fractional FPS Value** and modify the numerator to change your desired output FPS
 5. Go to the **Output** tab, and change the **Output Mode** to **Advanced**
+    - **Recording Format:** Use **MPEG-4 (.mp4)** for compatibility or **Matroska Video (.mkv)**.
 6. Go to the **Audio** tab, and under **Global Audio Devices**, configure your audio devices
 7. Click **OK** on the Settings window
 8. Adjust the **Audio Mixer** to your liking
@@ -61,6 +72,13 @@ You should the latest version of OBS from the official [downloads page](https://
 The stats dock is used for monitoring if your OBS settings can keep up with your computer, as well as other statistics shown.
 
 The main two statistics to indicate lag are encoding lag and rendering lag. If one of these statistics are increasing when recording your game in movement, then you should adjust your OBS settings.
+
+### :material-replay: Replay Buffer
+Replay buffer is a feature in OBS that allows users to save only the last specified seconds of a recording to a video file on the press of a button or hotkey. It uses RAM as a temporary storage, similar to NVIDIA's Shadowplay.
+
+It's very useful for testing encoder settings (with lots of movement in the test) without making lots of useless video files, as well as easily clipping moments in gameplay or whatever else.
+
+You can configure it in the **Replay Buffer** tab in **Output**, and you can set hotkeys for it in **Hotkeys** after it has been enabled.
 
 ## :material-account-question: Where to go from here
 

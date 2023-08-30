@@ -12,9 +12,8 @@ nav:
   - Video & renders:
     - Video & Renders: video-and-renders/index.md
     - Open Broadcaster Software:
-      - Initial Configuration:
+      - Configuration:
         - Index: video-and-renders/obs/index.md
-        - General (All encoders): video-and-renders/obs/general.md
         - NVIDIA NVENC: video-and-renders/obs/nvenc.md
         - AMD AMF: video-and-renders/obs/amf.md
         - Intel QuickSync: video-and-renders/obs/quicksync.md
@@ -32,20 +31,20 @@ theme:
   favicon: assets/logos/favicon.png
   custom_dir: overrides
   icon:
-    annotation: material/information-slab-circle
-
+    annotation: material/plus-circle
+  
   features:
     # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#setting-up-navigation
     - navigation.instant
     - navigation.path
-    #- navigation.prune
+    # This breaks navigation.expand at the moment
+    # - navigation.prune
     - navigation.expand
     - navigation.indexes
     - navigation.top
     - navigation.tabs
     - navigation.sections
     - navigation.tracking
-    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-pruning
     # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#table-of-contents
     - toc.follow
     # https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-search/#search-suggestions
@@ -61,7 +60,6 @@ theme:
     - content.code.annotate
     - content.tooltips
     # - header.autohide
-    - toc.integrate
 
   # a custom colour scheme could be good in the future
   # dark purple accent and primary don't look the best
@@ -81,6 +79,7 @@ theme:
         icon: material/weather-sunny
         name: Switch to light mode
 
+
 extra:
   #homepage: https://ctt.cx
   social:
@@ -96,13 +95,11 @@ extra:
     link: https://t.me/Couleur
     name: Contact Couleur on Telegram
 
-extra_css:
-  - assets/css/extra.css
 
 plugins:
   # https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-search
   - search
-  - glightbox
+
 
 #
 # Python Markdown
