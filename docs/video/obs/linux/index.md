@@ -15,8 +15,8 @@ If the default **Window Capture (Xcomposite)** works just fine for you, you can 
 
 ## :octicons-plug-16: Third-party plugins
 
-- [:simple-nvidia: **NvFBC (`obs-nvfbc` patched for high FPS)**](/video/obs/linux/nvfbc/)
+- [:simple-nvidia: **NvFBC (`obs-nvfbc` patched for high FPS)**](nvfbc.md)
     - Requires NVIDIA, OBS 27 and X.Org
     - Screen capture
-- [:octicons-screen-full-16: **OBS VkCapture (`obs-vkcapture`)**](/video/obs/linux/obs-vkcapture/)
+- [:octicons-screen-full-16: **OBS VkCapture (`obs-vkcapture`)**](obs-vkcapture.md)
     - Game capture
