@@ -15,3 +15,6 @@
   -webkit-mask-image: var(--md-admonition-icon--image);
           mask-image: var(--md-admonition-icon--image);
 }
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #252632;
+}
