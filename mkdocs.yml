@@ -9,19 +9,19 @@ edit_uri: edit/main/docs/
 nav:
   - Home:
     - Home: index.md
-  - Video & renders:
-    - Video & Renders: video-and-renders/index.md
+  - Video:
+    - Video: video/index.md
     - Open Broadcaster Software:
       - Configuration:
-        - Index: video-and-renders/obs/index.md
-        - NVIDIA NVENC: video-and-renders/obs/nvenc.md
-        - AMD AMF: video-and-renders/obs/amf.md
-        - Intel QuickSync: video-and-renders/obs/quicksync.md
-        - CPU x264: video-and-renders/obs/x264.md
+        - Index: video/obs/index.md
+        - NVIDIA NVENC: video/obs/nvenc.md
+        - AMD AMF: video/obs/amf.md
+        - Intel QuickSync: video/obs/quicksync.md
+        - CPU x264: video/obs/x264.md
       - Linux: 
-        - Index: video-and-renders/obs/linux/index.md
-        - NvFBC: video-and-renders/obs/linux/nvfbc.md
-        - OBS VkCapture: video-and-renders/obs/linux/obs-vkcapture.md
+        - Index: video/obs/linux/index.md
+        - NvFBC: video/obs/linux/nvfbc.md
+        - OBS VkCapture: video/obs/linux/obs-vkcapture.md
 
 copyright: >
   <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>

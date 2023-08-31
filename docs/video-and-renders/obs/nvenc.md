@@ -14,9 +14,9 @@ icon: simple/nvidia
     
     Check which NVENC features your NVIDIA GPU supports on the [Video Encode and Decode GPU Support Matrix](https://developer.nvidia.com/video-encode-and-decode-gpu-support-matrix-new) page, which will tell you which codecs are supported and more.
     
-    If your NVIDIA GPU doesn't support NVENC, try seeing if your iGPU has a hardware encoder or use [CPU x264](/CTT/video-and-renders/obs/x264/) as a last resort.
+    If your NVIDIA GPU doesn't support NVENC, try seeing if your iGPU has a hardware encoder or use [CPU x264](/video/obs/x264/) as a last resort.
 
-Before following this, make sure that you've followed the [initial configuration](/CTT/video-and-renders/obs/) first. **Make sure that you test your settings!** See [Replay Buffer](/CTT/video-and-renders/obs/#replay-buffer).
+Before following this, make sure that you've followed the [initial configuration](/video/obs/) first. **Make sure that you test your settings!** See [Replay Buffer](/video/obs/#replay-buffer).
 
 ## :material-cog: Configuration
 
@@ -25,12 +25,12 @@ Before following this, make sure that you've followed the [initial configuration
 
     ??? image "Recording Settings"
         <center>
-            ![Maximum performance recording settings](/CTT/assets/images/video-and-renders/obs/nvenc/recording_performance.png){ width="600" }
+            ![Maximum performance recording settings](/assets/images/video/obs/nvenc/recording_performance.png){ width="600" }
         </center>
 
     ??? image "Encoder Settings"
         <center>
-            ![Maximum performance encoder settings](/CTT/assets/images/video-and-renders/obs/nvenc/encoder_performance.png){ width="600" }
+            ![Maximum performance encoder settings](/assets/images/video/obs/nvenc/encoder_performance.png){ width="600" }
         </center>
 
     <h3>Recording Settings</h3>
@@ -90,7 +90,7 @@ It adjusts the bitrate for **each individual frame**, resulting in better video 
 The CQ Level ranges from **1** (lossless, resulting in huge files) to **30** (very lossy, resulting in small files).  
 
     !!! example ""
-        <h4>[:material-arrow-right: Click here to see the Quality vs CQP Level Graph](/CTT/assets/images/video-and-renders/obs/nvenc/quality_vs_cqp.png)</h4>
+        <h4>[:material-arrow-right: Click here to see the Quality vs CQP Level Graph](/assets/images/video/obs/nvenc/quality_vs_cqp.png)</h4>
 
 5. <font size="3">**:material-account-question: Why should you use H.264?**</font>  
 HEVC is more efficient but harder to encode, leading to worse performance. The same applies to AV1 on the RTX 40 series GPUs.
@@ -102,7 +102,7 @@ It adjusts the bitrate for **each individual frame**, resulting in better video 
 The CQ Level ranges from **1** (lossless, resulting in huge files) to **30** (very lossy, resulting in small files).  
 
     !!! example ""
-        <h4>[:material-arrow-right: Click here to see the Quality vs CQP Level Graph](/CTT/assets/images/video-and-renders/obs/nvenc/quality_vs_cqp.png)</h4>
+        <h4>[:material-arrow-right: Click here to see the Quality vs CQP Level Graph](/assets/images/video/obs/nvenc/quality_vs_cqp.png)</h4>
 
 8. <font size="3">**:material-account-question: Why this profile?**</font>  
 On newer GPUs, "baseline" may reduce encoding lag when recording at high FPS at the cost of the bigger file size. This won't affect your video quality.
