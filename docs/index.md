@@ -5,6 +5,9 @@ icon: material/home
 
 ## :material-home: Welcome to the CTT wiki!
 
+!!! example ""
+    <h4><center>[:simple-discord: Join the Discord!](https://discord.gg/ctt)</center></h4>
+
 Couleur Tweak Tips (shortened to CTT) is a Discord server and wiki, dedicated to open source information about optimal render settings, applying motion blur to videos, tweaking operating systems and much more, simply to help users optimally configure their settings for performance and QoL.
 
 ## :material-account-question: Where do I get started?
