@@ -14,7 +14,7 @@ For motion blur, a process is commonly used called frame blending, without (unli
 
 In general, the higher the input FPS, the smoother the final output would be, due to more blur frames making the blur look more seamless. Blur frames are how many frames are blended together, so `blur frames = input fps / output fps`.
 
-Video editors such as [Vegas Pro](../placeholder.md) and [Adobe Premiere Pro](../placeholder.md) have these features built-in. However, we recommend using seperate programs such as [blur](../placeholder.md) first to pre-render the videos, therefore you don't have any lag in your video editor as well as having much more customisation.
+Video editors such as [Vegas Pro](/placeholder/) and [Adobe Premiere Pro](/placeholder/) have these features built-in. However, we recommend using seperate programs such as [blur](/placeholder/) first to pre-render the videos, therefore you don't have any lag in your video editor as well as having much more customisation.
 
 ### :material-select-multiple: Interpolation
 
