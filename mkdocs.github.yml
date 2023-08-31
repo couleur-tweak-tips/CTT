@@ -9,3 +9,5 @@ plugins:
         color: "#BF6BFF"
         font_family: Inter
   - glightbox
+  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-search
+  - search

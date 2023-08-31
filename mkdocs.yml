@@ -1,9 +1,9 @@
 site_name: Couleur Tweak Tips
-site_url: https://he3als.xyz/CTT
+site_url: https://ctt.cx/
 
 # https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository
-repo_url: https://github.com/he3als/CTT
-repo_name: he3als/CTT
+repo_url: https://github.com/couleur-tweak-tips/CTT
+repo_name: couleur-tweak-tips/CTT
 edit_uri: edit/main/docs/
 
 nav:
@@ -23,7 +23,9 @@ nav:
         - NvFBC: video-and-renders/obs/linux/nvfbc.md
         - OBS VkCapture: video-and-renders/obs/linux/obs-vkcapture.md
 
-copyright: "mmh ah yes tweak tips 👍"
+copyright: >
+  <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+  <br />mmh ah yes tweak tips 👍
 
 theme:
   name: material
@@ -96,10 +98,13 @@ extra:
     name: Contact Couleur on Telegram
 
 
+extra_css:
+  - assets/css/extra.css
+
+
 plugins:
   # https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-search
   - search
-
 
 #
 # Python Markdown
