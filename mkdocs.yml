@@ -1,33 +1,86 @@
 site_name: Couleur Tweak Tips
+site_url: https://ctt.cx/
+
+# https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository
+repo_url: https://github.com/couleur-tweak-tips/CTT
+repo_name: couleur-tweak-tips/CTT
+edit_uri: edit/main/docs/
 
 nav:
   - Home:
     - Home: index.md
   - Video & renders:
-    - OBS: OBS.md
+    - Video & Renders: video-and-renders/index.md
+    - Open Broadcaster Software:
+      - Configuration:
+        - Index: video-and-renders/obs/index.md
+        - NVIDIA NVENC: video-and-renders/obs/nvenc.md
+        - AMD AMF: video-and-renders/obs/amf.md
+        - Intel QuickSync: video-and-renders/obs/quicksync.md
+        - CPU x264: video-and-renders/obs/x264.md
+      - Linux: 
+        - Index: video-and-renders/obs/linux/index.md
+        - NvFBC: video-and-renders/obs/linux/nvfbc.md
+        - OBS VkCapture: video-and-renders/obs/linux/obs-vkcapture.md
 
-copyright: "mmh ah yes tweak tips 👍"
+copyright: >
+  <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+  <br />mmh ah yes tweak tips 👍
 
 theme:
   name: material
-  logo: images/logo.png
-  favicon: images/favicon.png
+  logo: assets/logos/logo.png
+  favicon: assets/logos/favicon.png
+  custom_dir: overrides
+  icon:
+    annotation: material/plus-circle
+  
+  features:
+    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#setting-up-navigation
+    - navigation.instant
+    - navigation.path
+    # This breaks navigation.expand at the moment
+    # - navigation.prune
+    - navigation.expand
+    - navigation.indexes
+    - navigation.top
+    - navigation.tabs
+    - navigation.sections
+    - navigation.tracking
+    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#table-of-contents
+    - toc.follow
+    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-search/#search-suggestions
+    - search.suggest
+    - search.highlight
+    - search.share
+    # https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/#code-actions
+    - content.action.edit
+    - content.action.view
+    # https://squidfunk.github.io/mkdocs-material/reference/code-blocks/#configuration
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate
+    - content.tooltips
+    # - header.autohide
 
+  # a custom colour scheme could be good in the future
+  # dark purple accent and primary don't look the best
   palette:
-   - scheme: default
-     primary: custom
-     accent: custom
-     toggle:
-       icon: material/lightbulb
-       name: Switch to dark mode
-   # Palette toggle for dark mode
-   - scheme: slate
-     primary: custom
-     accent: custom
-     toggle:
-       icon: material/lightbulb-outline
-       name: Switch to light mode
-       
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
 
 extra:
   #homepage: https://ctt.cx
@@ -42,10 +95,67 @@ extra:
 
   - icon: fontawesome/brands/telegram
     link: https://t.me/Couleur
-    name: contact couleur on telegram
+    name: Contact Couleur on Telegram
 
+
+extra_css:
+  - assets/css/extra.css
+
+
+plugins:
+  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-search
+  - search
+
+#
+# Python Markdown
+# https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown
+# https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions
+#
 markdown_extensions:
+  # https://squidfunk.github.io/mkdocs-material/reference/admonitions
+  - admonition
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+
+  # https://squidfunk.github.io/mkdocs-material/reference/annotations
+  - abbr
   - attr_list
+  - md_in_html
+
+  # https://squidfunk.github.io/mkdocs-material/reference/formatting
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+
+  # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/#inlinehilite
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+
+  # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/#snippets
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+
+  # https://squidfunk.github.io/mkdocs-material/reference/content-tabs
+  - pymdownx.tabbed:
+      alternate_style: true
+
+  # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/#superfences
+  - pymdownx.superfences
+
+  # https://squidfunk.github.io/mkdocs-material/reference/icons-emojis
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
+
+  # https://squidfunk.github.io/mkdocs-material/reference/lists
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true

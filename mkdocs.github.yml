@@ -1,0 +1,13 @@
+INHERIT: mkdocs.yml
+
+plugins:
+  # Currently, not all features are avaliable in non-insider, but they're set anyways for future-proofing
+  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-social-cards
+  - social:
+      cards_layout_options:
+        background_color: "#131313"
+        color: "#BF6BFF"
+        font_family: Inter
+  - glightbox
+  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-search
+  - search

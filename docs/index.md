@@ -1,9 +1,17 @@
-# About CTT
+---
+description: The Couleur Tweak Tips (CTT) wiki
+icon: material/home
+---
 
-Collection of multi-purpose guides, resources, utilities (some our own) relating to operating-system tweaking & gameplay recording/rendering.
+## :material-home: Welcome to the CTT wiki!
 
-## 🚧 In construction
+Couleur Tweak Tips (shortened to CTT) is a Discord server and wiki, dedicated to open source information about optimal render settings, applying motion blur to videos, tweaking operating systems and much more, simply to help users optimally configure their settings for performance and QoL.
 
-We're currently building this over on the [Prototype server](https://discord.gg/SQjE9qUmcD), if you're an enthusiast or adv come say hi :)
+## :material-account-question: Where do I get started?
 
-For the rest consider joining [the main server](https://discord.gg/CTT) where there's all the docs that are getting ported.
+We recommend checking out our primary pages first:
+
+- [OBS (Open Broadcasting Software) Configuration](/CTT/video-and-renders/obs/) for high performance recording and more
+<!-- - [blur Configuration](/blur/) for applying motion blur to videos
+- [Programs](/programs/) for software that we find useful
+- [Minecraft](/minecraft/) for configuring Minecraft for QoL and performance -->
