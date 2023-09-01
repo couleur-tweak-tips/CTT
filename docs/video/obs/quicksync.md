@@ -12,7 +12,7 @@ icon: simple/intel
 
     <h3>Recording Settings</h3>
 
-    - **Video Encoder:** Use **QuickSync H.264**. (5)  
+    - **Video Encoder:** Use **QuickSync H.264**.
 
     <h3>Encoder Settings</h3>
 
