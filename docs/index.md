@@ -15,4 +15,4 @@ Couleur Tweak Tips (CTT) is a Discord server and wiki, dedicated to:
 * Configuring operating systems: Windows/Linux' appearance & behavior, keyboard shortcuts
 * Quality of life software: ShareX, AltSnap, PowerToys, SpotX, MAS, espanso, SearchEverything
 
-Browse through the left pane to get started
+To get started, browse the wiki using the sidebar on the left, or use the search bar at the top of the page.

@@ -78,34 +78,35 @@ Before following this, make sure that you've followed the [initial configuration
 <!-- some things are duplicated as seemingly you can't use an annotation twice -->
 
 1. <font size="3">**:material-account-question: Why this preset?**</font>  
-Despite the name it doesn't affect your video quality. Our testing showed that "P1: Fastest (Lowest Quality)" results in the least encoding lag, but produces a bigger filesize. While "P7: Slowest (Best Quality)" significantly reduces the FPS you can record at, but results in a smaller filesize.
+Despite the name, it doesn't affect your video quality when the correct settings are used. Although P1 isn't as efficient (resulting in larger files), it's the fastest preset, resulting in the highest performance.
 
 2. <font size="3">**:material-account-question: Why this profile?**</font>  
-Using "high" profile on newer GPUs may limit the fps you can record at, but it effectively reduces the file size. This won't affect your video quality.
+Baseline is the simplist profile, lacking some of the more complex/advanced features which we don't need for this type of recording. This results in better performance.
 
 3. <font size="3">**:material-account-question: Why CQP over CBR and VBR?**</font>  
-It adjusts the bitrate for **each individual frame**, resulting in better video quality. Compared to CBR which uses a fixed bitrate, and VBR which varies the bitrate based on the complexity of the video, CQP can provide more efficient file size management.
+With CQP, bitrate is adjusted for each macroblock in a frame, meaning it requires very little fine-tuning. This is compared to CBR and VBR, which use predefined values for bitrate, which isn't good for gameplay recording.
 
 4. <font size="3">**:material-account-question: Why these particular values?**</font>  
-The CQ Level ranges from **1** (lossless, resulting in huge files) to **30** (very lossy, resulting in small files).  
+The CQ Level ranges from **0** (lossless, resulting in incredibly huge files) to **30** (very lossy, resulting in small files). Values between 15 and 18 provide both visually lossless quality without the super huge file sizes.
 
     !!! example ""
         <h4>[:material-arrow-right: Click here to see the Quality vs CQP Level Graph](/assets/images/video/obs/nvenc/quality_vs_cqp.png)</h4>
 
 5. <font size="3">**:material-account-question: Why should you use H.264?**</font>  
-HEVC is more efficient but harder to encode, leading to worse performance. The same applies to AV1 on the RTX 40 series GPUs.
+Although HEVC is more efficient, meaning it produces smaller files, it's more demanding to encode, so the performance is worse. The same applies to AV1 on the RTX 40 series GPUs.
 
 6. <font size="3">**:material-account-question: Why CQP over CBR and VBR?**</font>  
-It adjusts the bitrate for **each individual frame**, resulting in better video quality. Compared to CBR which uses a fixed bitrate, and VBR which varies the bitrate based on the complexity of the video, CQP can provide more efficient file size management.
+With CQP, bitrate is adjusted for each macroblock in a frame, meaning it requires very little fine-tuning. This is compared to CBR and VBR, which use predefined values for bitrate, which isn't good for gameplay recording.
 
 7. <font size="3">**:material-account-question: Why these particular values?**</font>  
-The CQ Level ranges from **1** (lossless, resulting in huge files) to **30** (very lossy, resulting in small files).  
+The CQ Level ranges from **0** (lossless, resulting in incredibly huge files) to **30** (very lossy, resulting in small files). Values between 15 and 18 provide both visually lossless quality without the super huge file sizes.
 
     !!! example ""
         <h4>[:material-arrow-right: Click here to see the Quality vs CQP Level Graph](/assets/images/video/obs/nvenc/quality_vs_cqp.png)</h4>
 
 8. <font size="3">**:material-account-question: Why this profile?**</font>  
-On newer GPUs, "baseline" may reduce encoding lag when recording at high FPS at the cost of the bigger file size. This won't affect your video quality.
+Baseline is the simplist profile, lacking some of the more complex/advanced features which we don't need for this type of recording. This results in better performance.
 
 9. <font size="3">**:material-account-question: Why this preset?**</font>  
-Despite the name it doesn't affect your video quality. Our testing showed that "P1: Fastest (Lowest Quality)" results in the least encoding lag, but produces a bigger filesize. While "P7: Slowest (Best Quality)" significantly reduces the FPS you can record at, but results in a smaller filesize.
+Despite the name, it doesn't affect your video quality when the correct settings are used. Although P1 isn't as efficient (resulting in larger files), it's the fastest preset, resulting in the highest performance.
+
