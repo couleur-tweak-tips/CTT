@@ -8,7 +8,7 @@ icon: simple/intel
 ## :material-cog: Configuration
 
 === "Medium Quality & Low FPS"
-    :material-information-slab-circle: These settings maximize recording performance at high FPS.
+    :material-information-slab-circle: These settings are for medium quality and low FPS.
 
     <h3>Recording Settings</h3>
 
