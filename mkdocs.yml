@@ -9,6 +9,7 @@ edit_uri: edit/main/docs/
 nav:
   - Home:
     - Home: index.md
+    - Contributing: contributing.md
   - Video:
     - Video: video/index.md
     - Open Broadcaster Software:
