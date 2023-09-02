@@ -16,3 +16,5 @@ echo To close the server, exit this window.
 
 echo]
 mkdocs serve
+echo]
+pause

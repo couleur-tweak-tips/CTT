@@ -20,7 +20,7 @@ Before following this, make sure that you've followed the [initial configuration
 
 ## :material-cog: Configuration
 
-=== "Maximum Performance"
+=== ":material-speedometer: Maximum Performance"
     :material-information-slab-circle: These settings maximize recording performance at high FPS.
 
     ??? image "Recording Settings"
@@ -55,7 +55,7 @@ Before following this, make sure that you've followed the [initial configuration
 
     - **GPU & Max B-Frames:** Leave GPU at 0 if single GPU. Leave B-Frames at 0.
 
-=== "Best Filesize"
+=== ":material-file-alert: Best Filesize"
     :material-information-slab-circle: These settings optimize for smallest files without quality loss.
     
     <h3>Recording Settings</h3>

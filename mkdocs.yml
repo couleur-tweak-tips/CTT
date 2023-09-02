@@ -35,6 +35,7 @@ theme:
   custom_dir: overrides
   icon:
     annotation: material/plus-circle
+    repo: fontawesome/brands/github
   
   features:
     # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#setting-up-navigation
