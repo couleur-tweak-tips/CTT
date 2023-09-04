@@ -42,7 +42,7 @@ You should the latest version of OBS from the official [downloads page](https://
 ??? tip "Video Walkthrough"
     <center>
         <video width="720" height="405" controls>
-            <source id="mp4" src="/assets/videos/video/obs/obs-initial-config.mp4" type="video/mp4">
+            <source id="mp4" src="../../assets/videos/video/obs/obs-initial-config.mp4" type="video/mp4">
         </video>
     </center>
 
@@ -53,7 +53,7 @@ You should the latest version of OBS from the official [downloads page](https://
     
     ??? tip "How to use remuxing"
         <center>
-            ![How to remux](/assets/images/video/obs/nvenc/how_to_remux.gif){ width="600" }
+            ![How to remux](../../assets/images/video/obs/nvenc/how_to_remux.gif){ width="600" }
         </center>
 
 1. Click **Cancel** on the **Auto-Configuration Wizard** to skip it
@@ -65,7 +65,7 @@ You should the latest version of OBS from the official [downloads page](https://
 6. Go to the **Audio** tab, and under **Global Audio Devices**, configure your audio devices
 7. Click **OK** on the Settings window
 8. Adjust the **Audio Mixer** to your liking
-9. Add a **Display Capture** source (unless you're on [Linux](/video/obs/linux/))
+9. Add a **Display Capture** source (unless you're on [Linux](linux/index.md))
 10. At the top, go to **Docks :material-arrow-right: Stats**, then drag it to the side of the preview to dock it, then adjust the sizing how you'd like
 
 ### :octicons-graph-16: Stats dock
@@ -87,12 +87,12 @@ You can configure it in the **Replay Buffer** tab in **Output**, and you can set
 
 From here, you'll want to go to the page which fits [your GPU](https://www.microsoft.com/en-us/windows/learning-center/how-to-check-gpu "How to check your GPU in Windows").
 
-- :simple-nvidia: [**NVIDIA NVENC**](/video/obs/nvenc)
-- :custom-amd: [**AMD AMF**](/video/obs/amf)
-- :simple-intel: [**Intel QuickSync**](/video/obs/quicksync)
+- :simple-nvidia: [**NVIDIA NVENC**](nvenc.md)
+- :custom-amd: [**AMD AMF**](amf.md)
+- :simple-intel: [**Intel QuickSync**](quicksync.md)
 
 ### :octicons-cpu-16: Software Encoding
 
 These are much slower and more resource intensive than the GPU/hardware-accelerated encoders listed above, but they're also universally compatible and much more filesize efficient.
 
-- :octicons-cpu-16: [**CPU x264**](/video/obs/x264/)
+- :octicons-cpu-16: [**CPU x264**](x264.md)
