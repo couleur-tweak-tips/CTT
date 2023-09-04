@@ -8,13 +8,11 @@ icon: material/home
 !!! example ""
     <h4><center>[:simple-discord: Join the Discord!](https://discord.gg/ctt)</center></h4>
 
-Couleur Tweak Tips (shortened to CTT) is a Discord server and wiki, dedicated to open source information about optimal render settings, applying motion blur to videos, tweaking operating systems and much more, simply to help users optimally configure their settings for performance and QoL.
+Couleur Tweak Tips (CTT) is a Discord server and wiki, dedicated to:
 
-## :material-account-question: Where do I get started?
+* Content creation software configuration: OBS, VEGAS..
+* Applying motion blur effects to videos: frame blending, blur, Smoothie..
+* Configuring operating systems: Windows/Linux' appearance & behavior, keyboard shortcuts
+* Quality of life software: ShareX, AltSnap, PowerToys, SpotX, MAS, espanso, SearchEverything
 
-We recommend checking out our primary pages first:
-
-- [OBS (Open Broadcasting Software) Configuration](video/obs/index.md) for high performance recording and more
-<!-- - [blur Configuration](/blur/) for applying motion blur to videos
-- [Programs](/programs/) for software that we find useful
-- [Minecraft](/minecraft/) for configuring Minecraft for QoL and performance -->
+Browse through the left pane to get started

@@ -9,8 +9,8 @@ This section of the wiki will show you how to optimally configure software to he
 
 ## :material-book: Definitions
 
-### :material-run-fast: Motion blur
-For motion blur, a process is commonly used called frame blending, without (unlike other methods like RSMB) any smearing of HUDs or general artifacting. Commonly this is done from a very high FPS (e.g. 540) down to a common FPS, i.e. 60 or 30.
+### :material-run-fast: Frame blending
+The most common, it is without (unlike other methods like RSMB) any smearing of HUDs or general artifacting. Commonly this is done from a very high FPS (e.g. 540) down to a common FPS, i.e. 60 or 30.
 
 In general, the higher the input FPS, the smoother the final output would be, due to more blur frames making the blur look more seamless. Blur frames are how many frames are blended together, so `blur frames = input fps / output fps`.
 
@@ -22,7 +22,7 @@ Video interpolation is a video processing technique that creates new frames betw
 
 [RIFE](https://github.com/megvii-research/ECCV2022-RIFE) and the [SVP](https://www.svp-team.com) algorithm are commonly implemented into frame blending applications to interpolate.
 
-However, interpolation isn't perfect. The lower input FPS you give it, the generally worse result it will produce, meaning that in our case for motion blur, you still will need to record in the highest FPS that your hardware will allow it to.
+It generates frames from the data it has, and the higher the input FPS, the smaller the window between the two points are, which means more FPS the better.
 
 ### :material-file-video-outline: Video encoding and decoding
 

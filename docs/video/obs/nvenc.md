@@ -10,9 +10,9 @@ icon: simple/nvidia
 ## :material-information-box: Information
 
 ??? warning "Support"
-    NVENC only supports NVIDIA GPUs, with 10 series GPUs and above being ideal.
+    NVENC is NVIDIA's on-chip encoder for their desktop graphics cards, with 1000 series GPUs and above considered ideal for high FPS recording.
     
-    Check which NVENC features your NVIDIA GPU supports on the [Video Encode and Decode GPU Support Matrix](https://developer.nvidia.com/video-encode-and-decode-gpu-support-matrix-new) page, which will tell you which codecs are supported and more.
+    Check which NVENC features your NVIDIA GPU supports on NVIDIA's [video encode and decode GPU support matrix page](https://developer.nvidia.com/video-encode-and-decode-gpu-support-matrix-new).
     
     If your NVIDIA GPU doesn't support NVENC, try seeing if your iGPU has a hardware encoder or use [CPU x264](x264.md) as a last resort.
 
@@ -75,7 +75,7 @@ Before following this, make sure that you've followed the [initial configuration
 
 </div>
 
-<!-- some things are duplicated as seemingly you can't use an annoation twice -->
+<!-- some things are duplicated as seemingly you can't use an annotation twice -->
 
 1. <font size="3">**:material-account-question: Why this preset?**</font>  
 Despite the name it doesn't affect your video quality. Our testing showed that "P1: Fastest (Lowest Quality)" results in the least encoding lag, but produces a bigger filesize. While "P7: Slowest (Best Quality)" significantly reduces the FPS you can record at, but results in a smaller filesize.
