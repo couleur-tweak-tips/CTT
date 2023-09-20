@@ -12,7 +12,7 @@ nav:
     - Contributing: contributing.md
   - Video:
     - Video: video/index.md
-    - Open Broadcaster Software:
+    - OBS Studio:
       - Configuration:
         - Index: video/obs/index.md
         - NVIDIA NVENC: video/obs/nvenc.md
