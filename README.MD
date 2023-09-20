@@ -1,10 +1,12 @@
 # CTT Wiki
 
-wip on the CTT wiki, made in MkDocs Material.
+WIP wiki for [CTT](https://discord.com/invite/ctt), made with MkDocs Material.
 
 ## Contributing
-Request access to the `dev` branch on Discord:
+Join CTT and come discuss with us on the **CTT Wiki** forum post.
+
+Useful Resources:
 - https://squidfunk.github.io/mkdocs-material/setup/
 - https://squidfunk.github.io/mkdocs-material/reference/
 
-You can use `locally-host.cmd` to locally host and test your changes.
+To locally host and test your changes, run `locally-host.cmd` for Windows, or `locally-host.sh` for Linux.
