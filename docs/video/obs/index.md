@@ -3,10 +3,10 @@ description: Initial OBS configuration for all encoders
 icon: simple/obsstudio
 ---
 
-# :simple-obsstudio: Open Broadcaster Software 
+# :simple-obsstudio: OBS Studio
 
 ## :material-information-box: Introduction
-[Open Broadcaster Software (OBS)](https://obsproject.com) is a free and open-source software for live streaming and recording. Here you'll learn how to configure and install OBS.
+[OBS Studio](https://obsproject.com), or OBS as we will refer to it in the wiki, is a free and open-source software for live streaming and recording. Here you'll learn how to configure and install OBS.
 
 ## :material-package-down: Installing OBS
 You should the latest version of OBS from the official [downloads page](https://obsproject.com/download). This page provides multiple sources from which you can install it.
