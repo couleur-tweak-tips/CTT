@@ -10,7 +10,7 @@ icon: simple/intel
 Before following this, make sure that you've followed the [initial configuration](index.md) first. **Make sure that you test your settings!** See [Replay Buffer](index.md#replay-buffer).
 
 ## :material-cog: Configuration
-:material-information-slab-circle: These settings are intended for recording Minecraft at 30-60 frames per second with acceptable quality and medium file sizes. If you're looking to record with high fps, look to [NVENC](#index.md#nvenc) as an alternative to QuickSync
+:material-information-slab-circle: These settings are intended for recording Minecraft at 30-60 frames per second with acceptable quality and medium file sizes. If you're looking to record with high fps, look to [other encoders](#index.md#where-to-go-from-here) as an alternative to QuickSync
 
 === ":material-speedometer: Maximum Performance"
 
