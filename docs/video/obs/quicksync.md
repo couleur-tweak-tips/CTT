@@ -26,23 +26,25 @@ Before following this, make sure that you've followed the [initial configuration
 
     <h3>Recording Settings</h3>
 
-    - **Video Encoder:** Use **Quicksync H.264**. 
+    - **Video Encoder:** Select the **Quicksync H.264** option. If you have an 11th gen or newer Intel CPU, you can select the **Quicksync HEVC** option instead.
 
     <h3>Encoder Settings</h3>
 
-    - **Target Usage** There is no visual difference between speed, balanced and quality as far as Shanki can tell.
+    - **Target Usage** Set to balanced, as quality slows down the encoding process with no visible quality difference. However performance has a noticeable impact on quality, and no performance gains. So it's best to leave it at balanced. 
 
-    - **Profile** Keep at high or baseline, there is no measurable performance difference between them in Shanki's testing on both Minecraft Bedrock (1.16.100-1.17.34) and Java editions (1.7.10)
+    - **Profile** Keep at high or baseline, as there is no measurable performance difference or quality difference. 
 
-    - **Keyframe Interval** Leave to 0 (auto) for the best performance, doing this will set the keyframe interval to 3 on the latest OBS version... so 3 is the actual best keyframe interval for recording at 60fps
+    - **Keyframe Interval** Leave to 0 (auto) or 3 for the best performance and quality. 
 
     - **Rate Control** Opposed to using CQP(6), It's preferable to use ICQ for best efficiency, as it will adapt the bitrate per frame.
 
-    - **ICQ Quality** Forget about size in bytes, quality ranges from 1 (practically lossless, huge file), to 30 (very lossy, small), the higher you go, the smaller the file. From Shanki's Testing he found that the sweet spot is around 14-16 depending on how much RAM and what your laptop's power throttling limit is (to achieve the same visual acuity as NVENC). 
+    - **ICQ Quality** Forget about size in bytes, quality ranges from 1 (practically lossless, huge file), to 30 (very lossy, small), the higher you go, the smaller the file. From testing, 15-18 is a good range for quality and filesize. However QSV will not reach the visual acuity of NVENC no matter how low you go, so it's best to save on performance and opt for higher numbers like 20-25 to ensure good performance while playing and recording. 
 
     - **Latency** Set this to normal, as you aren't streaming. This setting is useful for getting the delay as low as possible during live streams but since this is a recording, you will not be needing it to be set lower than normal.
 
-    - **Max-B-frames** Leave Max-B-frames to 0 in this context
+    - **Max-B-frames** Leave Max-B-frames to 0 for recording minecraft, however if you wish to play games with slower on screen movement, set it to 3.
+
+    > The following settings have been tested by `@ashanki` on Minecraft Bedrock Edition versions (1.16.100-1.20.12) & Minecraft Java Edition versions (1.7.10-1.20.1). If you have any questions or data to add to this (10), please contact `@ashanki` in the [CTT Discord](https://discord.gg/ctt).
 
 </div>
 
@@ -81,3 +83,5 @@ On newer GPUs, "baseline" may reduce encoding lag when recording at high FPS at 
 9. <font size="3">**:material-account-question: Why this preset?**</font>  
 Despite the name it doesn't affect your video quality. Our testing showed that "P1: Fastest (Lowest Quality)" results in the least encoding lag, but produces a bigger filesize. While "P7: Slowest (Best Quality)" significantly reduces the FPS you can record at, but results in a smaller filesize.
 
+10. <font size="3">** Request for data!**</font>
+If you have an Intel 11th gen or newer CPU, please contact `@ashanki` on the [CTT Discord](https://discord.gg/ctt) to help us gather data on the performance of Quicksync HEVC, as it remains largely untested.
