@@ -26,10 +26,8 @@ nav:
   - Gaming:
     - Index: gaming/index.md
     - Games:
-      - Index: gaming/games/index.md
       - "Halo Infinite": gaming/games/halo-infinite.md
     - "Encyclopedia":
-      - Index: gaming/encyclopedia/index.md
       - "Presentation Model": gaming/encyclopedia/presentation-model.md
 
 copyright: >

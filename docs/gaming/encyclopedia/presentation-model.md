@@ -110,7 +110,7 @@ It's possible to configure what presentation model is used by a given applicatio
     The following only applies to DirectX based applications.<br>
 
     - Disabling Fullscreen Optimizations for any DirectX 12 application is useless since DirectX 12 can only use Hardware: Independent Flip.<br>
-    - The same applies for any DirectX 11 application that uses Hardware: Independent Flip by default and is not applied by Fullscreen Optimizations.
+    - The same applies for any DirectX 11 application that uses Hardware: Independent Flip at the application level and is not applied by Fullscreen Optimizations.
 
 Windows by default applies so called Fullscreen Optimizations to any DirectX 11 and lower based application that uses Hardware: Legacy Flip.<br>
 This results in the application using Hardware: Independent Flip instead of Hardware: Legacy Flip.<br>
@@ -120,7 +120,7 @@ To disable Fullscreen Optimizations:<br>
 1. Simply find the game's executable. 
 2. Go into its properties and disable fullscreen optimizations: <br>
     <center>
-    ![](../../../assets/images/gaming/general-knowledge/disable-fullscreen-optimizations.png)
+    ![](../../assets/images/gaming/general-knowledge/disable-fullscreen-optimizations.png)
     </center>
 
 3. Next, run the following commands in PowerShell as an Administrator:<br>
@@ -137,7 +137,7 @@ To disable Fullscreen Optimizations:<br>
 
 
 ##### [Optimizations For Windowed Games](https://devblogs.microsoft.com/directx/updates-in-graphics-and-gaming/)
-This is a feature present withing Windows 11 which converts any DirectX application using the Bit-Block Transfer Model with optimal flip mode for:
+This is a feature present withing Windows 11 which converts any DirectX application using the Bit-Block Transfer Model with optimal the Flip Model for:
 
 - Lower Frame Latency
 - Auto HDR
