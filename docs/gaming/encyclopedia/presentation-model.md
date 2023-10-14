@@ -120,7 +120,7 @@ To disable Fullscreen Optimizations:<br>
 1. Simply find the game's executable. 
 2. Go into its properties and disable fullscreen optimizations: <br>
     <center>
-    ![](../../../assets/images/gaming/general-knowledge/app-properties-1.png)
+    ![](../../../assets/images/gaming/general-knowledge/disable-fullscreen-optimizations.png)
     </center>
 
 3. Next, run the following commands in PowerShell as an Administrator:<br>
