@@ -23,6 +23,14 @@ nav:
         - Index: video/obs/linux/index.md
         - NvFBC: video/obs/linux/nvfbc.md
         - OBS VkCapture: video/obs/linux/obs-vkcapture.md
+  - Gaming:
+    - Index: gaming/index.md
+    - Games:
+      - Index: gaming/games/index.md
+      - "Halo Infinite": gaming/games/halo-infinite.md
+    - "Encyclopedia":
+      - Index: gaming/encyclopedia/index.md
+      - "Presentation Model": gaming/encyclopedia/presentation-model.md
 
 copyright: >
   <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
