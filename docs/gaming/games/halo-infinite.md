@@ -207,26 +207,6 @@ An open source modification/patch for Halo Infinite that aims to fix and improve
     !!! image "1024x768 with Visual Quality Tweaks and ZetaLoader along with Aggressive Dynamic Resolution Scaling."
         <img class="rounded-image" src="../../../assets/images/gaming/halo-infinite/Image-Sharpening-Tweaks.PNG">
 
-4. Multimedia Class Schedule Service Scheduling:
-
-    Using the function `DwmEnableMMCSS` makes DWM to participate in MMCSS scheduling while the calling process is alive.
-
-    This may help with improving performance within non-fullscreen games.
-    
-    !!! abstract "References"        
-        - [https://github.com/djdallmann/GamingPCSetup/blob/master/CONTENT/RESEARCH/WINSERVICES/README.md#multimedia-class-scheduler-service-mmcss](https://github.com/djdallmann/GamingPCSetup/blob/master/CONTENT/RESEARCH/WINSERVICES/README.md#multimedia-class-scheduler-service-mmcss)
-
-        - [https://www.overclock.net/threads/if-you-play-non-fullscreen-exclusive-games-you-might-get-a-boost-in-performance-with-dwmenablemmcss.1775433/](https://www.overclock.net/threads/if-you-play-non-fullscreen-exclusive-games-you-might-get-a-boost-in-performance-with-dwmenablemmcss.1775433/)
-
-        - [https://learn.microsoft.com/en-us/windows/win32/procthread/multimedia-class-scheduler-service](https://learn.microsoft.com/en-us/windows/win32/procthread/multimedia-class-scheduler-service)
-
-
-5. 0.5 ms Timer Resolution:
-
-    Improves `0.X` lows when the framerate is capped.
-
-    Check out ZetaLoader's [`README.md`](https://github.com/Aetopia/Zetaloader#3-05-ms-timer-resolution) for more insight on this topic.
-
 !!! tip
     For more information on the project, view ZetaLoader's GitHub repository.<br>
     **GitHub Repository: [https://github.com/Aetopia/Zetaloader](https://github.com/Aetopia/Zetaloader)**
