@@ -238,15 +238,15 @@ To configure ZetaLoader, do the following:
     WindowMode = 0 
     Width = 0
     Height = 0
-    Frequency = 0
+    RefreshRate = 0
     ```
 
     |Key|Value|
     |-|-|
-    |`WindowMode`|Toggles ZetaLoader's Borderless Fullscreen.<br><ul><li>`0` - Disabled</li> <li>`1` - Enabled</li></ol>|
-    |`Width`|Display Resolution Width when ZetaLoader's Borderless Fullscreen is enabled.|
-    |`Height`|Display Resolution Height when ZetaLoader's Borderless Fullscreen is enabled.|
-    |`Frequency`|Display Frequency when ZetaLoader's Borderless Fullscreen is enabled.|
+    |`WindowMode`|Borderless Fullscreen<br><ul><li>`0` - Disabled</li> <li>`1` - Enabled</li></ol>|
+    |`Width`|Display Resolution Width|
+    |`Height`|Display Resolution Height|
+    |`RefreshRate`|Display Refresh Rate|
 
 Example:
 ```ini
@@ -254,6 +254,6 @@ Example:
 WindowMode = 1
 Width = 1360
 Height = 768
-Frequency = 60
+RefreshRate = 60
 ```
 This will make Halo Infinite run `1360`x`768` @ `60` Hz with ZetaLoader's Borderless Fullscreen enabled.
