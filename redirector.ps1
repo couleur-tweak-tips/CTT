@@ -14,7 +14,7 @@ Set-Location $PSScriptRoot
 function New-HtmlRedirect ($url) {
     return @"
 <!DOCTYPE html>
-<meta http-equiv="refresh" content="0"; url="$url"/>
+<meta http-equiv="refresh" content="0; url=$url"/>
 <style>body {background-color: rgb(17, 17, 17);}</style>
 "@
 }
