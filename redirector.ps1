@@ -35,12 +35,16 @@ foreach ($filepath in $mdFiles.FullName) {
     # this is what's gonna be the redirect, e.g ctt.cx/foo
     $filename = [IO.Path]::GetFileNameWithoutExtension($filepath)
 
+    # this is what it's gonna link to, e.g /video/obs/output#nvenc
+    $target = ($filepath | Get-RelativePath) -replace "\/index\.md$" -replace "\.md$"
+
+    if ($filename -eq "index"){
+        $filename = $target | Split-Path -Leaf
+    }
+
     if (Test-Path ./docs/$filename) {
         continue
     }
-
-    # this is what it's gonna link to, e.g /video/obs/output#nvenc
-    $target = ($filepath | Get-RelativePath) -replace "\/index\.md$" -replace "\.md$"
     
     if ($target -notlike "*/*") { continue } # no need to make redirects for non-nested
 
