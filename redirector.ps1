@@ -7,15 +7,13 @@
 
 #>
 
-$root = "https://ctt.cx/"
-
 Set-Location $PSScriptRoot
 
 function New-HtmlRedirect ($url) {
     return @"
 <!DOCTYPE html>
 <meta http-equiv="refresh" content="0; url=$url"/>
-<style>body {background-color: rgb(17, 17, 17);}</style>
+<style>body {background-color: rgb(37, 38, 50);}</style>
 "@
 }
 
@@ -55,7 +53,7 @@ foreach ($filepath in $mdFiles.FullName) {
 
     $Parameters = @{
         Path  = Join-Path (Resolve-Path ./docs) $filename/index.html
-        Value = New-HtmlRedirect -url "$root$target"
+        Value = New-HtmlRedirect -url "/$target"
     }
     if ($env:YES_MAKE_TONS_OF_FOLDERS) { Set-Content @Parameters }
     
@@ -78,7 +76,7 @@ foreach ($key in [string[]]$table.keys) {
 
     $Parameters = @{
         Path  = Join-Path (Resolve-Path ./docs) $key/index.html
-        Value = New-HtmlRedirect -url "$root$($table.$key)"
+        Value = New-HtmlRedirect -url "/$($table.$key)"
     }
     if ($env:YES_MAKE_TONS_OF_FOLDERS) { Set-Content @Parameters }
 
