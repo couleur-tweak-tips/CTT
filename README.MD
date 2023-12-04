@@ -3,7 +3,7 @@
 WIP wiki for [CTT](https://discord.com/invite/ctt), made with MkDocs Material.
 
 ## Contributing
-Join CTT and come discuss with us on the **CTT Wiki** forum post.
+Join [CTT](https://discord.com/invite/ctt) and come discuss with us on the ["ctt.cx website" forum post](https://discord.com/channels/774315187183288411/1153901211028819968).
 
 Useful Resources:
 - https://squidfunk.github.io/mkdocs-material/setup/
