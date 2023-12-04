@@ -18,12 +18,19 @@ jobs:
       - uses: actions/setup-python@v4
         with:
           python-version: 3.x
-      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV 
+      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
       - uses: actions/cache@v3
         with:
           key: mkdocs-material-${{ env.cache_id }}
           path: .cache
           restore-keys: |
             mkdocs-material-
+
+      - name: you know material for mkdocs wasnt safe from my powershell
+        shell: pwsh
+        run: |
+          $env:YES_MAKE_TONS_OF_FOLDERS=1
+          ./redirector.ps1
+
       - run: pip install -r requirements.txt
       - run: mkdocs gh-deploy --force -f mkdocs.github.yml
