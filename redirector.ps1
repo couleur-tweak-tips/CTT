@@ -52,7 +52,7 @@ foreach ($filepath in $mdFiles.FullName) {
 
     $Parameters = @{
         Path  = Join-Path (Resolve-Path ./docs) $filename/index.html
-        Value = New-HtmlRedirect -url "/$target"
+        Value = New-HtmlRedirect -url "$target"
     }
     if ($env:YES_MAKE_TONS_OF_FOLDERS) { Set-Content @Parameters }
     
@@ -75,7 +75,7 @@ foreach ($key in [string[]]$table.keys) {
 
     $Parameters = @{
         Path  = Join-Path (Resolve-Path ./docs) $key/index.html
-        Value = New-HtmlRedirect -url "/$($table.$key)"
+        Value = New-HtmlRedirect -url "$($table.$key)"
     }
     if ($env:YES_MAKE_TONS_OF_FOLDERS) { Set-Content @Parameters }
 
