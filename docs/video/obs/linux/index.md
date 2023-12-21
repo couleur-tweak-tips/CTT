@@ -1,6 +1,6 @@
 ---
 description: OBS configuration for Linux
-icon: material/linux
+icon: simple/linux
 ---
 
 # :material-linux: Linux OBS Configuration

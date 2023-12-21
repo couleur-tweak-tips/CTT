@@ -1,41 +1,27 @@
 ---
 description: Initial OBS configuration for all encoders
-icon: simple/obsstudio
+icon: obs/logo
 ---
 
-# :simple-obsstudio: OBS Studio
-
 ## :material-information-box: Introduction
-[OBS Studio](https://obsproject.com), or OBS as we will refer to it in the wiki, is a free and open-source software for live streaming and recording. Here you'll learn how to configure and install OBS.
+[Open Broadcaster Software Studio](https://obsproject.com) is free and open-source software for live streaming and recording.
+
+## High FPS recording
+
+A lot of [us](https://discord.gg/CTT) configure our encoder to record as high FPS as we get in-game(1) to then [frame blend](../smoothie/recipe.md#frame-blending) with [Smoothie](../smoothie/index.md)
+{ .annotate}
+
+1. If you get about 600FPS it's recommended to record around 480FPS to accomodate for the variations and eventual drops
 
 ## :material-package-down: Installing OBS
+
 You should the latest version of OBS from the official [downloads page](https://obsproject.com/download). This page provides multiple sources from which you can install it.
 
-### Alternative sources
+## Other documentation sources
 
-=== "Windows"
+See OBS' knowledgebase: https://obsproject.com/kb
 
-    * WinGet: `winget install -e --id OBSProject.OBSStudio`
-    * Scoop: `scoop bucket add extras; scoop install extras/obs-studio`
-    * Chocolatey: `choco install obs-studio`
-
-=== "Linux"
-
-    * Flathub (recommended): `flatpak install flathub com.obsproject.Studio`
-    * Arch-based distros: `pacman -S obs-studio`
-    * Ubuntu-based distros (copied from OBS download page):
-      ```bash
-      sudo add-apt-repository ppa:obsproject/obs-studio
-      sudo apt update
-      sudo apt install ffmpeg obs-studio
-      ```
-
-=== "macOS"
-
-    !!! warning "Unsupported"
-        At the moment, OBS settings for macOS aren't considered in the documentation.
-
-    * Homebrew: `brew install --cask obs`
+* Launch (CLI) Parameters: https://obsproject.com/kb/launch-parameters
 
 ## :material-cog: Initial configuration
 
@@ -45,16 +31,6 @@ You should the latest version of OBS from the official [downloads page](https://
             <source id="mp4" src="../../assets/videos/video/obs/obs-initial-config.mp4" type="video/mp4">
         </video>
     </center>
-
-??? info "Recording formats"
-    - **MPEG-4 (.mp4)** has the best compatibility, and will work for Discord embeds and in pretty much any video editor
-    - **Matroska Video (.mkv)** has decent compatibility, but won't work for Discord embeds. However, if OBS suddenly closes or your computer unexpectedly shuts down, your recording will be saved, unlike `.mp4`.
-        - You can convert `.mkv` and other formats to regular `.mp4` videos within OBS using remuxing.
-    
-    ??? tip "How to use remuxing"
-        <center>
-            ![How to remux](../../assets/images/video/obs/nvenc/how_to_remux.gif){ width="600" }
-        </center>
 
 1. Click **Cancel** on the **Auto-Configuration Wizard** to skip it
 2. Open **Settings :material-arrow-right: Video**
@@ -79,20 +55,3 @@ Replay buffer is a feature in OBS that allows users to save only the last specif
 It's very useful for testing encoder settings (with lots of movement in the test) without making lots of useless video files, as well as easily clipping moments in gameplay or whatever else.
 
 You can configure it in the **Replay Buffer** tab in **Output**, and you can set hotkeys for it in **Hotkeys** after it has been enabled.
-
-## :material-account-question: Where to go from here
-
-!!! warning "Ranking"
-    NVIDIA's encoder (NVENC) is by far the best for recording, as it is fast and not resource intensive, unless you push it to its limits. Other encoders may struggle to record very high FPS, such as 240 FPS and over.
-
-From here, you'll want to go to the page which fits [your GPU](https://www.microsoft.com/en-us/windows/learning-center/how-to-check-gpu "How to check your GPU in Windows").
-
-- :simple-nvidia: [**NVIDIA NVENC**](nvenc.md)
-- :custom-amd: [**AMD AMF**](amf.md)
-- :simple-intel: [**Intel QuickSync**](quicksync.md)
-
-### :octicons-cpu-16: Software Encoding
-
-These are much slower and more resource intensive than the GPU/hardware-accelerated encoders listed above, but they're also universally compatible and much more filesize efficient.
-
-- :octicons-cpu-16: [**CPU x264**](x264.md)

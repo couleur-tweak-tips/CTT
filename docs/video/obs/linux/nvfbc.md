@@ -5,6 +5,12 @@ icon: simple/nvidia
 
 # :simple-nvidia: NvFBC
 
+
+!!! note ":material-arch: Packaged for Arch Linux users"
+
+    If you cannot install from the [AUR](https://aur.archlinux.org/) you're gonna have to look for alternatives / compile / install them yourself
+    
+
 ## :material-information-box: Information
 
 For NVIDIA users, NvFBC is available with some driver patching. NvFBC is a feature like NVENC, except from that it captures your screen directly from the framebuffer very efficiently.
@@ -21,20 +27,20 @@ However, unfortunately, this has some issues:
 
 ## :material-package-down: Installation
 
-1. Install `nvidia-utils-nvlax` from the AUR, which will replace `nvidia-utils` with a patched version. It does 2 patches, all automatically:
+1. Install `nvidia-utils-nvlax`{ data-clipboard-text="nvidia-utils-nvlax" } from the AUR, which will replace `nvidia-utils` with a patched version. It does 2 patches, all automatically:
     - **NVENC patch:** removes restriction on maximum number of simultaneous NVENC video encoding sessions imposed by Nvidia to consumer-grade GPUs
     - **NvFBC patch (required):** allows to use NvFBC on consumer-grade GPUs
-2. Install `downgrade` from the AUR
-3. Run `sudo downgrade --ala-only obs-studio`, install the latest version of OBS 27 (which is `27.2.4 2`)
-4. Install `obs-nvfbc-high-fps-git` from the AUR, which is the 'NvFBC Source' OBS plugin, patched for high FPS values
+2. Install `downgrade`{ data-clipboard-text="downgrade" } from the AUR
+3. Run `sudo downgrade --ala-only obs-studio`{ data-clipboard-text="sudo downgrade --ala-only obs-studio" }, install the latest version of OBS 27 (which is `27.2.4 2`)
+4. Install `obs-nvfbc-high-fps-git`{ data-clipboard-text="obs-nvfbc-high-fps-git" } from the AUR, which is the 'NvFBC Source' OBS plugin, patched for high FPS values
 5. Open OBS, and add the 'NvFBC Source'
 6. Configure the NvFBC source (test out settings), make the FPS the same as the OBS recording FPS
 
 ### :material-lightbulb-on: Tips
 
-- Enable **Smooth FPS** in Minecraft or cap your FPS, just so that OBS doesn't lag
+- Enable **Smooth FPS** in Minecraft / capping your FPS, to leave some GPU usage headroom for OBS
 - Toggle/disable compositing in your window manager/desktop environment
-- You can use `teres` in the AUR to frame blend and interpolate
+- You can use [`teres`](https://aur.archlinux.org/packages/teres) in the AUR to frame blend and interpolate
 
 ### :octicons-cross-reference-16: References
 

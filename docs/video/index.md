@@ -5,7 +5,7 @@ icon: material/video-box
 
 # :material-video-box: Introduction
 
-This section of the wiki will show you how to optimally configure software to help you produce high-quality and optionally motion blurred videos with your own optimised personal workflow.
+This category is dedicated to document optimal configurations of programs for creating video content (optionally with [high quality motion blur](./smoothie/index.md)) and help you forge your own personal production workflow.
 
 ## :material-book: Definitions
 
@@ -14,7 +14,7 @@ The most common, it is without (unlike other methods like RSMB) any smearing of 
 
 In general, the higher the input FPS, the smoother the final output would be, due to more blur frames making the blur look more seamless. Blur frames are how many frames are blended together, so `blur frames = input fps / output fps`.
 
-Video editors such as [Vegas Pro](/placeholder/) and [Adobe Premiere Pro](/placeholder/) have these features built-in. However, we recommend using seperate programs such as [blur](/placeholder/) first to pre-render the videos, therefore you don't have any lag in your video editor as well as having much more customisation.
+Video editors such as Vegas Pro and Adobe Premiere Pro have these features built-in. However, we recommend using seperate programs such as [Smoothie](./smoothie/index.md) first to pre-render the videos, therefore you don't have any lag in your video editor as well as having much more customisation.
 
 ### :material-select-multiple: Interpolation
 

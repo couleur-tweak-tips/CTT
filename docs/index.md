@@ -1,18 +1,58 @@
 ---
 description: The Couleur Tweak Tips (CTT) wiki
-icon: material/home
+icon: custom/couleurblack
 ---
 
-## :material-home: Welcome to the CTT wiki!
+<center>
+    <h1>the knowledge vault</h1>
+</center>
 
-!!! example ""
-    <h4><center>[:simple-discord: Join the Discord!](https://discord.gg/ctt)</center></h4>
+---
 
-Couleur Tweak Tips (CTT) is a Discord server and wiki, dedicated to:
+You've reached the website for **Couleur Tweak Tips**, a comprehensive aggregation of useful resources for enthusiasts looking to expand their toolchain of programs and adopt good practices to enhance the quality of life in daily computer use and video production.
 
-* Content creation software configuration: OBS, VEGAS..
-* Applying motion blur effects to videos: frame blending, blur, Smoothie..
-* Configuring operating systems: Windows/Linux' appearance & behavior, keyboard shortcuts
-* Quality of life software: ShareX, AltSnap, PowerToys, SpotX, MAS, espanso, SearchEverything
+These resources have been created with two types of people in mind:
 
-Browse through the left pane to get started
+* Curious individuals who enjoy reading, doing, and learning.
+* Those who prefer quickly configuring programs to adhere to recommended standards; some guides offer automated versions in the form of PowerShell scripts.
+
+This website has been meticulously curated over the years, it evolved from a [crowded discord server](https://twitter.com/CouleurMinemen/status/1521966698047418377)
+
+This website evolved from a [crowded discord server](https://twitter.com/CouleurMinemen/status/1521966698047418377) over the years and turned into a meticulously curated repository of useful knowledge.
+
+=== ":custom-video: Video"
+
+    * [:custom-smoothie: Smoothie](./video/smoothie/index.md): Make your gameplay footage smooth
+    * :simple-obsstudio: [OBS Studio](./video/obs/index.md): Optimal configuration for recording & streaming
+    <!-- * :custom-voukoder: [Voukoder](): Fast & efficient video editor export plugin for :custom-vegas-pro-18: :custom-premiere-pro-og: :custom-after-effects-og: -->
+
+<!--
+=== ":custom-video: Video"
+    [:custom-smoothie: Smoothie](./video/smoothie/index.md): Make your gameplay footage smooth
+    * :obs-logo: [OBS Studio](./video/obs/index.md): Optimal configuration for recording & streaming
+    * :custom-voukoder: [Voukoder](): Fast & efficient video editor export plugin for :custom-vegas-pro-18: :custom-premiere-pro-og: :custom-after-effects-og:
+
+=== ":custom-msi: Programs"
+
+    * ShareX
+    * AltSnap
+    * PowerToys
+    * SpotX
+    * MAS
+    * espanso
+    * SearchEverything
+
+=== ":simple-windows: Windows"
+
+    
+
+=== ":material-dots-horizontal: Miscellaneous"
+
+    !!! warning "Unsupported"
+        At the moment, OBS settings for macOS aren't considered in the documentation.
+-->
+
+<center>
+    [![:simple-discord: Join the CTT Discord](https://invidget.switchblade.xyz/CTT)](https://discord.gg/CTT)
+</center>
+

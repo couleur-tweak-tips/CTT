@@ -1,4 +1,8 @@
-*[open-source]: Something that is free in price with publically avaliable and modifiable code/internals.
+*[free and open-source]: Something that is free as in price and freedom, with publicly avalaible and modifiable source code.
+
+*[FOSS]: Free and Open Source Software: Something that is free as in price and freedom, with publicly avalaible and modifiable source code.
+
+*[open-source]: Something that is free in price with publicly avalaible source code. Not necessarily free in rights.
 
 *[RIFE]: An AI video interpolation that is slower, but generally more accurate
 
@@ -18,16 +22,24 @@
 
 *[decoder]: Something that converts a compressed video format into a recognizable visual format (e.g., screen display) for playback or editing purposes.
 
-*[CBR]: Constant Bit Rate
+*[CBR]: Constant Bit Rate, mostly used measured with kilobits / second in bandwith-limited scenarios (streaming) 
 
-*[VBR]: Variable Bit Rate
+*[CQP]: Constant Quantization Parameters, most favorable GPU encoding rate control for recording to disk
+
+*[CRF]: Constant Rate Factor, most favorable CPU encoding rate control for recording to disk
+
+*[VBR]: Variable Bit Rate, rarely used in favor of CQP/CRF
+
+*[QSV]: Intel's QuickSync Video Codec
 
 *[NVENC]: NVIDIA's Video Encoder
 
 *[NVDEC]: NVIDIA's Video Decoder
 
-*[AMF]: AMD's Video Framework (Encoder & Decoder)
+*[AMF]: AMD's Video (codec) Framework
 
 *[QuickSync]: Intel's dedicated video encoding and decoding hardware core, found on iGPUs and their ARC GPUs
 
-*[iGPU]: A CPU's integrated GPU, less powerful than desktop counterparts and most commonly used in laptops 
+*[iGPU]: A CPU's integrated graphics chip, less powerful than desktop counterparts, most commonly used in laptops
+
+*[NLE]: Non linear (video) editor, this is a group term for VEGAS, Premiere, After Effects, Resolve, FFmpeg. . .

@@ -7,26 +7,62 @@ repo_name: couleur-tweak-tips/CTT
 edit_uri: edit/main/docs/
 
 nav:
-  - Home:
-    - Home: index.md
+  - About CTT:
+    - index.md
     - Contributing: contributing.md
+    - Contact: contact.md
+    - Credits: credits.md
+    - test.md
+    
   - Video:
-    - Video: video/index.md
+    - Index: video/index.md
+    - Which codec should I use?: video/codecguide.md
+    - Send To: video/sendto.md
+
+    - FFmpeg & LibAV:
+      - Index: video/ffmpeg/index.md
+      - Upscaling: video/ffmpeg/upscaling.md
+
+    - Smoothie:
+      - video/smoothie/index.md
+      - Installation: video/smoothie/installation.md
+      - Use cases examples: video/smoothie/usecases.md
+      - Recipe configuration: video/smoothie/recipe.md
+      - Troubleshooting: video/smoothie/troubleshooting.md
+      - Smoothie vs. blur: video/smoothie/smoothievsblur.md
+      - Command line arguments: video/smoothie/cli.md
+      - Frameserver rendering: video/smoothie/frameserver.md
+
+
     - OBS Studio:
-      - Configuration:
-        - Index: video/obs/index.md
-        - NVIDIA NVENC: video/obs/nvenc.md
-        - AMD AMF: video/obs/amf.md
-        - Intel QuickSync: video/obs/quicksync.md
-        - CPU x264: video/obs/x264.md
-      - Linux: 
-        - Index: video/obs/linux/index.md
-        - NvFBC: video/obs/linux/nvfbc.md
-        - OBS VkCapture: video/obs/linux/obs-vkcapture.md
+        - video/obs/index.md
+        - Installation ↗: video/obs/install.md
+        - Docks: video/obs/docks.md
+        - Source types: video/obs/sourcetypes.md
+        - General: video/obs/general.md
+        - Output: video/obs/output.md
+        - Audio: video/obs/audio.md
+        - Video: video/obs/video.md
+        - Hotkeys: video/obs/hotkeys.md
+        - Advanced: video/obs/advanced.md
+        - Linux: 
+          - video/obs/linux/index.md
+          - NvFBC: video/obs/linux/nvfbc.md
+          - OBS VkCapture: video/obs/linux/obs-vkcapture.md
+  - Programs:
+    - Scoop: software/scoop.md
+    - Winget: software/winget.md
+    - Windows Terminal: software/windows-terminal.md
+    - Visual Studio IDEs: software/visual-studio-ides.md
+
+  - Misc:
+    - misc/index.md
+    - misc/filesharing.md
+    - misc/mkdocs.md
 
 copyright: >
   <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
-  <br />mmh ah yes tweak tips 👍
+  <br />mmh ah yes tweak tips 👍 (CTT is NOT funded by the french government)
 
 theme:
   name: material
@@ -34,7 +70,7 @@ theme:
   favicon: assets/logos/favicon.png
   custom_dir: overrides
   icon:
-    annotation: material/plus-circle
+    # annotation: material/plus-circle
     repo: fontawesome/brands/github
   
   features:
@@ -57,6 +93,8 @@ theme:
     - search.share
     # https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/#code-actions
     - content.action.edit
+    # https://squidfunk.github.io/mkdocs-material/reference/content-tabs/#linked-content-tabs
+    - content.tabs.link
     - content.action.view
     # https://squidfunk.github.io/mkdocs-material/reference/code-blocks/#configuration
     - content.code.copy
@@ -114,10 +152,14 @@ plugins:
 # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions
 #
 markdown_extensions:
+  - markdown.extensions.toc:
+      permalink: ""
+      
   # https://squidfunk.github.io/mkdocs-material/reference/admonitions
   - admonition
   - footnotes
   - pymdownx.details
+  # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/#superfences
   - pymdownx.superfences
 
   # https://squidfunk.github.io/mkdocs-material/reference/annotations
@@ -145,9 +187,11 @@ markdown_extensions:
   # https://squidfunk.github.io/mkdocs-material/reference/content-tabs
   - pymdownx.tabbed:
       alternate_style: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
 
-  # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/#superfences
-  - pymdownx.superfences
+
 
   # https://squidfunk.github.io/mkdocs-material/reference/icons-emojis
   - pymdownx.emoji:
