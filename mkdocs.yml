@@ -12,7 +12,7 @@ nav:
     - Contributing: contributing.md
     - Contact: contact.md
     - Credits: credits.md
-    - test.md
+    #- test.md
     
   - Video:
     - Index: video/index.md
