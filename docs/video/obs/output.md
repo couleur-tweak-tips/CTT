@@ -99,7 +99,7 @@ You're recommended to use the [latest](https://github.com/obsproject/obs-studio/
 
         * `ICQ Quality`: <kbd>16 or 23 or 30</kbd>
 
-        :   From a few benchmarks from multiple CTT members Ashank found that the best quality for the file size is 16. However if you want to record at a higher frame rate, playing more GPU bound games, or if you are encountering frame drops, increase the value to 23 or above. Values of 30 or so still look acceptable, but the quality is noticably worse. You may use [this video](https://youtu.be/2xJ8sLPC5Cg) as reference for what TU7 and ICQ 30 looks like. Going above 30 looks objectively *bad*, if you are seriously struggling with recording with QSV at 30 ICQ, you should consider using a capture card, as no amount of optimization can improve your frames further.
+        :   From some light testing Ashank found that the best quality for the file size is 16 (On UHD graphics). However if you want to record at a higher frame rate, playing more GPU bound games, or if you are encountering frame drops, increase the value to 23 or above. Values of 30 or so still look acceptable, but the quality is noticably worse. You may use [this video](https://youtu.be/2xJ8sLPC5Cg) as reference for what TU7 and ICQ 30 looks like. Going above 30 looks objectively *bad*, if you are seriously struggling with recording with QSV at 30 ICQ, you should consider using a capture card, as no amount of optimization can improve your frames further.
 
         * `Latency`<kbd>normal</kbd>
 
