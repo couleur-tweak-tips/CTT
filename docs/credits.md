@@ -18,7 +18,7 @@ icon: custom/credits
 ###### Credits
 
 * teo: AMD (AMF) OBS settings
-* Shanki: Intel (QuickSync) OBS settings
+* Ashank: Intel (QuickSync) OBS settings
 * zazk: Apex settings
 * pepay: lightmap/overlay
 * tellinq: obs themes & cheatbreaker.net

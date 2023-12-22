@@ -79,15 +79,15 @@ You're recommended to use the [latest](https://github.com/obsproject/obs-studio/
 
     === ":custom-intel: (Intel) QSV"
 
-        These settings are intended for recording Minecraft at 30~60FPS with acceptable quality and medium file sizes
+        These settings are intended for recording Minecraft at 30FPS to 60FPS on Intel chips from 2020 and older, however with newer Iris XE and Arc iGPUs, you can record at 120FPS with these settings.
 
-        * `Target Usage`: <kbd>balanced</kbd>
+        * `Target Usage`: <kbd>TU7</kbd>
 
-        :   There is no visual difference between speed, balanced and quality as far as :simple-discord:@Ashanki can tell.
+        :   In the OBS 30 update there were various quality profiles introduced for QuickSync. TU7 is  the best performing out of all the presets, with some sacrifices to visual quality. If you are running your game on a dedicated GPU and recording with QuickSync, you can use TU4 for better quality.
 
         * `Profile`: <kbd>High</kbd>
 
-        :   Keep at high or baseline, there is no measurable performance difference between them in Shanki's testing on both Minecraft Bedrock (1.16.100-1.17.34) and Java editions (1.7.10)
+        :   With OBS 30 keep it at High, it's the best performing with the most compatibility.
 
         * `Keyframe Interval`: <kbd>3</kbd>
 
@@ -97,9 +97,9 @@ You're recommended to use the [latest](https://github.com/obsproject/obs-studio/
 
         :   It's preferable to use ICQ for best efficiency, it will adapt the bitrate per frame.
 
-        * `ICQ Quality`: <kbd>16</kbd>
+        * `ICQ Quality`: <kbd>16 or 23 or 30</kbd>
 
-        :   Forget about size in bytes, quality ranges from 1 (practically lossless, huge file), to 30 (very lossy, small), the higher you go, the smaller the file. From Shanki's Testing he found that the sweet spot is around 14-16 depending on how much RAM and what your laptop's power throttling limit is (to achieve the same visual acuity as NVENC). 
+        :   From a few benchmarks from multiple CTT members Ashank found that the best quality for the file size is 16. However if you want to record at a higher frame rate, playing more GPU bound games, or if you are encountering frame drops, increase the value to 23 or above. Values of 30 or so still look acceptable, but the quality is noticably worse. You may use [this video](https://youtu.be/2xJ8sLPC5Cg) as reference for what TU7 and ICQ 30 looks like. Going above 30 looks objectively *bad*, if you are seriously struggling with recording with QSV at 30 ICQ, you should consider using a capture card, as no amount of optimization can improve your frames further.
 
         * `Latency`<kbd>normal</kbd>
 
@@ -107,7 +107,7 @@ You're recommended to use the [latest](https://github.com/obsproject/obs-studio/
 
         * `Max-B-frames`: <kbd>0</kbd>
 
-        :   Leave Max-B-frames to 0 in this context
+        :   B-Frames are generally used as a compression method, which takes up a significant amount of CPU and GPU power when gaming. You may set this value to 3 for games with low motion (if you are using a dedicated GPU in tandem with QSV). However it is optimal to leave this at 0, as someone recording with QSV is likely to be using an iGPU which needs all the power it can get.
 
         ##### In OBS
 
