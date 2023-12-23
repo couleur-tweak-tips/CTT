@@ -146,6 +146,10 @@ extra_css:
 plugins:
   # https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-search
   - search
+    # makes image enlarge on click https://blueswen.github.io/mkdocs-glightbox/
+  - glightbox:
+      effect: none
+      height: 100vw
 
 #
 # Python Markdown
