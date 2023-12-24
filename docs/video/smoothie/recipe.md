@@ -40,8 +40,11 @@ Here's what each file is for:
 
 Just like blur's "blur" config category, VEGAS' smart resampling and FFmpeg's `tmix` filter but much faster, this averages every frame with it's neighboring frames, creating trails and if done correctly looks like realistic motion-blur.
 
+This is almost always done on only on a fourth / eight ect.. of the frames and intended to be viewed at conventional frame rates
 
-<iframe width="688" height="312" src="/assets/videos/video/smoothie/frameblending.mp4" frameborder=0></iframe>
+<iframe width="688" height="387"  src="/assets/videos/video/smoothie/frameblending.mp4" frameborder=0></iframe>
+
+On the left is a 240FPS, and on the right a 60FPS video with frame blending, this is not a pretty example but that shows you how the frames actually end up squished in a lower FPS
 
 
 !!! note "Using velocity on frame-blended footage in video-editors"
@@ -77,6 +80,11 @@ Just like blur's "blur" config category, VEGAS' smart resampling and FFmpeg's `t
     * `pyramid`: opacity peaks at the middle
     * `custom`: ill leave the explanation to nerd weighter atzur
 
+    Comparison of how `equal` and `ascending` look:
+
+    <iframe width="297" height="313" src="/assets/videos/video/smoothie/weights.mp4" frameborder=0></iframe>
+
+
 `bright blend`: no
 
 :   Enablines this slows down rendering. Converts to RGB48 color space before blending, it makes it look akin to Premiere Pro's frame blending (in a good way), I guess it's comparable to blend two images with additive mode
@@ -86,9 +94,10 @@ Just like blur's "blur" config category, VEGAS' smart resampling and FFmpeg's `t
 
 Motion-estimation tricks to create frames between existing ones, almost if like magically increasing the framerate, this creates imperfect frames which inevitably  have what we call artifacts, e.g smearing on static (HUD / overlays) parts and fast movement can look cursed with low fps input. "interpolation" in Smoothie is done with old non-DRM'd builds of [SVPFlow](https://github.com/couleurm/VSBundler/blob/main/smCi.ps1#L29) also see their [wiki](https://www.svp-team.com/wiki/Manual:SVPflow)
 
-Also see the [pre-interp](#pre-interp) section
 
-![](../../assets/videos/video/smoothie/interpolation.mp4)
+<iframe width="485" height="387"  src="/assets/videos/video/smoothie/interpolation.mp4" frameborder=0></iframe>
+
+Also see [pre-interp](#pre-interp), a different internal methodology
 
 
 `enabled`: yes

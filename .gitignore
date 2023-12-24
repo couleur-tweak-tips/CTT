@@ -69,4 +69,3 @@ ENV/
 # MkDocs documentation
 site*/
 docs/test.md
-*.mp4
