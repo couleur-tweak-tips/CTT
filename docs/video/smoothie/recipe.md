@@ -229,6 +229,8 @@ It can be closed off without crashing, it's just got some ignore file you can sa
 
 When using pre-interpolation, interpolation or flowblur you have the choice to not apply any of these effects on specific regions of the video with artifact masks, they're images with black and white regions and the black regions revert the effect it's applied on (remember all these `masking: yes` values? That's how you individually toggle masking)
 
+They're resolution specific, smoothie will crash if you pair 1280x720 videos with 1920x1080 masks
+
 <iframe width="688" height="387" src="https://www.youtube.com/embed/5GW2TUx78WY?start=20&color=white" frameborder=0 allowfullscreen></iframe>
 
 
