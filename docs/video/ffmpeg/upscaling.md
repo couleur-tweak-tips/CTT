@@ -6,35 +6,35 @@ icon: fontawesome/solid/arrow-up-right-dots
 # Why bother upscaling for YouTube?
 
 
-Scaling your video to twice it's size (e.g 1080p -> 2160p / 4K) tricks YouTube into giving your video more bitrate. This is only useful for YouTube, 
+Scaling your video to twice it's resolution (e.g `1080p` :material-arrow-right: `2160p` / 4K) tricks YouTube into giving your video more bitrate. This is only useful for YouTube, 
 
-==It won't make your video look any better better than when you're viewing it back on VLC, it'll just <u>looks less compressed/more faithful on YouTube</u>==.
+==It won't make your video look any better than when you're viewing it back on VLC, it'll just <u>looks less compressed/more faithful on YouTube</u>==.
 
-**This should be done at the very last step of every project, right before uploading**, there's no need to be editing 4K content that's been scaled.
+**This should be done at the very last step of every project, right before uploading**, there's only downsides to be editing 4K content that's been scaled.
 
-## Installation
+## :material-folder-download: Installation
 
 === "Automatic"
 
-    Running the following command will
+    Running the following command will:
     
     * Install [FFmpeg](./index.md) with [Scoop](https://scoop.sh)
     * Save the upscaling script in the [Send To folder](../sendto.md)
 
     Paste the following command in a PowerShell window, (it doesn' need to be as an Administrator):
 
-    ```PowerShell
+    ```PowerShell title="Automatic upscaler installer"
     iex(irm tl.ctt.cx); Get Upscaler
     ```
 
 === "Manual"
 
-    1. Install [FFmpeg](../index.md)
+    1. Install [FFmpeg](../ffmpeg/index.md#installation)
 
     2. Save [this batch file](https://github.com/couleur-tweak-tips/utils/blob/main/Miscellaneous/CTT%20Upscaler.cmd) as a .cmd file, it's recommended to save it in either:
 
-    * Your [Send To folder](../sendto.md)
-    * Or saving it wherever and dragging the video file(s) you wish to use with it
+        * Your [Send To folder](../sendto.md)
+        * Or saving it wherever and dragging the video file(s) you wish to use with it
 
     Your browser might make it a text file e.g `.cmd.txt`, show file extensions in your if explorer if it still opens notepad when double clicking it
 
