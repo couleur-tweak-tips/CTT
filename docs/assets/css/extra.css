@@ -1,3 +1,57 @@
+/* dark mode: override main header & tabs navigation */
+[data-md-color-scheme="slate"] .md-header {
+    background-color: #1e2029;
+    border-bottom: 0.10rem solid var(--md-accent-fg-color);
+}
+[data-md-color-scheme="slate"] .md-tabs {
+  border-bottom-left-radius : 10px !important;
+  border-bottom-right-radius: 10px !important;
+  background-color: #2e2c3e;
+}
+/* light mode: override main header & tabs navigation */
+[data-md-color-scheme="default"] .md-header {
+    background-color: white;
+    border-bottom: 0.10rem solid var(--md-accent-fg-color);
+    color: black;
+}
+[data-md-color-scheme="default"] .md-tabs {
+  color: black;
+  background-color: white;
+}
+
+/* make the "View source of this page" and "Edit this page" only vieweable on hover */
+.md-icon.md-content__button {
+  opacity: 0;
+  transition: opacity 0.5s cubic-bezier(.29, 1.01, 1, -0.68);
+}.md-icon.md-content__button:hover {
+  opacity: 1;
+}
+
+/* the abomination Itself */
+.md-nav__item--nested.md-nav__item--section.md-nav__item--active.md-nav__item > .md-nav > .md-nav__list > li.md-nav__item--nested.md-nav__item--section.md-nav__item > .md-nav {
+  /* margin to the right does nothing, but just mentionning margin-left moves them to the right ??? */
+  margin-left: 0rem !important;
+  position: relative;
+}
+.md-nav__item--nested.md-nav__item--section.md-nav__item--active.md-nav__item > .md-nav > .md-nav__list > li.md-nav__item--nested.md-nav__item--section.md-nav__item > .md-nav::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  bottom: 8px;
+  left: 0;
+  width: 1px;
+  opacity: 30%;
+  background: var(--md-accent-fg-color);
+}
+
+/* hide this hideous creation when mobile mode activates */
+@media (max-width: 1220px) {
+  .md-nav__item--nested.md-nav__item--section.md-nav__item--active.md-nav__item > .md-nav > .md-nav__list > li.md-nav__item--nested.md-nav__item--section.md-nav__item > .md-nav::before {
+
+    opacity: 0%;
+
+  }
+}
 
 /* Stretch content area */
 .md-main__inner.md-grid {
