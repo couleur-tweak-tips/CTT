@@ -8,7 +8,7 @@ icon: material/account-search-outline
 * GitHub organization: [/couleur-tweak-tips](https://github.com/couleur-tweak-tips/)
 * <div class="annotate" markdown>Website: [ctt.cx](https://ctt.cx)(1)</div>
 
-    1. It's source code is is available [here](https://github.com/couleur-tweak-tips/CTT)
+    1. It's source code is available [here](https://github.com/couleur-tweak-tips/CTT)
 
 ## Couleur
 

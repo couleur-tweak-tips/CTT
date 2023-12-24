@@ -343,7 +343,7 @@ Windows Terminal does not behave well with this
 
 Pre-interpolation uses [RIFE NCNN Vulkan](https://github.com/styler00dollar/VapourSynth-RIFE-ncnn-Vulkan) to do interpolation, in the filter chain it's applied before [interpolation](#interpolation) hence the term "pre-"
 
-It's very very slow to use, see how to get them [here](./installation.md#making-a-send-to-shortcut-and-rife-models)
+It's very slow to use, see how to get them [here](./installation.md#making-a-send-to-shortcut-and-rife-models)
 
 NCNN is used instead of RIFE for the much smaller dependencies (CUDA is like 5GB °O°, blur used to have an option for it, never managed to get it working)
 
