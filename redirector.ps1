@@ -11,9 +11,27 @@ Set-Location $PSScriptRoot
 
 function New-HtmlRedirect ($url) {
     return @"
-<!DOCTYPE html>
-<meta http-equiv="refresh" content="0; url=$url"/>
-<style>body {background-color: rgb(37, 38, 50);}</style>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="refresh" content="0;url=$url">
+      <style>
+        body {background-color: #1e2129;}
+      </style>
+      <script>
+        window.onload = function() {
+          var currentFragment = window.location.hash;
+          var newUrl = "$url" + currentFragment;
+          window.location.replace(newUrl);
+        }
+      </script>
+    </head>
+    <body>
+    </body>
+    </html>
+    
 "@
 }
 
