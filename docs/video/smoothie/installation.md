@@ -39,29 +39,35 @@ icon: material/folder-download
     * [havsfunc](https://github.com/couleur-tweak-tips/smoothie-rs/blob/main/target/scripts/havsfunc.py): used to change fps and interpolate, maintained [here](https://github.com/HomeOfVapourSynthEvolution/havsfunc/releases)
 
 
+=== "Windows"
 
-## Windows
+    Smoothie comes in a portable zip file(1), get it [here](https://github.com/couleur-tweak-tips/smoothie-rs/releases).
+    { .annotate}
 
-Smoothie comes in a portable zip file(1), get it [here](https://github.com/couleur-tweak-tips/smoothie-rs/releases).
-{ .annotate}
+    1. [A portable program](https://en.wikipedia.org/wiki/Portable_application#Portable_application) means it doesn't come with an installer, you just unzip and run it. Upsides is it's easy to uninstall (just delete the folder lol) but downsides is you gotta make shortcuts to it yourself
 
-1. [A portable program](https://en.wikipedia.org/wiki/Portable_application#Portable_application) means it doesn't come with an installer, you just unzip and run it. Upsides is it's easy to uninstall (just delete the folder lol) but downsides is you gotta make shortcuts to it yourself
-
-Extract the `smoothie-rs` folder somewhere, then in it you can use `launch.cmd` to launch it in it's GUI mode
+    Extract the `smoothie-rs` folder somewhere, then in it you can use `launch.cmd` to launch it in it's GUI mode
 
 
-# Making a [Send To](../sendto.md) shortcut and [RIFE models](./recipe.md#pre-interp)
+    # Making a [Send To](../sendto.md) shortcut and [RIFE models](./recipe.md#pre-interp)
 
-Unzip it wherever you'd like, in the bin folder get `smoothie-rs.exe`'s PATH by <kbd>SHIFT+Right click</kbd>ing it and "Copy Path"
+    Unzip it wherever you'd like, in the bin folder get `smoothie-rs.exe`'s PATH by <kbd>SHIFT+Right click</kbd>ing it and "Copy Path"
 
-In `%APPDATA%\Microsoft\Windows\SendTo` make a shortcut to <smoothie-rs-folder\bin\smoothie-rs.exe> with add a space and ` --tui -i`
+    In `%APPDATA%\Microsoft\Windows\SendTo` make a shortcut to <smoothie-rs-folder\bin\smoothie-rs.exe> with add a space and ` --tui -i`
 
-If Smoothie is crashing on you can add the `-v` argument (that'd be ` -v --tui -i`) after the smoothie-rs executable's path to enable verbose logging to see what's wrong
+    If Smoothie is crashing on you can add the `-v` argument (that'd be ` -v --tui -i`) after the smoothie-rs executable's path to enable verbose logging to see what's wrong
 
-Video tutorial:
+    Video tutorial:
 
-<iframe width="688" height="387" src="https://www.youtube.com/embed/RfPDgoMuSWg?start=20&color=white" frameborder=0 allowfullscreen></iframe>
+    <iframe width="688" height="387" src="https://www.youtube.com/embed/RfPDgoMuSWg?start=20&color=white" frameborder=0 allowfullscreen></iframe>
 
+=== "Linux"
+
+    todo, cargo should be able to compile it
+
+    for arch nerds see the dependencies of https://aur.archlinux.org/packages/teres
+    * you'll also need https://aur.archlinux.org/packages/vapoursynth-plugin-vsakarin-git for frame blending
+    * and https://aur.archlinux.org/packages/vapoursynth-plugin-rife-ncnn-vulkan-git for pre-interp
 
 <!--
 it'd be cool to be able to opt-in to use invidious instance for vids 
