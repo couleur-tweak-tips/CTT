@@ -4,21 +4,34 @@ icon: fontawesome/solid/upload
 
 In the context of sharing videos, the advantage over YouTube and other social media is that they don't compress your video (it's a <u>file</u> host, it doesn't alter it), so you don't need to upscale and wait. Perfect for sharing render tests / HQ versions of your montages
 
-* :simple-odysee: https://odysee.com
 
-### Direct download links
 
-These give direct file access, which lets you embed videos and images
+| Website                                              | Size limit | Time limit                       | Terms                                                                                                                               |Donate| Quirk                                                                                                                |
+|------------------------------------------------------|------------|----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|-|----------------------------------------------------------------------------------------------------------------------|
+| [:simple-odysee: odysee](https://odysee.com)         | 16GB          | Forever                          | [ToS](https://odysee.com/$/tos)                                                                                                     |?| MKV container makes video playback fail on firefox                                                                   |
+| [fileditch.com](https://fileditch.com)               | 15GB       | Forever                          | [FAQ](https://fileditch.com/faq.html)                                                                                               |?| Pomf, Ran by individual                                                                                                    |
+| [catbox.moe](https://catbox.moe)                     | 200MB      | Forever                          | [Legal](https://catbox.moe/legal.php)                                                                                               |[Support](https://catbox.moe/support.php)| Pomf, Ran by individual                                                                                                    |
+| [litterbox.catbox.moe](https://litterbox.catbox.moe) | 1GB        | <=3 days                         | [Legal](https://catbox.moe/legal.php)                                                                                               |^| Pomf, Ran by individual                                                                                                    |
+| [gigafile.nu](https://gigafile.nu)                   | 300GB      | <=100 days                       | [jp](https://gigafile.nu/privacy.php) [en](https://gigafile-nu.translate.goog/privacy.php?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en-US) |?| Japanese site, visit in english [here](https://gigafile-nu.translate.goog/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en-US) |
+| [0x0.st](https://0x0.st)                             | 512MB      | see site                         | see site                                                                                                                            |see site| Ran by individual                                                                                                    |
+| [gofile.io](https://gofile.io)                       | None       | see site                         | [ToS](https://gofile.io/terms)                                                                                                      |[Premium](https://gofile.io/premium)| No embed, video player                                                                                               |
+| [swisstransfer.com](https://swisstransfer.com)       | 512MB      | see [FAQ](https://gofile.io/faq) | click "see tos"                                                                                                                     |?| No embed                                                                                                             |
+| [wetransfer.com](https://wetransfer.com)             | 2GB        | 7d                               | [ToS](https://wetransfer.com/legal/terms)                                                                                           |Get Pro| No embed                                                                                                             |
 
-* <https://fileditch.com> - up to 15GB, no time limit
-* <https://catbox.moe> - up to 200MB, no time limit
-* <https://gigafile.nu> - up to 300GB, up to 100 days, hosted in Japan, browse it in english [here](https://gigafile-nu.translate.goog/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en-US)
-* <https://litterbox.catbox.moe> - up to 1GB, set your expiration date (1h-3d)
-* <https://0x0.st/> - 512MB, the smaller it is the longer it stays, **you must upload via CURL**
+## Quirks explained:
 
-> <:noembed:970050767945887834> Sites that do not provide any video player (you **need** to download before playing
-<https://gofile.io> - Unlimited, does not expire "as long as they are regularly downloaded", see [/faq](https://gofile.io/faq)
-<https://swisstransfer.com> - 50GB 30d, seems unstable when uploading big files
-<https://wetransfer.com> - 2GB 7d, most trustable/known/uptime
+`No embed`
 
-The huge advantage of using a **file** host instead of a **video** host like YouTube/streamable is that it doesn't touch your video's quality at all. The downside is that you are responsible for the compression, if you're curious about it read <#1026807067861844059>
+: The site does not provide hotlinks / direct download links, this means linking it in Telegram / Discord won't provide you with a video player
+
+`Video player`
+
+: The site features a video player, allowing you to play the video without needing to download the entire file (e.g movies)
+
+`Ran by individual`
+
+: The site is not owned by a company, most likely a nice person hosting this for free.
+
+`Pomf`
+
+:   Site is powered by [Pomf](https://github.com/pomf/pomf) file host
