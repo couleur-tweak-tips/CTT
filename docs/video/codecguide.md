@@ -6,7 +6,7 @@ icon: material/file-video
 # :material-file-video: Choose a suitable codec
 
 
-When modifying videos(1), you are **re-encoding** your video, which often gets you greeted with an overwhelming amount of formats, codecs and configuration options[¹](https://github.com/couleur-tweak-tips/smoothie-rs/blob/a917cbd61b8bcda73c672fa435c79e231b22fb14/target/encoding_presets.ini#L11-L26)[²](../assets/images/video/vegas-templates.png).
+When modifying videos(1), you are **re-encoding** your video, which often gets you greeted with an overwhelming amount of formats, codecs and a plethora configuration options[¹](https://github.com/couleur-tweak-tips/smoothie-rs/blob/a917cbd61b8bcda73c672fa435c79e231b22fb14/target/encoding_presets.ini#L11-L26)[²](../assets/images/video/vegas-templates.png).
 { .annotate }
 
 1. This means using (up)scale scripts, [Smoothie](./smoothie/index.md), or exporting a NLE project to a video file, this does not concern LosslessCut.
@@ -57,6 +57,20 @@ Note that AV1 Encoding is only available on last-gen cards
     :material-minus: Most video editors don't support importing AV1 footage yet (Voukoder does support exporting with it with software and hardware encoding)
 
     :material-minus: No, you won't have better "quality" when recording videos, H264 CQP0 exists if you want lossless quality
+
+## Rate controls
+
+Unless you are recording lossless (HUGE files), you need a way to constrain the video's bandwith
+
+`CBR`: Constant bit rate
+
+:   Most used for streaming nowadays
+
+`CRF` / `CQP`: Constrained rate factor / Constant quantizer
+
+:   The new prefered rate control for recording to disk, as it adapts to the "bandwith-hungryness" of the content, e.g standing still in front a wall in a video-game will write way less data than when you're spinning and doing a bunch of 360s.
+
+    It's some complex math stuff 
 
 ## Couleur's routine & use of codecs { #couleurs }
 
