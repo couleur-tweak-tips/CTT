@@ -40,8 +40,17 @@ Here's what each file is for:
 
 Just like blur's "blur" config category, VEGAS' smart resampling and FFmpeg's `tmix` filter but much faster, this averages every frame with it's neighboring frames, creating trails and if done correctly looks like realistic motion-blur.
 
-![](../../assets/videos/video/smoothie/frameblending.mp4)
 
+<iframe width="688" height="312" src="/assets/videos/video/smoothie/frameblending.mp4" frameborder=0></iframe>
+
+
+!!! note "Using velocity on frame-blended footage in video-editors"
+
+    If you like running your clips through Smoothie before editing them, you can tweak the aforementioned settings like so:
+
+    Setting the `fps `to 120, 180 or higher depending on how so you wanna go
+
+    And most importantly raising the `blur intensity` to 2.5 or even higher depending on your taste
 
 `enabled`: yes
 
@@ -294,8 +303,6 @@ Windows Terminal does not behave well with this
 
 ## :material-eyedropper-plus: color grading { #color-grading }
 
-Self explanatory
-
 `enabled`: no
 
 :   Whether or not you wish to enable this setting, if disabled the rest of this category does not matter
@@ -367,3 +374,9 @@ NCNN is used instead of RIFE for the much smaller dependencies (CUDA is like 5GB
         * Licensing
         * Size, not everyone uses them
         * They're not that hard to download, unzip and place in /models/
+
+## Using multiple recipe files
+
+1. Make a copy of `recipe.ini` and name it something else
+2. Make a copy of the shortcut you use Smoothie with
+3. Add `--recipe name.ini` to the arguments (for [Send To shortcuts](./installation.md#making-a-send-to-shortcut-and-rife-models) make sure it's before `-i`, that one must be the last)

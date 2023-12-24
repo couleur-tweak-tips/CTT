@@ -50,16 +50,15 @@ Extract the `smoothie-rs` folder somewhere, then in it you can use `launch.cmd` 
 
 # Making a [Send To](../sendto.md) shortcut and [RIFE models](./recipe.md#pre-interp)
 
+Unzip it wherever you'd like, in the bin folder get `smoothie-rs.exe`'s PATH by <kbd>SHIFT+Right click</kbd>ing it and "Copy Path"
+
 In `%APPDATA%\Microsoft\Windows\SendTo` make a shortcut to <smoothie-rs-folder\bin\smoothie-rs.exe> with add a space and ` --tui -i`
 
-If Smoothie is crashing on you can add the `-v` argument (that'd be ` -v --tui -i`) to enable verbose logging to see what's wrong
+If Smoothie is crashing on you can add the `-v` argument (that'd be ` -v --tui -i`) after the smoothie-rs executable's path to enable verbose logging to see what's wrong
 
 Video tutorial:
 
 <iframe width="688" height="387" src="https://www.youtube.com/embed/RfPDgoMuSWg?start=20&color=white" frameborder=0 allowfullscreen></iframe>
-
-# Linux
-
 
 
 <!--

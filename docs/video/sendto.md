@@ -37,6 +37,19 @@ That executable gets launched with each argument being the full file path of the
 example.cmd "D:\vids\clip1.mp4" "D:\vids\clip2.mp4"
 ```
 
+## Program compabitility
+
+The following programs support passing multiple file paths at once :white_check_mark::
+
+* [Smoothie](./smoothie/index.md): i've natively made it support this 
+* LosslessCut: in a "batch mode"
+
+These programs only support opening with one video at a time :x:
+
+* Avidemux: It can only open one video file at once
+* [FFmpeg](./ffmpeg/index.md): Each input media file needs to be separated with `-i`
+
+
 ## Folder behavior
 
 You can also place shortcuts to folder if you want to be able to copy / move folder to specific places from any folder in the Explorer:
