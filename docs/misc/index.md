@@ -1,5 +1,5 @@
 ---
-icon: material/dots-horizontal
+icon: material/dots-horizontal-circle
 ---
 
 # Miscellaneous resources
