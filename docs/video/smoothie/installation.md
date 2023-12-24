@@ -14,7 +14,9 @@ icon: material/folder-download
 
 1. This may sound obviously dumb, but you can't imagine the amount of kids asking on Discord "can it blur my desktop" thinking it was an os-wide filter.
 
-??? info "VapourSynth-related dependencies"
+??? info "VapourSynth dependencies"
+
+    Note: These are bundled with the .ZIP provided for Windows users, read below this spoiler
 
     * [VapourSynth Classic](https://github.com/AmusementClub/vapoursynth-classic)
     * [Python 3.10.9](https://python.org)
