@@ -1,6 +1,6 @@
 ---
 description: Differences between Smoothie and blur
-icon: custom/blur2
+icon: custom/blur
 ---
 
 ## Which is better/should I use?
