@@ -10,7 +10,7 @@ Here are some common problems and their solutions:
 
 #### `ffmpeg.exe is not installed/in PATH, ensure FFmpeg is installed` { #ffmpeg-not-found }
 
-:   You need ffmpeg(1), see [it's dependencies](./installation.md#dependencies)
+:   You need [ffmpeg](../ffmpeg/index.md#installation), see [it's dependencies](./installation.md#dependencies)
 
 
 #### `*Smoothie crashing before any error can be read*` { #smoothie-instant-crash }
