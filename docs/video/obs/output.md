@@ -132,7 +132,7 @@ You're recommended to use the [latest](https://github.com/obsproject/obs-studio/
 
         !!! danger "This section lacks settings"
 
-            If you have experience regarding streaming with NVENC please contribute regarding this
+            If you have experience regarding streaming with NVENC please contribute regarding this, for now I recommend [checking NVIDIA's article](https://www.nvidia.com/en-us/geforce/guides/broadcasting-guide/)
 
         * `Rate Control`: <kbd>CBR</kbd>
 
@@ -173,7 +173,7 @@ You're recommended to use the [latest](https://github.com/obsproject/obs-studio/
 
         Do you know good settings for streaming? [Let us know](../../contact.md)!
 
-        I'd just recommend copying the settings from the recording tab with quality presets and CBR rate control
+        I'll just recommend [this](https://www.xaymar.com/guides/obs/high-quality-streaming/qsv/) guide for now
 
 === ":simple-buffer: Replay buffer"
 
