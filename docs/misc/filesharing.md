@@ -12,6 +12,7 @@ These give direct file access, which lets you embed videos and images
 
 * <https://fileditch.com> - up to 15GB, no time limit
 * <https://catbox.moe> - up to 200MB, no time limit
+* <https://gigafile.nu> - up to 300GB, up to 100 days, hosted in Japan, browse it in english [here](https://gigafile-nu.translate.goog/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en-US)
 * <https://litterbox.catbox.moe> - up to 1GB, set your expiration date (1h-3d)
 * <https://0x0.st/> - 512MB, the smaller it is the longer it stays, **you must upload via CURL**
 
