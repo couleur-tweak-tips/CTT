@@ -19,6 +19,7 @@ List of cool mkdocs material sites I found that use [:simple-materialformkdocs: 
 * [Splink](https://moj-analytical-services.github.io/splink/)
 * [PSRule](https://microsoft.github.io/PSRule/v2/)
 * [Chinese.. Mkdocs??](https://wdk-docs.github.io)
+* [MkDocs Macros Plugin](https://mkdocs-macros-plugin.readthedocs.io/en/latest/)
 
 ## Documentation frameworks 
 
