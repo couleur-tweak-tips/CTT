@@ -1,8 +1,8 @@
-*[free and open-source]: Something that is free as in price and freedom, with publicly avalaible and modifiable source code.
+*[free and open-source]: Something that is free as in freedom, with publicly avalaible and modifiable source code.
 
-*[FOSS]: Free and Open Source Software: Something that is free as in price and freedom, with publicly avalaible and modifiable source code.
+*[FOSS]: Free and Open Source Software: Something that is free as in freedom, with publicly avalaible and modifiable source code.
 
-*[open-source]: Something that is free in price with publicly avalaible source code. Not necessarily free in rights.
+*[open-source]: Something that has its source code publicly avalaible. Not necessarily free in rights.
 
 *[RIFE]: An AI video interpolation that is slower, but generally more accurate
 
