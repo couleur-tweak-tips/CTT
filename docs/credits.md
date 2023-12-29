@@ -15,6 +15,8 @@ icon: custom/credits
 
     1. I've since made my own library for game patching in PowerShell, it's equivalent today is [`Optimize-OptiFine`](https://github.com/couleur-tweak-tips/TweakList/blob/5c70449aad2824b784b1c831a2fd9459736f5d2e/modules/Game%20%26%20Program%20tuners/Optimize-OptiFine.ps1)
 
+* dark theme color palette heavily inspired from [pmydown-extensions docs](https://facelessuser.github.io/pymdown-extensions/), thank you facelessuser 🥰
+
 ###### Credits
 
 * teo: AMD (AMF) OBS settings
