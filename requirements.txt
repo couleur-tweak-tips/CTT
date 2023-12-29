@@ -3,3 +3,4 @@ cairosvg
 mkdocs-material
 mkdocs-glightbox
 pymdown-extensions
+mkdocs-git-revision-date-localized-plugin

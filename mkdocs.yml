@@ -145,12 +145,17 @@ extra_css:
 
 
 plugins:
+
   # https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-search
   - search
-    # makes image enlarge on click https://blueswen.github.io/mkdocs-glightbox/
+
+  # makes image enlarge on click https://blueswen.github.io/mkdocs-glightbox/
   - glightbox:
       effect: none
       height: 100vw
+
+  # https://timvink.github.io/mkdocs-git-revision-date-localized-plugin
+  - git-revision-date-localized
 
 #
 # Python Markdown
