@@ -152,7 +152,7 @@ You're recommended to use the [latest](https://github.com/obsproject/obs-studio/
 
     === ":custom-amd: (AMD) AMF"
     
-        [I](../../contact.md#couleur) do not own an AMD, try copying the settings shown in this video and see how htey turn out:
+        [I](../../contact.md#couleur) do not own an AMD, try copying the settings shown in this video and see how they turn out:
 
         Feel free to [contribute](../../contributing.md) knowledge regarding this.
 
