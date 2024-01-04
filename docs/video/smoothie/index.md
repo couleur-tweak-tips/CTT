@@ -10,8 +10,6 @@ icon: custom/smoothie
 </h1>
 <p align="center">
     add motion blur to videos, with granular configuration
-    <br>
-    <br>
 </p>
 <p align="center">
     <a href="https://discord.com/channels/774315187183288411/1051234238835474502">
@@ -30,17 +28,28 @@ icon: custom/smoothie
 
 ---
 
-# About
+## what is smoothie
 
-Cross-platform fork of [blur](https://github.com/f0e/blur), now [rewritten](https://github.com/couleur-tweak-tips/Smoothie#readme) in Rust.
+=== "User facing"
 
-Smoothie is specialized in applying motion blur on video-game footage, it's got features like [smart-resampling](./recipe.md#frame-blending) and [RSMB](./recipe.md#flowblur).
+    Smoothie applies motion blur on video-game footage, it's got features similar to [smart-resampling](./recipe.md#frame-blending) and [RSMB](./recipe.md#flowblur).
+    
+    It acts as an all-in-one filter chain, you can individually toggle and configure each recipe component
 
-you can configure it extensively within [`recipe.ini`](./recipe.md).
 
-## Pros
+=== "Developper facing"
 
-* Magnitudes faster rendering than VEGAS Pro's smart resample
+    Cross-platform fork of [blur](https://github.com/f0e/blur), now [rewritten](https://github.com/couleur-tweak-tips/Smoothie#readme) in Rust.
+
+## why use smoothie
+
+Smoothie can be a better alternative to using the following programs / features ,
+
+They're available to opt-in/out at your discretion via the [recipe](./recipe.md):
+
+* [`[frame blending]`](./recipe.md#frame-blending): VEGAS Pro's smart resampling / Premiere Pro's frame blending / FFmpeg Tmix filter
+    
+    It has magnitudes faster rendering than VEGAS Pro's smart resample, benchmark:
 
 
     * `Smoothie-RS`: 10.9 seconds
@@ -72,13 +81,21 @@ you can configure it extensively within [`recipe.ini`](./recipe.md).
         -i grzy.mp4 -vf tmix=frames=17 -y -r 60 -c:v utvideo tmikx.mkv
         ```
 
-* Black-and-white-image based artifact masking for frame interpolation & flowblur artifacts ![Mask example](../../assets/images/video/smoothie/mask.png){ width="350" }
+* [`[flowblur]`](./recipe.md#flowblur): [RSMB](https://revisionfx.com/products/rsmb/), After Effects' CC Force Motion Blur
+    * [`[artifact masking]`](./recipe.md#artifact masking): Manually reverting RSMB where it smeared in a video editor with masking tools
+    
+        ??? info "Mask example"
 
-## Cons
+            E.g for apex legends:
+            
+            ![Mask example](../../assets/images/video/smoothie/mask.png)
 
-* Another step in your workflow
+* [`[pre-interp]`](./recipe.md#pre-interp): [Flowframes](https://nmkd.itch.io/flowframes) / [RIFE](https://github.com/megvii-research/ECCV2022-RIFE)
+* [`[output]`](./recipe.md#output): Transcoding with [FFmpeg (`-vcodec <...>`)](https://ffmpeg.org/ffmpeg-all.html#Main-options)
+        * [Upscaling to `4K`](../ffmpeg/upscaling.md)
 
-## :material-file-eye: Usage
+
+## how to use smoothie
 
 You can configure your recipe by modifying `recipe.ini`, all settings are explained [here](./recipe.md)
 
@@ -87,4 +104,3 @@ It does not have an interface as it is a [CLI tool](https://en.wikipedia.org/wik
 1. You can feed your videos directly via [SendTo](../sendto.md) ![Send To folder](../../assets/images/video/smoothie/smoothiesendto.png){ width="450" }
 
 2. Or select your videos in a file picker dialog by running [`Launch.cmd`](https://github.com/couleur-tweak-tips/smoothie-rs/blob/5bedf4ff231fd56832deacf4e32c5eb9f640c004/.github/workflows/shipper.ps1#L22) ![Launch.cmd preview](../../assets/images/video/smoothie/launch.png)
-
