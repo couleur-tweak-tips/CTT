@@ -139,6 +139,10 @@ extra:
     link: https://t.me/Couleur
     name: Contact Couleur on Telegram
 
+  - icon: fontawesome/brands/mastodon
+    link: https://hachyderm.io/@coler
+    name: Follow Couleur on Hachyderm (Mastodon)
+
 
 extra_css:
   - assets/css/extra.css
