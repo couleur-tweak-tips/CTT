@@ -20,36 +20,24 @@ This website has been meticulously curated over the years, it evolved from a [cr
 
 This website evolved from a [crowded discord server](https://twitter.com/CouleurMinemen/status/1521966698047418377) over the years and turned into a meticulously curated repository of useful knowledge.
 
-=== ":custom-video: Video"
-
-    * [:custom-smoothie: Smoothie](./video/smoothie/index.md): Make your gameplay footage smooth
-    * :simple-obsstudio: [OBS Studio](./video/obs/index.md): Optimal configuration for recording & streaming
-    <!-- * :custom-voukoder: [Voukoder](): Fast & efficient video editor export plugin for :custom-vegas-pro-18: :custom-premiere-pro-og: :custom-after-effects-og: -->
-
 <!--
-=== ":custom-video: Video"
-    [:custom-smoothie: Smoothie](./video/smoothie/index.md): Make your gameplay footage smooth
-    * :obs-logo: [OBS Studio](./video/obs/index.md): Optimal configuration for recording & streaming
-    * :custom-voukoder: [Voukoder](): Fast & efficient video editor export plugin for :custom-vegas-pro-18: :custom-premiere-pro-og: :custom-after-effects-og:
+<div class="grid cards" markdown>
 
-=== ":custom-msi: Programs"
+-   === ":custom-video: Video"
 
-    * ShareX
-    * AltSnap
-    * PowerToys
-    * SpotX
-    * MAS
-    * espanso
-    * SearchEverything
+        * [:custom-smoothie: Smoothie](./video/smoothie/index.md): Make your gameplay footage smooth
+        * :simple-obsstudio: [OBS Studio](./video/obs/index.md): Optimal configuration for recording & streaming
 
-=== ":simple-windows: Windows"
+    === ":custom-msi: Programs"
 
-    
-
-=== ":material-dots-horizontal: Miscellaneous"
-
-    !!! warning "Unsupported"
-        At the moment, OBS settings for macOS aren't considered in the documentation.
+        * ShareX
+        * AltSnap
+        * PowerToys
+        * SpotX
+        * MAS
+        * espanso
+        * SearchEverything
+</div>
 -->
 
 <center>
