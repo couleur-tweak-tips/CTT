@@ -4,7 +4,7 @@ icon: material/dots-horizontal-circle
 
 # Miscellaneous resources
 
-this page is my hoarder's refuge for unorganized list of interesting websites / repos
+this category is my hoarder's refuge for unorganized list of interesting websites / repos
 
 * <https://cli.rs>
 * <https://is-a.dev>
