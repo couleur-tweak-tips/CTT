@@ -5,19 +5,20 @@ icon: material/lifebuoy
 
 # Troubleshooting
 
-Here are some common problems and their solutions:
+When troubleshooting, make sure to read the **entire error message**, most of the time the text above the red error text is what explains the issue.
 
+Here's a handful of common errors and how to solve them:
 
 #### `ffmpeg.exe is not installed/in PATH, ensure FFmpeg is installed` { #ffmpeg-not-found }
 
-:   You need [ffmpeg](../ffmpeg/index.md#installation), see [it's dependencies](./installation.md#dependencies)
+:   You need [ffmpeg](../ffmpeg/index.md#installation), see [Smoothie's dependencies](./installation.md#dependencies)
 
 
 #### `*Smoothie crashing before any error can be read*` { #smoothie-instant-crash }
 
-:   Run Smoothie by using `launch.cmd` and select your video. Smoothie will now stay open and you can read the error.If there's no error message, it's likely a problem with your Send to shortcut</ins>.
+:   Run Smoothie by using `launch.cmd` and select your video. Smoothie will stay open and you can read the error. If there's no error message, it's likely a problem with your Send to shortcut</ins>.
 
-#### `Smoothie Recipe parser: setting xyz has no parent category` { #recipe-parse-error }
+#### `Smoothie Recipe parser: setting XYZ has no parent category` { #recipe-parse-error }
 
 :   Double check the syntax of your recipe config file. Make sure you're not using the config from the old [smoothie-py](https://github.com/couleur-tweak-tips/Smoothie) or [blur](https://github.com/f0e/blur).
 
@@ -40,11 +41,14 @@ Here are some common problems and their solutions:
 
 #### `Python exception: Source: The index does not match the source file`  { #source-index-mismatch }
 
-: Ensure your video path doesn't have any non-english, special characters. The name of your file might be the problem, try renaming it. If it persists please [make a support post on our Discord](https://discord.gg/CTT) or [contact me](../../contact.md#couleur)
+: Ensure your video path doesn't have any non-english, special characters. The name of your file might be the problem, try renaming it.
 
 #### `Warning: Failed to load [...]\smoothie-rs\bin\vapoursynth64\plugins\librife.dll. GetLastError() returned 126. The file you tried to load or one of its dependencies is probably missing.`
 
 :   You're running this in a VM or do not have vulkan libraries installed.
 
+### The error is persisting or not listed here
 
-shout out z1xus and [gemstorm](https://github.com/gem-storm/smrs-guide) for the base of most o this page
+:   Please [make a support post on our Discord](https://discord.gg/CTT) or [contact me](../../contact.md#couleur)
+
+Shout out [z1xus and gem-storm](https://github.com/gem-storm/smrs-guide) for the base of most of this page!

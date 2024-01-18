@@ -5,7 +5,7 @@ icon: fontawesome/regular/share-from-square
 
 # :fontawesome-regular-share-from-square: Send To
 
-Send To is a feature in Windows' right-click (context) menu that can be launch scripts with the file(s) you selected
+Send To is a feature in Windows' right-click (context) menu that can launch scripts with the file(s) you selected
 
 ![Typing shell:sendto in Windows' Run dialog (Win+R)](../assets/images/video/sendto/context menu example.png){ width="600" }
 
@@ -52,7 +52,7 @@ These programs only support opening with one video at a time :x:
 
 ## Folder behavior
 
-You can also place shortcuts to folder if you want to be able to copy / move folder to specific places from any folder in the Explorer:
+You can also place shortcuts to folders if you want to be able to copy / move files to specific places from anywhere in the Explorer:
 
 * Simply left clicking will <u>copy</u> the file
 * <kbd>SHIFT</kbd> clicking it will <u>move</u> the file

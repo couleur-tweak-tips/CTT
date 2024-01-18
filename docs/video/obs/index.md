@@ -8,20 +8,24 @@ icon: obs/logo
 
 ## High FPS recording
 
-A lot of [us](https://discord.gg/CTT) configure our encoder to record as high FPS as we get in-game(1) to then [frame blend](../smoothie/recipe.md#frame-blending) with [Smoothie](../smoothie/index.md)
+A lot of [us](https://discord.gg/CTT) configure our encoder to record as high FPS as we get in-game(1) to then [frame blend](../smoothie/recipe.md#frame-blending) with [Smoothie](../smoothie/index.md).
 { .annotate}
 
-1. If you get about 600FPS it's recommended to record around 480FPS to accomodate for the variations and eventual drops
+1. If you get about 600FPS it's recommended to record around 480FPS to accommodate for the variations and eventual drops
 
 ## :material-package-down: Installing OBS
 
-You should the latest version of OBS from the official [downloads page](https://obsproject.com/download). This page provides multiple sources from which you can install it.
+You should install the latest version of OBS from the [official downloads page](https://obsproject.com/download). This page provides multiple sources you can install it from.
 
 ## Other documentation sources
 
 See OBS' knowledgebase: https://obsproject.com/kb
 
+<!--
 * Launch (CLI) Parameters: https://obsproject.com/kb/launch-parameters
+
+this is linked in the page above anyway, i don't think it needs to be linked here
+-->
 
 ## :material-cog: Initial configuration
 

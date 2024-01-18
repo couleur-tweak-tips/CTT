@@ -8,12 +8,16 @@ icon: simple/nvidia
 
 !!! note ":material-arch: Packaged for Arch Linux users"
 
-    If you cannot install from the [AUR](https://aur.archlinux.org/) you're gonna have to look for alternatives / compile / install them yourself
+    If you cannot install from the [AUR](https://aur.archlinux.org/) you're gonna have to look for alternatives or compile / install them yourself.
     
 
 ## :material-information-box: Information
 
-For NVIDIA users, NvFBC is available with some driver patching. NvFBC is a feature like NVENC, except from that it captures your screen directly from the framebuffer very efficiently.
+For NVIDIA users, NvFBC is available with some driver patching. NvFBC is a feature like NVENC, except that it captures your screen directly from the framebuffer very efficiently.
+
+<!--
+I think 'except from that' is technically not incorrect grammar, but I think it sounds much better like this.
+-->
 
 Overall, this works very well for high FPS recording, and is on a par with Windows' default **Display Capture** source, if not better.
 
