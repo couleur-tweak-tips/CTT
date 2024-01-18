@@ -32,30 +32,29 @@
   opacity: 1;
 }
 
-/* the abomination Itself */
-.md-nav__item--nested.md-nav__item--section.md-nav__item--active.md-nav__item>.md-nav>.md-nav__list>li.md-nav__item--nested.md-nav__item--section.md-nav__item>.md-nav {
-  /* margin to the right does nothing, but just mentionning margin-left moves them to the right ??? */
-  margin-left: 0rem !important;
+.md-nav[data-md-level="2"] > .md-nav__list {
+  margin-left: 1.45em;
+  padding-left: 0.75em;
   position: relative;
 }
 
-.md-nav__item--nested.md-nav__item--section.md-nav__item--active.md-nav__item>.md-nav>.md-nav__list>li.md-nav__item--nested.md-nav__item--section.md-nav__item>.md-nav::before {
-  content: '';
+.md-nav[data-md-level="2"]> .md-nav__list::before {
+  content: "";
   position: absolute;
-  top: 5px;
-  bottom: 8px;
+  top: 0;
   left: 0;
+  height: 100%;
   width: 1px;
-  opacity: 30%;
-  background: var(--md-accent-fg-color);
+  background: linear-gradient(to bottom, rgba(124, 77, 255, 0.3) 0%, rgba(124, 77, 255, 0.1) 50%, rgba(124, 77, 255, 0.3) 100%);
 }
 
-/* hide this hideous creation when mobile mode activates */
 @media (max-width: 1220px) {
-  .md-nav__item--nested.md-nav__item--section.md-nav__item--active.md-nav__item>.md-nav>.md-nav__list>li.md-nav__item--nested.md-nav__item--section.md-nav__item>.md-nav::before {
-
+  .md-nav[data-md-level="2"]> .md-nav__list::before {
     opacity: 0%;
-
+  }
+  .md-nav[data-md-level="2"] > .md-nav__list {
+    margin-left: 0;
+    padding-left: 0;
   }
 }
 
