@@ -104,7 +104,3 @@ It does not have an interface as it is a [CLI tool](https://en.wikipedia.org/wik
 1. You can feed your videos directly via [SendTo](../sendto.md) ![Send To folder](../../assets/images/video/smoothie/smoothiesendto.png){ width="450" }
 
 2. Or select your videos in a file picker dialog by running [`Launch.cmd`](https://github.com/couleur-tweak-tips/smoothie-rs/blob/5bedf4ff231fd56832deacf4e32c5eb9f640c004/.github/workflows/shipper.ps1#L22) ![Launch.cmd preview](../../assets/images/video/smoothie/launch.png)
-
-<!--
-I (gem-storm) decided to capitalize the headers. I'm not sure if it's a style choice or not, but to stay consistent with the other pages I changed it.
--->
