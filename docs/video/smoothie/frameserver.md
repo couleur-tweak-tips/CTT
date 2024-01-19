@@ -12,7 +12,7 @@ icon: material/server-network
 
     also I forgot if I shipped Smoothie with AviSource, place [this DLL](https://github.com/vapoursynth/vs-avisource-obsolete/releases/tag/R1) in /bin/vapoursynth64/plugins/
 
-DebugMode FrameServer lets your video editor export projects as a virtual uncompressed AVI file which Blur and Smoothie can use as input, effectively exporting indirectly to it.
+DebugMode FrameServer lets your video editor export projects as a virtual uncompressed AVI file which blur and Smoothie can use as input, effectively exporting indirectly to it.
 
 It supports most VEGAS versions and Premiere Pro.
 
@@ -90,7 +90,7 @@ cmd /k
 
 You'll need to go in Smoothie's `/bin/` folder and shift-right click `smoothie-rs.exe` -> Copy as path and paste it in
 
-For Blur you should be able to find `blur-cli.exe` (or if you got older versions just `blur.exe`) `C:\Program files (x86)\blur`
+For blur you should be able to find `blur-cli.exe` (or if you got older versions just `blur.exe`) `C:\Program files (x86)\blur`
 
 
 You'll need to add the following arguments after:
