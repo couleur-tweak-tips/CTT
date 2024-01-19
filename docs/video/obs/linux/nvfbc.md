@@ -15,10 +15,6 @@ icon: simple/nvidia
 
 For NVIDIA users, NvFBC is available with some driver patching. NvFBC is a feature like NVENC, except that it captures your screen directly from the framebuffer very efficiently.
 
-<!--
-I think 'except from that' is technically not incorrect grammar, but I think it sounds much better like this.
--->
-
 Overall, this works very well for high FPS recording, and is on a par with Windows' default **Display Capture** source, if not better.
 
 However, unfortunately, this has some issues:
