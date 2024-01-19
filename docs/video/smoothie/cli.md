@@ -27,7 +27,7 @@ I'll keep the term 'bool' here because noobs aren't gonna be using CLI lets be r
 
 `--peek`: int
 
-:   Render out a single frame as an image file, useful when peeking to see what a frame will look like with a very slow recipe. This is passed to both `--start` and `--end` to VSPipe and does not mess up any temporal filters afaik.
+:   Render out frame number specified as an image file, useful when peeking to see what a frame will look like with a very slow recipe. This is passed to both `--start` and `--end` to VSPipe and does not mess up any temporal filters afaik.
 
 `--vpy`: file path
 
@@ -50,12 +50,12 @@ I'll keep the term 'bool' here because noobs aren't gonna be using CLI lets be r
 
 `--json`: string
 
-:   Trimming timecodes payload for [Suckless-Cut](https://github.com/couleur-tweak-tips/suckless-cut), not fully ported from Smoothie-PY yet.
+:   Trimming timecodes payload for [suckless-cut](https://github.com/couleur-tweak-tips/suckless-cut), not fully ported from smoothie-py yet.
 
 
 `--trim`, `--padding`: bool
 
-:   Trimming behavior, not fully ported from Smoothie-PY yet.
+:   Trimming behavior, not fully ported from smoothie-py yet.
 
 
 `--rerun / -!!`: bool
