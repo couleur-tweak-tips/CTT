@@ -2,11 +2,12 @@
 icon: obs/hotkeys
 ---
 
+!!! info "All the keybinds on this page are what I've set, <u>OBS has no default keybinds</u>"
 
 If you put the same keybind on a start X and stop X / enable X and disable X it will work like a toggle.
 
 
-* `Enable Preview` & `Disable Preview`
+* `Enable Preview` & `Disable Preview`: <kbd>CTRL+ENTER</kbd>
 
 :   This helps with performance, I like to disable it after starting recording.
 
