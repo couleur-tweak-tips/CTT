@@ -51,4 +51,6 @@ Here's a handful of common errors and how to solve them:
 
 :   Please [make a support post on our Discord](https://discord.gg/CTT) or [contact me](../../contact.md#couleur)
 
-Shout out [z1xus and gem-storm](https://github.com/gem-storm/smrs-guide) for the base of most of this page!
+<br>
+
+Shout out [z1xus and gem-storm](https://github.com/gem-storm/smrs-guide) for the base of most of this page
