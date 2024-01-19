@@ -7,10 +7,6 @@ A command-line program installer for Windows
 * All apps are contained in `%USERPROFILE%\Scoop`{ data-clipboard-text="%USERPROFILE%\Scoop" } folder (per default, I recommend [installing on a non-windows drive](https://github.com/ScoopInstaller/Install#advanced-installation))
 * All software you install is in a portable factor (except the ones that end in -np, **n**on **p**ortable)
 
-<!--
-'is' sounds better than 'are here imo
---> 
-
 Installing it is as easy as pasting this in PowerShell:
 ```PowerShell
 irm get.scoop.sh | iex
