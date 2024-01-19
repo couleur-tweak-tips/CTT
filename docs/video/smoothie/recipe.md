@@ -7,16 +7,12 @@ icon: simple/googlesearchconsole
 
 The recipe (config file) is the hardest part of Smoothie's learning curve, reading this and messing around with short clips is the best way to familiarize yourself with it. 
 
-<!--
 The values which can be turned on or off (booleans) have a bunch of aliases for convenience, I advise typing y/n or 1/0 for short
-
-I personally think this can go unmentioned, if you disagree and want to mention it, I'd recommend removing the term "booleans" (might be confusing for noobs)
--->
 
 If there are features you're not interested in using, feel free to remove them from the file, it won't break a thing and act like you disabled it(1)
 { .annotate }
 
-1. Smoothie loads `defaults.ini`, which is just like the user's `recipe.ini` but with everything disabled / max compatibility, then it overrides those value with the existing ones in `recipe.ini`. Feel free to edit `defaults.ini` so you can hide options / categories you never change in `recipe.ini`!
+1. Smoothie loads `defaults.ini`, which is just like the user's `recipe.ini` but with everything disabled / max compatibility, then it overrides those value with the existing ones in `recipe.ini`.
 
 <br>
 
@@ -30,17 +26,14 @@ Here's what each file is for:
 
 :   Backup of all existing settings, it's loaded first then overwritten by `recipe.ini`, so you can remove unused features.
 
-<!--
-This is a personal choice, but I think 'overwritten' looks and sounds better than 'overwrote'.
--->
 
 * [`encoding_presets.ini`](https://github.com/couleur-tweak-tips/smoothie-rs/blob/main/target/encoding_presets.ini)
 
-:   Presets for [encoding](#output) in the config file. This is not hardcoded, so you can change and make presets.
+:   Preset config file for the [output enc args](#output) recipe setting.
 
-<!--
-'Preset=value' could be confusing for the noobs
--->
+    The value on the left of the equal sign is what you type in the recipe, and the value on the right is what it'll expand to when fed to FFmpeg's arguments.
+
+    None of them are hardcoded, so you can edit them or even create your very own FFmpeg output CLI presets.
 
 * [`jamba.vpy`](https://github.com/couleur-tweak-tips/smoothie-rs/blob/main/target/jamba.vpy)
 
@@ -50,13 +43,8 @@ This is a personal choice, but I think 'overwritten' looks and sounds better tha
 
 ## :material-blur-linear: frame blending { #frame-blending }
 
-`[frame blending]` is just like blur's `- blur` config category, VEGAS' smart resampling, and FFmpeg's `tmix` filter - but much faster. It combines frames with neighboring ones to decrease the frame rate but preserve smoothness. It's recommended to blend to 60FPS or less, because the majority of websites and monitors cap at 60.
+`[frame blending]` is just like blur's `- blur` config category, VEGAS' smart resampling, and FFmpeg's `tmix` filter - but much faster. It averages every frame with it's neighboring frames, that makes motion trails and if done correctly looks like realistic motion-blur.
 
-<!--
-This is almost always done on only on a fourth / eight ect.. of the frames and intended to be viewed at conventional frame rates
-
-I don't think this is worth saying, it's just confusing and most users will assume this anyways.
--->
 <iframe width="688" height="387"  src="/assets/videos/video/smoothie/frameblending.mp4" frameborder=0></iframe>
 
 On the left is a 240FPS video, and on the right a 60FPS video with frame blending, this is not a pretty example but that shows you how the frames actually end up squished in a lower FPS
@@ -70,7 +58,7 @@ On the left is a 240FPS video, and on the right a 60FPS video with frame blendin
 
     Raising the `blur intensity` to 2.5 or even higher depending on your taste
 
-    And then doing frame blending / smart resampling in the editor
+    And then doing frame blending / smart resampling again in the editor
 
 `enabled`: yes
 
@@ -78,33 +66,21 @@ On the left is a 240FPS video, and on the right a 60FPS video with frame blendin
 
 `fps`: 60
 
-:   Output framerate.
-
-<!--
-...this does not affect how the frame blending is applied in the code
-
-wtf does this even mean? people would assume this already. useless info imo
--->
+:   Output framerate, this and `intensity` affects the number of neighboring frames (weights) to average, after blending the video is capped to such fps value.
 
 `intensity`: 1.0
 
-:   How intense the frame blending is, this is identical to blur's `blur amount`.
-
-<!--
-...Multiplied factor of how much frame blending weights to apply is calculated by diving the input FPS (or interpolated if configured) by the output FPS, e.g (240/60)\*<u>1.0</u> = 4,
-
-this is (imo) too much info for how intensity works, moving this down to weighting explanation
--->
+:   How intense the frame blending looks, this is identical to blur's `blur amount`.
 
 `weighting`: equal
 
 :   'Weights' are each blended frame, this option changes the opacity of each weight, you can make them manually `[1.0, 1.0, 1.0, 1.0, 1.0]` or choose from [the available presets](https://github.com/couleur-tweak-tips/smoothie-rs/blob/main/target/scripts/weighting.py):
     
     * `equal`
-    * `vegas`: Matches VEGAS Pro smart resampling's weights (use 1.0 intensity for most accurate results)
+    * `vegas`: Matches VEGAS Pro smart resampling's weights closest (when used with 1.0 intensity)
     * `gaussian`: Ascending gaussian curve
     * `gaussian_sym`: Symmetrical gaussian curve
-    * `ascending`
+    * `ascending`: my personal favorite, i like to pair it with a higher intensity
     * `descending`
     * `pyramid`: Opacity peaks at the middle
     * `custom`: (VERY NERDY) any Python expression (with [restricted namespace](https://github.com/couleur-tweak-tips/smoothie-rs/blob/f04526681aecf6564d5b83f5a7c8d35edeb8bf2f/target/scripts/weighting.py#L116-L144)), e.g. `custom; func = x**2`
@@ -114,24 +90,18 @@ this is (imo) too much info for how intensity works, moving this down to weighti
 
     Comparison of how `equal` and `ascending` look:
 
-
     <iframe width="297" height="313" src="/assets/videos/video/smoothie/weights.mp4" frameborder=0></iframe>
-
-<!--
-this is showing the wrong video somehow, the text is exactly the same in the og source code... hopefully it doesn't do this when on the public site.
--->
-
 
 `bright blend`: no
 
-:   Makes the blending look similar to Premiere Pro's frame blending (in a good way), It's comparable to blending two images with additive mode.
+:   Makes the blending look similar to Premiere Pro's frame blending (in a good way), It's comparable to blending two images with additive mode, slower than non-bright, it's achieved bby temporarily converting the clip to RGB48 color space during blending, s/o Zaphyr
 
 
 ## :material-select-multiple:  interpolation { #interpolation }
 
 <div class="annotate" markdown>* Motion-estimation tricks to create frames between existing ones, almost like magically increasing the framerate, this creates imperfect frames which inevitably have what we call artifacts, e.g smearing on static (HUD / overlay) parts and fast movement can look cursed with a low-fps input. "interpolation" in Smoothie is done with old non-DRM'd builds of [SVPFlow](https://github.com/couleurm/VSBundler/blob/main/smCi.ps1#L29). Also see their [wiki](https://www.svp-team.com/wiki/Manual:SVPflow). </div>
 
-It's recommended to record in **at least 120FPS** if you're going to interpolate with SVPFlow, as lower frame rates like 60FPS [often look worse than the raw clip](https://www.youtube.com/watch?v=QihBOhLzQj8).
+It's recommended to record in the highest fps possible, (**at least 120FPS** for ok results). If you're going to interpolate only with SVPFlow, lower frame rates like 60FPS [often look worse than the raw clip](https://www.youtube.com/watch?v=QihBOhLzQj8).
 
 
 <iframe width="485" height="387"  src="/assets/videos/video/smoothie/interpolation.mp4" frameborder=0></iframe>
@@ -218,11 +188,7 @@ Most easily comparable to Reel Smart Motion blur (RSMB), it often creates even m
 
 ## :material-play-box-outline: output { #output }
 
-<!--
-If you wish to disable output to test render speed without being slowed down by encoding, use [`--tonull`](https://github.com/couleur-tweak-tips/smoothie-rs/blob/main/src/cli.rs)
-
-I don't think you need to mentions this. Most users will never use it and it's mentioned in the CLI page anyways.
--->
+If you want to see how much the encoding process slows down rendering speed, try out [`--tonull`](./cli.md)
 
 `process`: ffmpeg
 
@@ -234,19 +200,16 @@ I don't think you need to mentions this. Most users will never use it and it's m
 
     If you didn't understand what any of this means, I'd recommend giving [<u>Which codec should I use?</u>](../codecguide.md) a read.
 
-<!--
-Adding `4K` will expand to the arguments necessary to (up)scale to 4K
+    Tip: Adding `4K` at the end will expand to the arguments necessary to [upscale your video to 4K](../ffmpeg/upscaling.md)
 
-You already mentioned encoding_presets.ini, this can go unmentioned.
--->
 
 `container`: MP4
 
 :   Video container format, defaults to MP4.
 
-    To contain the UTVideo codec you'll need to switch to AVI or MKV. 
+    To contain the UTVideo codec you'll need to switch to .AVI or .MKV 
     
-    You can use MKV to read what's already been rendered before it finishes rendering.
+    You can use .MKV to read what's already been rendered before it finishes rendering.
 
 `file format`: %FILENAME% ~ %FRUIT% %OUTPUT_FPS%
 
@@ -254,7 +217,7 @@ You already mentioned encoding_presets.ini, this can go unmentioned.
 
     * %FILENAME% is the output file base name (without the extension)
 
-    * %FRUIT% will expand to a random fruit from [this list](https://github.com/couleur-tweak-tips/smoothie-rs/blob/5bedf4ff231fd56832deacf4e32c5eb9f640c004/src/video.rs#L92-L100) 😋
+    * %FRUIT% will expand to a random fruit from [this list](https://github.com/couleur-tweak-tips/smoothie-rs/blob/5bedf4ff231fd56832deacf4e32c5eb9f640c004/src/video.rs#L92-L101) 😋
 
     * Other values of the recipe can be used, see how it's implemented [here](https://github.com/couleur-tweak-tips/smoothie-rs/blob/5bedf4ff231fd56832deacf4e32c5eb9f640c004/src/video.rs#L140)
 
@@ -305,11 +268,11 @@ They're resolution specific, Smoothie will crash if you pair 1280x720 videos wit
 
 `play ding`: no
 
-:   Supposed to play `C:\Windows\Media\ding.wav` with ffplay once Smoothie is done rendering, not yet implemented.
+:   Supposed to play `C:\Windows\Media\ding.wav` with ffplay once Smoothie is done rendering, not yet implemented from smoothie-py.
 
 `always verbose`: no
 
-:   Equivalent to if you always passed `--verbose` to the arguments (recipe parsing stuff won't be logged since it hasn't reached the point to where it parses the recipe to enable verbosity).
+:   Equivalent to if you always passed `--verbose` to the arguments (though prefer actually using the argument as it activates verbose logging earlier, logs even more data).
 
 `dedup threshold`: 0.0
 
@@ -325,7 +288,7 @@ They're resolution specific, Smoothie will crash if you pair 1280x720 videos wit
 
 `ffmpeg options`: -loglevel error -i - -hide_banner -stats -stats_period 0.15
 
-:   Arguments first passed to ffmpeg .
+:   Arguments first passed to ffmpeg.
 
 `ffplay options`: -loglevel quiet -i - -autoexit -window_title smoothie.preview
 
@@ -374,13 +337,6 @@ Windows Terminal does not behave well with this.
 
 :   Very self-explanatory, controls the color settings of the output video.
 
-`coring`: no
-
-:   Enables coring on the output video.
-
-<!--
-ngl i have no clue what coring does and cant find any answers online, someone else can make a detailed explanation.
--->
 ## :material-invert-colors: LUT { #LUT }
 
 [Look up table](https://en.wikipedia.org/wiki/Lookup_table#Lookup_tables_in_image_processing) filter, they're kinda like color filters to make colors exactly accurate to a standard, but we nerds mostly use it for cool color grades :)
@@ -423,7 +379,7 @@ NCNN is used instead of RIFE for the much smaller dependencies (CUDA is like 5GB
 
 `factor`: 3x
 
-:   How much you wish to multiply the input FPS by and interpolate to that.
+:   How much you wish to multiply the input FPS by and interpolate to that, e.g. if the video's input fps is 60 and the factor is 3: 60 x 3 = it'll interpolate 180fps
 
 `model`: rife-v4.4
 
@@ -437,16 +393,14 @@ NCNN is used instead of RIFE for the much smaller dependencies (CUDA is like 5GB
 
     https://github.com/hzwer/Practical-RIFE#model-list
 
-    Then extract them, Right click -> `Copy as path` on the desired model, and paste it here.
-<!--
-Then extract and move each individual folders in /rife models/
+    Download and extract them to a new folder, e.g name it /rife models/
 
-this folder isn't in the nightly releases.
--->
+    Then right click the desired model folder -> `Copy as path` on the desired model, and paste it as this value.
+
     RIFE Models don't come included with Smoothie because:
         * Licensing
         * Size, not everyone uses them
-        * They're not that hard to download, unzip a
+        * They're not that hard to set up, really
 
 ## Using multiple recipe files
 
