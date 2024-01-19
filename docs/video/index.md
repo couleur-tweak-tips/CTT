@@ -10,15 +10,15 @@ This category is dedicated to document optimal configurations of programs for cr
 ## :material-book: Definitions
 
 ### :material-run-fast: Frame blending
-The most common, it is without (unlike other methods like RSMB) any smearing of HUDs or general artifacting. Commonly this is done from a very high FPS (e.g. 540) down to a common FPS, i.e. 60 or 30.
+The most common form of motion blur, it is without any smearing of HUDs or general artifacting (unlike other methods like RSMB). Commonly this is done from a very high FPS (e.g. 540) down to a common FPS, i.e. 60 or 30.
 
 In general, the higher the input FPS, the smoother the final output would be, due to more blur frames making the blur look more seamless. Blur frames are how many frames are blended together, so `blur frames = input fps / output fps`.
 
-Video editors such as Vegas Pro and Adobe Premiere Pro have these features built-in. However, we recommend using seperate programs such as [Smoothie](./smoothie/index.md) first to pre-render the videos, therefore you don't have any lag in your video editor as well as having much more customisation.
+Video editors such as Vegas Pro and Adobe Premiere Pro have these features built-in. However, we recommend using seperate programs such as [Smoothie](./smoothie/index.md) first to pre-render the videos, therefore you don't have any lag in your video editor as well as having much more customization.
 
 ### :material-select-multiple: Interpolation
 
-Video interpolation is a video processing technique that creates new frames between existing ones, effectively increasing the video's frames per second (FPS) using algorithms or AI.
+Video interpolation is a video processing technique that creates new frames between existing ones, effectively increasing the video's FPS using algorithms or AI.
 
 [RIFE](https://github.com/megvii-research/ECCV2022-RIFE) and the [SVP](https://www.svp-team.com) algorithm are commonly implemented into frame blending applications to interpolate.
 

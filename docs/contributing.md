@@ -9,15 +9,16 @@ This website was not made to thoroughly index and review every single available 
 
 You can contact us about your idea:
 
-* <div class="annotate" markdown>Send your idea(1) in the [CTT Discord](https://discord.gg/CTT)'s `#suggestions` forum or [in DMs](./contact.md#couleur)</div>
+* <div class="annotate" markdown>Send your idea in the [CTT Discord](https://discord.gg/CTT)'s `#suggestions` forum or [in DMs](./contact.md#couleur)(1)</div>
 
-    1.  I what you're writing is beyond Discord's (2000, or 4000 w/ nitro) character limit make a [Cryptpad](https://cryptpad.fr/pad/) page
+    1.  If what you're writing is beyond Discord's 2000 character limit (4000 w/ nitro) make a [Cryptpad](https://cryptpad.fr/pad/) page
 
-Or do most of the work:
+
+Or do most of the work by 
 
 1. [Fork `couleur-tweak-tips/CTT` on GitHub](https://github.com/couleur-tweak-tips/CTT/fork) 
 
-2. Contributing your fix/idea and [opening a pull request](https://github.com/couleur-tweak-tips/CTT/pulls)
+2. Contributing your fix / idea and [opening a pull request](https://github.com/couleur-tweak-tips/CTT/pulls)
 
 :   Doing this implies you respect the following:
 

@@ -6,12 +6,12 @@ icon: custom/ffmpeg
 
 FFmpeg is most known for being a tool for handling multimedia (notably <u>A</u>udio & <u>V</u>ideo). It's a swiss army knife when used in scripts. 
 
-It's backbones, LibAV, lets other program make use of it's wide capabilities (e.g Voukoder does).
+It's backbones, LibAV, lets other programs (e.g Voukoder) make use of it's wide capabilities.
 
 
 It can do any and all of these at once:
 
-* Convert from a [codec](../codecguide.md) to another, or simply `copy` to transfer it without touching it(1) (`-c`)
+* Convert from one [codec](../codecguide.md) to another, or simply `copy` to transfer it without touching it (`-c`)
 * Cut videos (LosslessCut uses FFmpeg for that) (`-ss` `-to`)
 * Add/remove/merge audio/video/subtitle tracks (e.g multiple `-i`/`-input`)
 
@@ -50,9 +50,9 @@ And [a lot, a lot of other useful stuff](https://ffmpeg.org/ffmpeg-all.html)
 
 There are three main "[fftools](https://git.ffmpeg.org/gitweb/ffmpeg.git/tree/HEAD:/fftools)":
 
-* `ffmpeg`: for handling audio, videos.. the swiss army knife
-* `ffplay`: a video player that makes use of ffmpeg's decoding abilities
-* `ffprobe`: probing tools to gather information on a video/audio file's formats and specifications
+* `ffmpeg`: For handling audio, videos, etc. The swiss army knife
+* `ffplay`: A video player that makes use of ffmpeg's decoding abilities
+* `ffprobe`: Probing tools to gather information on a video/audio file's formats and specifications
 
 ## Scripts
 
