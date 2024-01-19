@@ -15,9 +15,3 @@ icon: obs/advanced
 * `Color Range`: <kbd>Limited</kbd>
 
 :   <kbd>Full</kbd> tends to look a bit more saturated when converted around, which some people like.
-
-<!--
-'Colour' is the British spelling, in a poll from a while ago, we decided to use American spelling ('Color')
-
-source: https://discord.com/channels/774315187183288411/817772193974845470/1154056884035268618
--->
