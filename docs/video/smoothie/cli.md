@@ -23,7 +23,7 @@ I'll keep the term 'bool' here because noobs aren't gonna be using CLI lets be r
 
 `--outdir`: folder path
 
-:   Specify output directory for all queued files, overrides [`global output folder:`](./recipe.md#miscellaneous).
+:   Specify output directory for all queued files, overrides [`[miscellaneous] global output folder:`](./recipe.md#miscellaneous).
 
 `--peek`: int
 
