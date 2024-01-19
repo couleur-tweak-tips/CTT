@@ -55,7 +55,7 @@ icon: material/folder-download
 
     In `%APPDATA%\Microsoft\Windows\SendTo` make a shortcut to <smoothie-rs-folder\bin\smoothie-rs.exe> with add a space and ` --tui -i`
 
-    If Smoothie is crashing on you, add the `-v` argument (that'd be ` -v --tui -i`) after the executable's path to enable verbose logging to see what's wrong
+    If Smoothie is crashing on you, add the `-v` argument (that'd be ` -v --tui -i`) after the smoothie-rs executable's path to enable verbose logging to see what's wrong
 
     Video tutorial:
 
