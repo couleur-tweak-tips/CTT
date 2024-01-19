@@ -10,13 +10,9 @@ The output takes the base canvas and scales it to whatever you set it to.
 
 ### When using a different resolution is worth using
 
-If you're limited on bandwidth / encoding efficiency you might consider scaling down, or the opposite on YouTube for extra bitrate (same principle as (up)scaling)
+* For Streaming: If you're limited on bandwidth / encoding efficiency you might consider scaling down, or the opposite on YouTube for extra bitrate (same principle as upscaling)
 
-For recording it's not recommended to scale at all.
-
-<!--
-Maybe in some situations this isn't true, I've never personally had to.
--->
+* For Recording: If you know you're gonna scale to a different resolution in post editing you can do it directly while recording, though this means it's scaling on the fly, may or may not help with performance.
 
 # Frame rate
 
