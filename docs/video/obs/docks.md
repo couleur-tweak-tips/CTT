@@ -29,10 +29,7 @@ Displays useful statistics regarding your recording and/or streaming status, mos
 
 ## :material-projector-screen-outline: Scenes
 
-Scenes are collections of user-defined sources, to give you an idea they’re typically used by streamers who switch from game source w/ facecam, full-screen facecam, and starting stream soon / brb text.
-<!--
-Those arrow symbols just look wacky, decided to remove them.
--->
+Scenes are collections of user-defined sources, to give you an idea they’re typically used by streamers who switch from game source w/ facecam, full-screen facecam, and "starting stream soon" / "brb" text.
 
 If you only make use of a single source at a time (e.g recording games) you could remove the Scenes Selector and Scene Transitions for some UI headroom. 
 
