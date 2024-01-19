@@ -45,12 +45,12 @@ Scaling your video to a larger resolution (e.g `1920x1080`/`1080p` :material-arr
 Here are two videos, one was left as is, the other one stretched to 4K, watch it in fullscreen with the <kbd>Settings</kbd> -> <kbd>Quality</kbd> option maxed out.
 === "1080p"
 
-    <iframe width="688" height="387" src="https://www.youtube.com/embed/ohjz9Kff7lo" frameborder=0 allowfullscreen></iframe>
+    <iframe width="688" height="387" src="https://www.youtube.com/embed/ohjz9Kff7lo?color=white" frameborder=0 allowfullscreen></iframe>
 
     
 === "1080p stretched to 4K"
 
-    <iframe width="688" height="387" src="https://www.youtube.com/embed/-FE9s_acdYw" frameborder=0 allowfullscreen></iframe>
+    <iframe width="688" height="387" src="https://www.youtube.com/embed/-FE9s_acdYw?color=white" frameborder=0 allowfullscreen></iframe>
 
     
 ## **Why not just set the project scale to 4K before rendering?** {#why-not-nle}
