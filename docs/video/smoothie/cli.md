@@ -16,9 +16,6 @@ icon: octicons/terminal-16
 
 `-t/--tui`: bool
 
-<!--
-I'll keep the term 'bool' here because noobs aren't gonna be using CLI lets be real
--->
 :   Makes Smoothie behave like an app instead of a CLI tool (e.g pause before exiting on an error).
 
 `--outdir`: folder path
