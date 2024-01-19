@@ -6,7 +6,7 @@ icon: fontawesome/solid/arrow-up-right-dots
 # Why bother upscaling for YouTube?
 
 
-Scaling your video to a larger resolution (e.g `1080p` :material-arrow-right: `3840x2160` / 4K) tricks YouTube into giving your video more bitrate.
+Scaling your video to a larger resolution (e.g `1920x1080`/`1080p` :material-arrow-right: `3840x2160`/4K) tricks YouTube into giving your video more bitrate.
 
 ==This is only useful for YouTube, because it won't make your video look any better than when you're viewing it back in a media player, it'll just <u>looks less compressed/more faithful on YouTube</u>==.
 
