@@ -21,11 +21,7 @@ You should install the latest version of OBS from the [official downloads page](
 
 See OBS' knowledgebase: https://obsproject.com/kb
 
-<!--
 * Launch (CLI) Parameters: https://obsproject.com/kb/launch-parameters
-
-this is linked in the page above anyway, i don't think it needs to be linked here
--->
 
 ## :material-cog: Initial configuration
 
