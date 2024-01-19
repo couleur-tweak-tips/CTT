@@ -55,7 +55,7 @@ Here are two videos, one was left as is, the other one stretched to 4K, watch it
     
 ## **Why not just set the project scale to 4K before rendering?** {#why-not-nle}
 
-VEGAS Pro (and probably any other NLE) uses the bicubic scaling filter which makes your video a bit blurry, using FFmpeg lets you make sure you're using the right filter
+VEGAS Pro (and probably other NLEs) uses the bicubic scaling filter which makes your video a bit blurry, using FFmpeg lets you make sure you're using the right filter
 
 ## :custom-voukoder: **Why not use Voukoder's zscale?** {#why-not-voukoder}
 
