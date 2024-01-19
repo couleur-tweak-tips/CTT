@@ -12,6 +12,6 @@ There's three types of audio to capture:
 
 * Microphone / webcams: sound you produce by speaking
 * Desktop audio: mix of all audio sources from apps
-* Application audio capture [BETA]: Lets you have audio sources per program, which you can then 
+* Application audio capture [BETA]: Lets you have audio sources per program, which you can then use with multiple audio tracks to separately modify them in your video editor. 
 
 <iframe width="688" height="387" src="https://www.youtube.com/embed/yoXvk7ix4RQ?start=4&end=152&color=white" frameborder=0 allowfullscreen></iframe>

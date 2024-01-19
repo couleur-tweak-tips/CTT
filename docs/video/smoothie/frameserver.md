@@ -10,7 +10,7 @@ icon: material/server-network
 
     Because of bottlenecks I've yet to discover this
 
-    also I forgot if I shipped smoothie-rs with AviSource, place [this](https://github.com/vapoursynth/vs-avisource-obsolete/releases/tag/R1) DLL in /bin/vapoursynth64/plugins/
+    also I forgot if I shipped Smoothie with AviSource, place [this DLL](https://github.com/vapoursynth/vs-avisource-obsolete/releases/tag/R1) in /bin/vapoursynth64/plugins/
 
 DebugMode FrameServer lets your video editor export projects as a virtual uncompressed AVI file which blur and Smoothie can use as input, effectively exporting indirectly to it.
 
@@ -22,7 +22,7 @@ It supports most VEGAS versions and Premiere Pro.
 
 ## Download
 
-Grab it at the [Debugmode Homepage](https://www.debugmode.com/frameserver.html)
+Grab it at the [DebugMode Homepage](https://www.debugmode.com/frameserver.html)
 
 # Installation
 
@@ -33,12 +33,12 @@ Grab it at the [Debugmode Homepage](https://www.debugmode.com/frameserver.html)
 
 ![license agreements](../../assets/images/video/smoothie/debugmode_plugins.png)
 
-### 3. Indicate the <u>Debugmode Frameserver</u> installation directory, the default is fine:
+### 3. Indicate the <u>DebugMode FrameServer</u> installation directory, the default is fine:
 
 ![license agreements](../../assets/images/video/smoothie/debugmode_installdir.png)
 
 !!! warning "Read the following steps carefully"
-    Spamming "next" will install the plugins in the wrong directories, you NEED to manually copy your video editor's installation folder path
+    Spamming "next" will install the plugins in the wrong directories, you NEED to manually copy your video editor's installation folder path.
 
 ### 4. Indicate the <u>VEGAS Pro</u> installation directory; find it this way:
 
@@ -63,7 +63,7 @@ Do the same aforementioned instructions but with Premiere Pro
 
 ### 6. Install Dokan
 
-It'll install the dokan library which it uses to make virtual files,  <u>you do not need to install</u> the optional development plugins.
+It'll install the Dokan library which it uses to make virtual files,  <u>you do not need to install</u> the optional development plugins.
 
 ![](../../assets/images/video/smoothie/debugmode_dokandep.png)
 
@@ -79,16 +79,16 @@ VEGAS defaults to 48kHz (<kbd>CTRL+ENTER</kbd> to open Project Settings  -> Audi
 
 You'll need to build up a command, here's what you need to know to assemble it
 
-Start it with `cmd /k ` if you want it to stay open after smoothie-rs finishes running (e.g to see the crash message before it crashes)
+Start it with `cmd /k ` if you want it to stay open after Smoothie finishes running (e.g to see the crash message before it crashes)
 
-Paste in the path of smoothie-rs.exe, get it by going in smrs' `/bin/` folder and <kbd>SHIFT+RIGHT CLICK</kbd>ing `smoothie-rs.exe` and clicking `Copy as path`
+Paste in the path of smoothie-rs.exe, get it by going in Smoothie's `/bin/` folder and <kbd>SHIFT+RIGHT CLICK</kbd>ing `smoothie-rs.exe` and clicking `Copy as path`
 
 If the terminal closes before you can see an error if one occurs, or if you're doing it for the first time, consider adding the following at the start of your command:
 ```
 cmd /k
 ```
 
-You'll need to go in smoothie-rs' `/bin/` folder and shift-right click `smoothie-rs.exe` -> Copy as path and paste it in
+You'll need to go in Smoothie's `/bin/` folder and shift-right click `smoothie-rs.exe` -> Copy as path and paste it in
 
 For blur you should be able to find `blur-cli.exe` (or if you got older versions just `blur.exe`) `C:\Program files (x86)\blur`
 

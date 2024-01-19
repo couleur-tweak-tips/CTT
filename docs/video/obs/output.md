@@ -4,7 +4,7 @@ icon: obs/output
 
 # :obs-output: Output
 
-You're recommended to use the [latest](https://github.com/obsproject/obs-studio/releases/latest) version of OBS(1), check by clicking <kbd>Help</kbd> in the window title bar -> <kbd>Check For Updates</kbd>
+It's recommended to use the [latest version of OBS](https://github.com/obsproject/obs-studio/releases/latest)(1), check your current version by clicking <kbd>Help</kbd> in the window title bar -> <kbd>Check For Updates</kbd>
 { .annotate}
 
 1. #### Why?
@@ -22,9 +22,9 @@ You're recommended to use the [latest](https://github.com/obsproject/obs-studio/
 
     `Recording format`: Fragmented MP4 (.mp4)
 
-    I highly recommend switching from the default to the fragmented MP4, as it brings the advantages of recording in mkv whilst not having to remux mkv to mp4 for compatibility.
-
-    * In general, NVENC is faster than AMF, which is faster than QuickSync, which is faster than x264/5
+    I highly recommend switching from the default to the Fragmented MP4, as it brings the advantages of recording in MKV whilst not having to remux MKV to MP4 for compatibility.
+   
+    In general, NVENC (NVIDIA) is faster than AMF (AMD), which is faster than QuickSync (Intel iGPU), which is faster than x264/5 (CPU)
 
     Regarding `CQP`, `CFR` rate controls: It's inverted compared to CBR, 0 is lossless and 51 is most compressed
 
@@ -39,13 +39,13 @@ You're recommended to use the [latest](https://github.com/obsproject/obs-studio/
 
             * <div class="annotate" markdown>`Preset`: P1 - P4(1)</div>
 
-                1. OBS describes low Presets as "Lower Quality" in the context of <u>streaming with CBR in bandwith-limited scenarios</u>, if used for recording it'll be much more performant to record at the cost of bigger filesizes.
+                1. OBS describes low Presets as "Lower Quality" in the context of <u>streaming with CBR in bandwidth-limited scenarios</u>, if used for recording it'll be much more performant to record at the cost of bigger file sizes.
 
             * `Multipass Mode`: Single pass
 
         * `Rate Control`: <kbd>CQP</kbd>
 
-        :   Much more adaptative than CBR which will always spits out the same constant bitrate, unlike CQP which write way less data when 
+        :   Much more adaptive than CBR, which always spits out the same constant bitrate.
 
         * `CQ Level`: <kbd>18</kbd>
 
@@ -99,7 +99,7 @@ You're recommended to use the [latest](https://github.com/obsproject/obs-studio/
 
         * `ICQ Quality`: <kbd>16 or 23 or 30</kbd>
 
-        :   From some light testing Ashank found that the best quality for the file size is 16 (On UHD graphics). However if you want to record at a higher frame rate, playing more GPU bound games, or if you are encountering frame drops, increase the value to 23 or above. Values of 30 or so still look acceptable, but the quality is noticably worse. You may use [this video](https://youtu.be/2xJ8sLPC5Cg) as reference for what TU7 and ICQ 30 looks like. Going above 30 looks objectively *bad*, if you are seriously struggling with recording with QSV at 30 ICQ, you should consider using a capture card, as no amount of optimization can improve your frames further.
+        :   From some light testing Ashank found that the best quality for the file size is 16 (On UHD graphics). However if you want to record at a higher frame rate, playing more GPU bound games, or if you are encountering frame drops, increase the value to 23 or above. Values of 30 or so still look acceptable, but the quality is noticeably worse. You may use [this video](https://youtu.be/2xJ8sLPC5Cg) as reference for what TU7 and ICQ 30 looks like. Going above 30 looks objectively *bad*, if you are seriously struggling with recording with QSV at 30 ICQ, you should consider using a capture card, as no amount of optimization can improve your frames further.
 
         * `Latency`<kbd>normal</kbd>
 
@@ -136,13 +136,13 @@ You're recommended to use the [latest](https://github.com/obsproject/obs-studio/
 
         * `Rate Control`: <kbd>CBR</kbd>
 
-        * `Bitrate`: Depends on platform and upload bandwith
+        * `Bitrate`: Depends on platform and upload bandwidth
 
         :   See links above
 
         * `Preset`: <kbd>P7: Slowest (Best Quality)</kbd>
 
-        :   That'll provide the most efficient encoding for the given bandwith
+        :   That'll provide the most efficient encoding for the given bandwidth
 
         * `Multipass Mode`: <kbd>Two Passes (Full Resolution)</kbd>
 
@@ -179,7 +179,7 @@ You're recommended to use the [latest](https://github.com/obsproject/obs-studio/
 
     ##### Description
 
-    Similar to [NVIDIA Shadowplay](https://www.nvidia.com/en-us/geforce/geforce-experience/shadowplay/), this captures using your recording settings and keeps in RAM only the last <kbd>X</kbd> seconds of what was captured and at any point you can press a hotkey to save it as a video file.
+    Similar to [NVIDIA ShadowPlay](https://www.nvidia.com/en-us/geforce/geforce-experience/shadowplay/), this captures using your recording settings and keeps in RAM only the last <kbd>X</kbd> seconds of what was captured and at any point you can press a hotkey to save it as a video file.
 
     It's an alternative to scrub through hour long recordings / stream VODs looking for important parts, each save will be separated per video file.
 
@@ -195,7 +195,7 @@ You're recommended to use the [latest](https://github.com/obsproject/obs-studio/
 
     *   <kbd>Maximum Memory</kbd>: depends on multiple factors
 
-    :   This entirely depends on how large the filesize of your clips are gonna be, the biggest one I saved was 1.15GB, so I keep it at 2048MB.
+    :   This entirely depends on how large the file size of your clips are gonna be, the biggest one I saved was 1.15GB, so I keep it at 2048MB.
 
 ### H.264 (AVC), H.265 (HEVC) or AV1?
 

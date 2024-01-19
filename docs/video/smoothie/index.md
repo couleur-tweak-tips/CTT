@@ -28,28 +28,28 @@ icon: custom/smoothie
 
 ---
 
-## what is smoothie
+## What is Smoothie?
 
 === "User facing"
 
     Smoothie applies motion blur on video-game footage, it's got features similar to [smart-resampling](./recipe.md#frame-blending) and [RSMB](./recipe.md#flowblur).
     
-    It acts as an all-in-one filter chain, you can individually toggle and configure each recipe component
+    It acts as an all-in-one filter chain, you can individually toggle and configure each component if you'd like.
 
 
-=== "Developper facing"
+=== "Developer facing"
 
-    Cross-platform fork of [blur](https://github.com/f0e/blur), now [rewritten](https://github.com/couleur-tweak-tips/Smoothie#readme) in Rust.
+    Smoothie is a cross-platform fork of [blur](https://github.com/f0e/blur), now [rewritten](https://github.com/couleur-tweak-tips/Smoothie#readme) in Rust.
 
-## why use smoothie
+## Why should I use Smoothie?
 
-Smoothie can be a better alternative to using the following programs / features ,
+Smoothie can be a better alternative to using the following programs / features.
 
-They're available to opt-in/out at your discretion via the [recipe](./recipe.md):
+They're opt-in/out, so you can disable them at your discretion via the [recipe](./recipe.md):
 
-* [`[frame blending]`](./recipe.md#frame-blending): VEGAS Pro's smart resampling / Premiere Pro's frame blending / FFmpeg Tmix filter
+* [`[frame blending]`](./recipe.md#frame-blending): VEGAS Pro's smart resampling / Premiere Pro's frame blending / FFmpeg's Tmix filter
     
-    It has magnitudes faster rendering than VEGAS Pro's smart resample, benchmark:
+    It's magnitudes faster than rendering with VEGAS Pro's smart resample, benchmark:
 
 
     * `Smoothie-RS`: 10.9 seconds
@@ -95,9 +95,9 @@ They're available to opt-in/out at your discretion via the [recipe](./recipe.md)
         * [Upscaling to `4K`](../ffmpeg/upscaling.md)
 
 
-## how to use smoothie
+## How to use Smoothie
 
-You can configure your recipe by modifying `recipe.ini`, all settings are explained [here](./recipe.md)
+You can configure your "recipe" (config) by modifying `recipe.ini`, all settings are explained [here](./recipe.md)
 
 It does not have an interface as it is a [CLI tool](https://en.wikipedia.org/wiki/Command-line_interface) but there are tons of wrappers so you never have to open a terminal and type anything yourself:
 

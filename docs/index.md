@@ -16,9 +16,8 @@ These resources have been created with two types of people in mind:
 * Curious individuals who enjoy reading, doing, and learning.
 * Those who prefer quickly configuring programs to adhere to recommended standards; some guides offer automated versions in the form of PowerShell scripts.
 
-This website has been meticulously curated over the years, it evolved from a [crowded discord server](https://twitter.com/CouleurMinemen/status/1521966698047418377)
+This website has been meticulously curated over the years, it evolved from a [crowded discord server](https://discord.gg/ctt)
 
-This website evolved from a [crowded discord server](https://twitter.com/CouleurMinemen/status/1521966698047418377) over the years and turned into a meticulously curated repository of useful knowledge.
 
 === ":custom-video: Video"
 
