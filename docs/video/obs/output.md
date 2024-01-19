@@ -179,7 +179,7 @@ It's recommended to use the [latest version of OBS](https://github.com/obsprojec
 
     ##### Description
 
-    Similar to [NVIDIA ShadowPlay](https://www.nvidia.com/en-us/geforce/geforce-experience/shadowplay/), this captures the last <kbd>X</kbd> seconds in RAM, and at any point you can press a hotkey to save it as a video file.
+    Similar to [NVIDIA ShadowPlay](https://www.nvidia.com/en-us/geforce/geforce-experience/shadowplay/), this captures using your recording settings and keeps in RAM only the last <kbd>X</kbd> seconds of what was captured and at any point you can press a hotkey to save it as a video file.
 
     It's an alternative to scrub through hour long recordings / stream VODs looking for important parts, each save will be separated per video file.
 
