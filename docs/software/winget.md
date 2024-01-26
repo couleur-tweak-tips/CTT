@@ -1,6 +1,12 @@
-# Winget
+# [Winget](https://learn.microsoft.com/en-us/windows/package-manager/)
 
 Microsoft' command-line package manager for Windows
+- unlike scoop (and like Chocolatey), apps install in their normal location
+- All available apps can be found in the `microsoft/winget-pkgs` repo on GitHub
+- Supports downloading and installing straight from Microsoft store
+
+The tool is preinstalled on all versions of Windows 11 and somewhat newer versions of Windows 10. If you are on either and don't have it, you can get it by getting [App Installer](https://www.microsoft.com/p/app-installer/9nblggh4nns1) from the Microsoft Store.
+
 
 I don't use it much so I'll just recommend you reading the [MS docs](https://learn.microsoft.com/en-us/windows/package-manager/winget/)
 
