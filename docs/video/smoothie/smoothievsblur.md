@@ -3,6 +3,9 @@ description: Differences between Smoothie and blur
 icon: custom/blur
 ---
 
+
+Related: You can use the [converter](../converter) to convert ``.blur-config.cfg`` files to smoothie `recipe.ini` files
+
 ## Which is better/should I use?
 
 blur and Smoothie are very similar under the hood, both use VapourSynth with very similar plugins, this page lists all the differences you'll encounter so you can make up your mind.
