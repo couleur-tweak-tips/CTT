@@ -16,7 +16,7 @@ icon: material/folder-download
 
 ??? info "VapourSynth dependencies"
 
-    Note: These are bundled with the .ZIP provided for Windows users, read below this spoiler
+    Note: These are already provided with the .ZIP for Windows users
 
     * [VapourSynth Classic](https://github.com/AmusementClub/vapoursynth-classic)
     * [Python 3.10.9](https://python.org)
@@ -41,7 +41,14 @@ icon: material/folder-download
 
 === "Windows"
 
-    Smoothie comes in a portable zip file(1), get it [here](https://github.com/couleur-tweak-tips/smoothie-rs/releases).
+    This tutorial covers the rest of the installation instructions
+
+    <iframe width="688" height="387" src="https://www.youtube.com/embed/RfPDgoMuSWg?start=20&color=white" frameborder=0 allowfullscreen></iframe>
+
+    # Manual installation
+
+
+    Smoothie comes in a portable zip file(1), download the latest version [here](https://github.com/couleur-tweak-tips/smoothie-rs/releases).
     { .annotate}
 
     1. [A portable program](https://en.wikipedia.org/wiki/Portable_application#Portable_application) means it doesn't come with an installer, you just unzip and run it. Upsides is it's easy to uninstall (just delete the folder lol) but downsides is you gotta make shortcuts to it yourself
@@ -49,7 +56,7 @@ icon: material/folder-download
     Extract the `smoothie-rs` folder somewhere, then in it you can use `launch.cmd` to launch it in it's GUI mode.
 
 
-    # Making a [Send To](../sendto.md) shortcut and [RIFE models](./recipe.md#pre-interp)
+    # Making a [Send To](../sendto.md) shortcut
 
     Navigate to `...\smoothie-rs\bin` and get `smoothie-rs.exe`'s PATH by <kbd>SHIFT+Right click</kbd>ing it and "Copy Path"
 
@@ -57,17 +64,30 @@ icon: material/folder-download
 
     If Smoothie is crashing on you, add the `-v` argument (that'd be ` -v --tui -i`) after the smoothie-rs executable's path to enable verbose logging to see what's wrong
 
-    Video tutorial:
+    # Installing [RIFE models](./recipe.md#pre-interp)
 
-    <iframe width="688" height="387" src="https://www.youtube.com/embed/RfPDgoMuSWg?start=20&color=white" frameborder=0 allowfullscreen></iframe>
+    1. RIFE models distributed as ZIPs containing folders named by model version,
+    2. Extract the zip to a new folder named `rife models` in your smoothie-rs folder
+    3. Use one by setting in the recipe [`[pre-interp] model:`](./recipe.md#pre-interp) to the folder name
+        * You can also <u>shift right click</u> the desired model folder in the Explorer -> `Copy as path` on the desired model, and paste it as a full path.
+
+
+    You can download a pack of them here (~400MB):
+
+    * <https://github.com/nihui/rife-ncnn-vulkan/releases>
+
+    If you'd like a larger collection ([folder url](https://github.com/styler00dollar/VapourSynth-RIFE-ncnn-Vulkan/tree/master/models)):
+
+    * <https://download-directory.github.io/?url=https://github.com/styler00dollar/VapourSynth-RIFE-ncnn-Vulkan/tree/master/models>
 
 === "Linux"
 
     todo, cargo should be able to compile it
 
-    for arch nerds see the dependencies of https://aur.archlinux.org/packages/teres
-    * you'll also need https://aur.archlinux.org/packages/vapoursynth-plugin-vsakarin-git for frame blending
-    * and https://aur.archlinux.org/packages/vapoursynth-plugin-rife-ncnn-vulkan-git for pre-interp
+    for arch nerds see the dependencies of <https://aur.archlinux.org/packages/teres>
+
+    * you'll also need <https://aur.archlinux.org/packages/vapoursynth-plugin-vsakarin-git> for frame blending
+    * and <https://aur.archlinux.org/packages/vapoursynth-plugin-rife-ncnn-vulkan-git> for pre-interp
 
 <!--
 it'd be cool to be able to opt-in to use invidious instance for vids 

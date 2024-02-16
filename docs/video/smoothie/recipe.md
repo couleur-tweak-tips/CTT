@@ -383,24 +383,8 @@ NCNN is used instead of RIFE for the much smaller dependencies (CUDA is like 5GB
 
 `model`: rife-v4.4
 
-:   Path to the RIFE model folder, they do not ship with Smoothie, see a video tutorial [here](https://youtu.be/RfPDgoMuSWg?t=72)
+:   Path to the RIFE model folder, they do not ship with Smoothie, see [installation instructions](../installation#installing-rife-models)
 
-    You can download a pack of them here (~400MB):
-
-    https://github.com/nihui/rife-ncnn-vulkan/releases
-
-    And some more recent ones there, individual links (~20MB/model):
-
-    https://github.com/hzwer/Practical-RIFE#model-list
-
-    Download and extract them to a new folder, e.g name it /rife models/
-
-    Then right click the desired model folder -> `Copy as path` on the desired model, and paste it as this value.
-
-    RIFE Models don't come included with Smoothie because:
-        * Licensing
-        * Size, not everyone uses them
-        * They're not that hard to set up, really
 
 ## Using multiple recipe files
 
