@@ -4,35 +4,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>blur -&gt; smoothie</title>
+    <title>blur → smoothie</title>
     <style>
         body {
             /* display: flex; */
             justify-content: center;
             align-items: center;
-            height: 100%;
+            height: auto;
+            width: auto;
             margin-top: 1vh;
             /* margin: 0; */
+            /*border: solid 5px #3a3752;*/
+            /*border-radius: 20px;*/
+            background-color: #1e2029;
             font-family: Arial, sans-serif;
+            color: lightgrey;
+        }
+        h1 {
+            text-align:center;
+        }
+        hr {
+            border: solid 3px #3a3752;
+            border-color:#7e56c2;
+            border-radius: 3px;
+        }
+        p {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        ul {
+            text-align: center;
+            list-style-type: none;
+            padding: 0px;
         }
 
+        ul li {
+            margin-bottom: 2px;
+        }
+        a {
+            color: #a47bea;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #6e2ce0;
+        }
+        input[type="checkbox"] {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-color: #3a3752;
+            border: 2px solid #7e56c2;
+            border-radius: 5px;
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+            cursor: pointer;
+            outline: none;
+        }
+        input[type="checkbox"]:checked {
+            background-color: #7e56c2;
+        }
+        label[for="fullRecipe"] {
+        cursor: pointer;
+        vertical-align: 6px;
+        font-weight: bold;
+        }
+        button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #7e56c2;
+            color: white;
+            font-size: 14px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #6e2ce0;
+        }
+        textarea {
+            resize: none;
+        }
+        @media (max-width: 768px) {
+            #container {
+                display: flex;
+                flex-direction: column;
+            }
+        }
         #container {
             display: flex;
             width: auto;
+            padding: 5px;
+            align-items: center;
+            justify-content: center;
         }
-
+        #input,
+        #output {
+            margin-top: 6px;
+            background-color: #3a3752;
+            color: white;
+            border: 5px solid #3a3752;
+            border-radius: 15px;
+            font-family: Consolas, monospace !important
+        }
+        #input {
+            margin-top: 15px;
+        }
+        #input:hover,
+        #output:hover {
+            transform: scale(1.02);
+            transition: transform 0.2s ease-in-out;
+        }
         #left,
         #right {
-            margin-top: 1px;
+            padding: 5px;
+            margin-top: 5px;
             justify-content: center;
-            padding: 10px;
-            height: auto;
         }
 
-        #left {
-            justify-content: center;
-            border-right: 1px solid #ccc;
-        }
     </style>
 </head>
 
@@ -40,13 +132,13 @@
     <h1>
         <a target="_blank" rel="noopener noreferrer"
             href="https://github.com/f0e/blur?tab=readme-ov-file#config-settings-explained">blur config</a>
-        -&gt;
+            to
         <a rel="noopener noreferrer" href="https://ctt.cx/recipe">smoothie recipe</a>
         converter
     </h1>
 
-    <hr>
-    Related resources:
+    <hr id="hrTop">
+    <p>related resources:</p>
     <ul>
         <li><a target="_blank" rel="noopener noreferrer" href="../smoothievsblur">blur config vs. sm recipe
                 reference</a></li>
@@ -57,7 +149,7 @@
                 href="https://github.com/couleur-tweak-tips/smoothie-rs/blob/main/target/recipe.ini">default smoothie
                 recipe</a></li>
     </ul>
-    <hr>
+    <hr id="hrBottom">
 
     <div id="container">
         <div id="left">
@@ -70,12 +162,12 @@
         </div>
         <div id="right">
 
-            <button type="button" id="copyout" onclick="Copy()">Copy and close tab</button>
+            <button type="button" id="copyout" onclick="Copy()">Copy</button>
             <br>
-            <textarea id="output" autocorrect="off" spellcheck="false" rows="55" cols="40"></textarea>
+            <textarea disabled id="output" autocorrect="off" spellcheck="false" rows="55" cols="40"></textarea>
         </div>
     </div>
-    *In the sense of all of the equivalent filters available with blur
+    <p>*In the sense of all of the equivalent filters available with blur</p>
 
     <script>
         function parseBlur(inputText) {
@@ -236,14 +328,29 @@
                 document.getElementById('output').value
             );
             history.back();
-            window.close();
+            //window.close();
         }
 
         document.getElementById("fullRecipe").addEventListener("change", function () {
             updateOutput();
         });
-
         updateOutput();
+
+        window.addEventListener('DOMContentLoaded', (event) => {
+            function setHrWidth() {
+                const leftTextareaWidth = document.getElementById('left').offsetWidth;
+                const rightTextareaWidth = document.getElementById('right').offsetWidth;
+                const hrTop = document.getElementById('hrTop');
+                const hrBottom = document.getElementById('hrBottom');
+
+                const totalWidth = leftTextareaWidth + rightTextareaWidth;
+                hrTop.style.width = totalWidth + 'px';
+                hrBottom.style.width = totalWidth + 'px';
+            }
+
+            setHrWidth();
+            window.addEventListener('resize', setHrWidth);
+        });
     </script>
 </body>
 
