@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>blur to smoothie</title>
+    <title>blur → smoothie</title>
     <style>
         body {
             /* display: flex; */
@@ -108,7 +108,7 @@
             color: white;
             border: 5px solid #3a3752;
             border-radius: 15px;
-            font-family: Azeret Mono;
+            font-family: Consolas, monospace !important
         }
         #input {
             margin-top: 15px;
@@ -131,14 +131,14 @@
 <body>
     <h1>
         <a target="_blank" rel="noopener noreferrer"
-            href="https://github.com/f0e/blur?tab=readme-ov-file#config-settings-explained">Blur Config</a>
+            href="https://github.com/f0e/blur?tab=readme-ov-file#config-settings-explained">blur config</a>
             to
-        <a rel="noopener noreferrer" href="https://ctt.cx/recipe">Smoothie Recipe</a>
+        <a rel="noopener noreferrer" href="https://ctt.cx/recipe">smoothie recipe</a>
         converter
     </h1>
 
     <hr id="hrTop">
-    <p>Related resources:</p>
+    <p>related resources:</p>
     <ul>
         <li><a target="_blank" rel="noopener noreferrer" href="../smoothievsblur">blur config vs. sm recipe
                 reference</a></li>
@@ -158,13 +158,13 @@
             <br>
 
             <textarea placeholder="Paste your .blur-config.cfg here..." id="input" autocorrect="off" spellcheck="false"
-                oninput="updateOutput()" autofocus rows="32" cols="40"></textarea>
+                oninput="updateOutput()" autofocus rows="55" cols="40"></textarea>
         </div>
         <div id="right">
 
             <button type="button" id="copyout" onclick="Copy()">Copy</button>
             <br>
-            <textarea disabled id="output" autocorrect="off" spellcheck="false" rows="32" cols="40"></textarea>
+            <textarea disabled id="output" autocorrect="off" spellcheck="false" rows="55" cols="40"></textarea>
         </div>
     </div>
     <p>*In the sense of all of the equivalent filters available with blur</p>
