@@ -7,8 +7,21 @@ Microsoft' command-line package manager for Windows
 
 The tool is preinstalled on all versions of Windows 11 and somewhat newer versions of Windows 10. If you are on either and don't have it, you can get it by getting [App Installer](https://www.microsoft.com/p/app-installer/9nblggh4nns1) from the Microsoft Store.
 
+If for some reason you don't have it installed, run the following:
+```powershell
+Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.DesktopAppInstaller_8wekyb3d8bbwe
+```
 
-I don't use it much so I'll just recommend you reading the [MS docs](https://learn.microsoft.com/en-us/windows/package-manager/winget/)
+Updating apps can be somewhat slow due to the manual verification from the moderators. If your favourite app isn't available or hasn't been updated, you can use simple tools like [Komac](https://github.com/russellbanks/Komac) or [WingetCreate](https://github.com/microsoft/winget-create)
+
+
+!!! tip "Don't see what you want?"
+
+    Updating apps can be somewhat slow due to the manual verification from the moderators. If your favourite app isn't available or hasn't been updated, you can use simple tools like [Komac] or [WingetCreate].
+
+   [Komac]: https://github.com/russellbanks/Komac
+   [WingetCreate]: https://github.com/microsoft/winget-create
+
 
 ## [winget.app](https://winstall.app/)
 
@@ -18,4 +31,4 @@ This noob-friendly lets you pick software to install and builds up a command for
 * [winget CLI tool](https://github.com/microsoft/winget-cli) (License: MIT)
 * [winget packages (manifests)](https://github.com/microsoft/winget-pkgs) you need to drill down in /manifests/, [here's an example](https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/PowerShell/7.3.8.0)
 
-PR if you have relevant knowledge to add here 👍
+For more info you can read Microsoft's documentation [here](https://learn.microsoft.com/en-us/windows/package-manager/winget/)
