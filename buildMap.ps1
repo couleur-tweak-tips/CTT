@@ -31,7 +31,7 @@ function Display ([Hashtable]$Table, [int32]$Depth) {
         }
     }
 }
-$depth = 1
+$depth = 2
 $ret = foreach ($category in $nav) {
 
     display $category $depth
@@ -41,7 +41,7 @@ $ret = foreach ($category in $nav) {
 Set-Content ./map.md -Value @'
 # [CTT.cx](https://cttt.cx)
 '@
-$ret -replace '#', '##' -replace "\.md" -replace "/index" | Add-Content ./map.md
+$ret -replace "\.md" -replace "/index" | Add-Content ./map.md
 
 
 if (-not(Test-Path ./docs/map/)) {
@@ -55,4 +55,4 @@ if (-not(Get-Command markmap -ErrorAction Ignore)) {
 
 markmap ./map.md --offline --no-toolbar --no-open -o ./docs/map/index.html
 
-remove-item ./map.md
+# remove-item ./map.md
