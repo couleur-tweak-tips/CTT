@@ -15,12 +15,12 @@ nav:
     #- test.md
     
   - Video:
-    - Index: video/index.md
+    - video/index.md
     - Which codec should I use?: video/codecguide.md
     - Send To: video/sendto.md
 
     - FFmpeg & LibAV:
-      - Index: video/ffmpeg/index.md
+      - video/ffmpeg/index.md
       - Upscaling: video/ffmpeg/upscaling.md
 
     - Smoothie:
@@ -59,8 +59,8 @@ nav:
   - Misc:
     - misc/index.md
     - File sharing: misc/filesharing.md
-    - misc/mkdocs.md
-    - misc/yt-dlp.md
+    - mkdocs: misc/mkdocs.md
+    - yt-dlp: misc/yt-dlp.md
 
 not_in_nav:
   alita.md
