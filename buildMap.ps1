@@ -44,7 +44,7 @@ Set-Content ./map.md -Value @'
 $ret -replace '#', '##' -replace "\.md" -replace "/index" | Add-Content ./map.md
 
 
-if (-not(Test-Path ./map)) {
+if (-not(Test-Path ./docs/map)) {
     mkdir map | out-null
 }
 
@@ -53,6 +53,6 @@ if (-not(Get-Command markmap -ErrorAction Ignore)) {
     npm install -g markmap-cli
 }
 
-markmap ./map.md --offline --no-toolbar --no-open -o ./map/index.html
+markmap ./map.md --offline --no-toolbar --no-open -o ./docs/map/index.html
 
 remove-item ./map.md
