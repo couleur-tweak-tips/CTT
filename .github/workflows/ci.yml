@@ -31,6 +31,7 @@ jobs:
         run: |
           $env:YES_MAKE_TONS_OF_FOLDERS=1
           ./redirector.ps1
+          ./buildMap.ps1
 
       - run: pip install -r requirements.txt
       - run: mkdocs gh-deploy --force -f mkdocs.github.yml
