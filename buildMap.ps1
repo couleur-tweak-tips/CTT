@@ -44,8 +44,8 @@ Set-Content ./map.md -Value @'
 $ret -replace '#', '##' -replace "\.md" -replace "/index" | Add-Content ./map.md
 
 
-if (-not(Test-Path ./docs/map)) {
-    mkdir map | out-null
+if (-not(Test-Path ./docs/map/)) {
+    mkdir ./docs/map/ | out-null
 }
 
 if (-not(Get-Command markmap -ErrorAction Ignore)) {
