@@ -23,6 +23,11 @@ nav:
       - video/ffmpeg/index.md
       - Upscaling: video/ffmpeg/upscaling.md
 
+    - Video cutters:
+      - video/cutters/index.md
+      - Avidemux: video/cutters/avidemux.md
+      - LosslessCut: video/cutters/losslesscut.md
+
     - Smoothie:
       - video/smoothie/index.md
       - Installation: video/smoothie/installation.md
