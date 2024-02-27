@@ -8,7 +8,7 @@ icon: simple/materialformkdocs
 === ":material-video-box: [`video hotlink`]()"
     <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Video>
     ```html
-    <video width="688" height="387" autoplay=false controls=true preload=auto>
+    <video width="688" height="387" controls=true preload=auto>
         <source src="VIDEO_URL">
     </video>
     ```
@@ -23,6 +23,7 @@ icon: simple/materialformkdocs
 
 List of cool mkdocs material sites I found that use [:simple-materialformkdocs: Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
 
+* [Altlas OS docs](https://docs.atlasos.net)
 * [PrivacyGuides.org](https://www.privacyguides.org/en/basics/why-privacy-matters/)
 * [Alternatives](https://alternatives.microcontrollers.dev/)
 * [Hummingbot](https://hummingbot.com/)
