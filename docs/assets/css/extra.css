@@ -145,3 +145,8 @@
 .md-social {
   margin: auto !important;
 }
+
+.md-typeset h1 {
+  color: var(--md-typeset-a-color);
+  font-weight: 700;
+}
