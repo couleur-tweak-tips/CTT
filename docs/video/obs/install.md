@@ -4,6 +4,7 @@ icon: material/folder-download
 
 <meta http-equiv="refresh" content="0; url=https://obsproject.com/download"/>
 
+<!--
 ### Alternative sources
 
 === ":simple-windowsxp: Windows"
@@ -33,3 +34,4 @@ icon: material/folder-download
 === ":simple-apple: macOS"
 
     * Homebrew: `brew install --cask obs`
+    -->

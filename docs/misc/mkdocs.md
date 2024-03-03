@@ -16,7 +16,7 @@ icon: simple/materialformkdocs
 === ":material-youtube-subscription: [`youtube embed`]()"
     <https://developers.google.com/youtube/iframe_api_reference>
     ```html
-    <iframe width="688" height="387" src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID?color=white" frameborder=0 allowfullscreen></iframe>
+    <iframe width="688" height="387" src="https://www.youtube-nocookie.com/embed/YOUTUBE_VIDEO_ID?color=white" frameborder=0 allowfullscreen></iframe>
     ```
 
 ## Websites using MkDocs Material

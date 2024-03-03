@@ -3,7 +3,7 @@ description: An introduction to the Video & Renders section
 icon: material/video-box
 ---
 
-# :material-video-box: Introduction
+# <!--:material-video-box:--> Introduction
 
 This category is dedicated to document optimal configurations of programs for creating video content (optionally with [high quality motion blur](./smoothie/index.md)) and help you forge your own personal production workflow.
 

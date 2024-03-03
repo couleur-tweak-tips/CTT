@@ -2,7 +2,7 @@
 icon: custom/ffmpeg
 ---
 
-# :custom-ffmpeg: FFmpeg & LibAV: an introduction
+# <!--:custom-ffmpeg:--> FFmpeg & LibAV: an introduction
 
 FFmpeg is most known for being a tool for handling multimedia (notably <u>A</u>udio & <u>V</u>ideo). It's a swiss army knife when used in scripts. 
 
@@ -37,7 +37,7 @@ And [a lot, a lot of other useful stuff](https://ffmpeg.org/ffmpeg-all.html)
 
         the link in description in question: <https://www.gyan.dev/ffmpeg/builds>
 
-        <iframe width="688" height="387" src="https://www.youtube.com/embed/WwWITnuWQW4?color=white" frameborder=0 allowfullscreen></iframe>
+        <iframe width="688" height="387" src="https://www.youtube-nocookie.com/embed/WwWITnuWQW4?color=white" frameborder=0 allowfullscreen></iframe>
 
 === "Linux"
 
