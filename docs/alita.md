@@ -2,6 +2,7 @@
 hide:
   - navigation
   - toc
+description: manga excerpts of gunnm AKA alita battle angel
 ---
 
 <script>
