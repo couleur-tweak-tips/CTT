@@ -37,7 +37,7 @@ icon: custom/avidemux
 
 </div>
 
-![](../../../assets/images/video/ffmpeg/video-cutters/avidemux/avidemux-ui.png)
+![](../../assets/images/video/ffmpeg/video-cutters/avidemux/avidemux-ui.png)
 > See more screenshots [here](https://avidemux.sourceforge.net/screenshots.html)
 
 <br>

@@ -4,7 +4,7 @@ icon: custom/blur
 ---
 
 
-Related: You can use the [converter](../converter) to convert ``.blur-config.cfg`` files to smoothie `recipe.ini` files
+Related: You can use the [converter](./converter/index.html) to convert ``.blur-config.cfg`` files to smoothie `recipe.ini` files
 
 ## Which is better/should I use?
 

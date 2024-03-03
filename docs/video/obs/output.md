@@ -148,7 +148,7 @@ It's recommended to use the [latest version of OBS](https://github.com/obsprojec
 
         :   These two settings considerably affect the encoding speed and efficiency, they've been recently introduced to OBS and I'm not that knowledgeable regarding them.
 
-        <iframe width="688" height="387" src="https://www.youtube.com/embed/uAqLJ3sxudU?color=white" frameborder=0 allowfullscreen></iframe>
+        <iframe width="688" height="387" src="https://www.youtube-nocookie.com/embed/uAqLJ3sxudU?color=white" frameborder=0 allowfullscreen></iframe>
 
     === ":custom-amd: (AMD) AMF"
     
@@ -156,7 +156,7 @@ It's recommended to use the [latest version of OBS](https://github.com/obsprojec
 
         Feel free to [contribute](../../contributing.md) knowledge regarding this.
 
-        <iframe width="688" height="387" src="https://www.youtube.com/embed/DXL8_Adbob4?start=329&color=white" frameborder=0 allowfullscreen></iframe>
+        <iframe width="688" height="387" src="https://www.youtube-nocookie.com/embed/DXL8_Adbob4?start=329&color=white" frameborder=0 allowfullscreen></iframe>
 
         The settings seen in the video:
         ```

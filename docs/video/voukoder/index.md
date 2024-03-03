@@ -58,7 +58,7 @@ I have made a PowerShell script which automates the following:
     then you MUST manually locate and indicate where to install it.
 
 
-    ![](/assets/images/video/voukoder/connectornotfound.png)
+    ![](../../assets/images/video/voukoder/connectornotfound.png)
 
 
     === ":custom-vegas-18: VEGAS Pro"

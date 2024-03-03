@@ -7,13 +7,13 @@ Start by opening up your Export settings by going into `File` -> `Export` -> `Ad
 
 Ensure you don't have any leftover render queues by selecting everything but the lasts and pressing <kbd>DEL</kbd> to remove them
 
-![](/assets/images/video/voukoder/ae-render-queue.png)
+![](../../assets/images/video/voukoder/ae-render-queue.png)
 
 To make a new template, click on the Down arrow right next to `Output Module:` and select `Make Template...`
 
 Give it a settings name and click `Edit`
 
-![](/assets/images/video/voukoder/ae-make-template.png)
+![](../../assets/images/video/voukoder/ae-make-template.png)
 
 === ":package: Lossless"
 
@@ -23,7 +23,7 @@ Give it a settings name and click `Edit`
 
     Select Voukoder in the Format dropdown and [configure it](./configuration.md)
     
-    ![](/assets/images/video/voukoder/premiere-output-settings.png)
+    ![](../../assets/images/video/voukoder/premiere-output-settings.png)
 
 <hr>
 

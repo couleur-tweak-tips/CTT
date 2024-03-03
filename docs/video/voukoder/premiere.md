@@ -11,14 +11,14 @@ Start by opening up your Export settings by going into `File` -> `Export` -> `Me
 
     In `Encoding Settings` -> `Performance` if you have another option than `Software Only`, you're able to export using hardware accelerated encoding, see the link above
 
-    ![](/assets/images/video/voukoder/premiere-h264.png)
+    ![](../../assets/images/video/voukoder/premiere-h264.png)
 
 
 === ":custom-voukoder: Exporting with Voukoder"
 
     After selecting Voukoder in the format drop down, configure the encoder by going into the Voukoder tab and clicking [`Configure...`](./configuration.md)
 
-    ![](/assets/images/video/voukoder/premiere-export-tab.png)
+    ![](../../assets/images/video/voukoder/premiere-export-tab.png)
 
 <hr>
 
@@ -31,6 +31,6 @@ At the bottom `Time Interpolation` is a very important setting:
 
 Don't forget to save your preset for later use
 
-![](/assets/images/video/voukoder/premiere-save-preset.png)
+![](../../assets/images/video/voukoder/premiere-save-preset.png)
 
 This will save as a `.epr` file in `%USERPROFILE%\Documents\Adobe\Adobe Media Encoder\12.0\Presets`

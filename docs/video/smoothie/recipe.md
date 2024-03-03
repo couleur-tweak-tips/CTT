@@ -383,7 +383,7 @@ NCNN is used instead of RIFE for the much smaller dependencies (CUDA is like 5GB
 
 `model`: rife-v4.4
 
-:   Path to the RIFE model folder, they do not ship with Smoothie, see [installation instructions](../installation#installing-rife-models)
+:   Path to the RIFE model folder, they do not ship with Smoothie, see [installation instructions](./installation.md#installing-rife-models)
 
 
 ## Using multiple recipe files

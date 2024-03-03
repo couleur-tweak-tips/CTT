@@ -62,7 +62,7 @@ icon: custom/losslesscut
 
 </div>
 
-![](../../../assets/images/video/ffmpeg/video-cutters/losslesscut/losslesscut-ui.png)
+![](../../assets/images/video/ffmpeg/video-cutters/losslesscut/losslesscut-ui.png)
 
 It has the following notable features:
 
@@ -75,7 +75,7 @@ It has the following notable features:
 
 ## :material-export: Export page
 
-![](../../../assets/images/video/ffmpeg/video-cutters/losslesscut/losslesscut-export.png)
+![](../../assets/images/video/ffmpeg/video-cutters/losslesscut/losslesscut-export.png)
 
 If you mind the long filenames it gives to your export, you can click on the output filename (underlined in blue) and set it to this:
 ```
