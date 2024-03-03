@@ -33,6 +33,8 @@ jobs:
           ./redirector.ps1
           ./buildMap.ps1
 
+          mkdocs build
+
           Get-ChildItem -File *.html -Recurse | ForEach-Object {
               $content = Get-Content -Path $_.FullName
 
