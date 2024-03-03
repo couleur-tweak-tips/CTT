@@ -94,6 +94,8 @@ theme:
   features:
     # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#setting-up-navigation
     - navigation.instant
+    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation#progress-indicator
+    - navigation.instant.progress
     - navigation.path
     # This breaks navigation.expand at the moment
     # - navigation.prune
@@ -102,7 +104,6 @@ theme:
     - navigation.top
     - navigation.tabs
     - navigation.sections
-    - navigation.tracking
     # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#table-of-contents
     - toc.follow
     # https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-search/#search-suggestions
@@ -119,7 +120,8 @@ theme:
     - content.code.select
     - content.code.annotate
     - content.tooltips
-    # - header.autohide
+    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-footer#navigation
+    - navigation.footer
 
   # a custom colour scheme could be good in the future
   # dark purple accent and primary don't look the best
@@ -175,7 +177,9 @@ plugins:
       height: 100vw
 
   # https://timvink.github.io/mkdocs-git-revision-date-localized-plugin
-  - git-revision-date-localized
+  - git-revision-date-localized:
+      enabled: !ENV [CI, false]
+      enable_creation_date: true
 
 #
 # Python Markdown
@@ -195,6 +199,8 @@ markdown_extensions:
 
   # https://squidfunk.github.io/mkdocs-material/reference/annotations
   - abbr
+
+  # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/#attribute-lists
   - attr_list
   - md_in_html
 
