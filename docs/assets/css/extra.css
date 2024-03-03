@@ -132,6 +132,14 @@
   margin-top: 0.2rem !important;
 }
 
-.md-social, md-copyright {
+.md-social, .md-copyright {
   padding: 0 !important
+}
+
+.md-copyright {
+  display: none
+}
+
+.md-social {
+  margin: auto;
 }

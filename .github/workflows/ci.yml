@@ -26,8 +26,6 @@ jobs:
           restore-keys: |
             mkdocs-material-
 
-      - run: pip install -r requirements.txt
-      
       - name: you know material for mkdocs wasnt safe from my powershell
         shell: pwsh
         run: |
@@ -35,15 +33,5 @@ jobs:
           ./redirector.ps1
           ./buildMap.ps1
 
-          mkdocs build
-
-          Get-ChildItem -File *.html -Recurse | ForEach-Object {
-              $content = Get-Content -Path $_.FullName
-
-              $content = $content -replace 'class="md-copyright">', 'class="md-copyright" style="display: none">'
-              $content = $content -replace 'class="md-social">', 'class="md-social" style="margin: auto;">'
-
-              Set-Content -Path $_.FullName -Value $content
-          }
-
+      - run: pip install -r requirements.txt
       - run: mkdocs gh-deploy --force -f mkdocs.github.yml
