@@ -38,6 +38,14 @@ nav:
       - Command line arguments: video/smoothie/cli.md
       - Frameserver rendering: video/smoothie/frameserver.md
 
+    - Voukoder:
+      - video/voukoder/index.md
+      - Configuration: video/voukoder/configuration.md
+      - VEGAS Pro: video/voukoder/vegas.md
+      - Premiere Pro: video/voukoder/premiere.md
+      - After Effects: video/voukoder/after-effects.md
+      - Davinci Resolve: video/voukoder/resolve.md
+
 
     - OBS Studio:
         - video/obs/index.md

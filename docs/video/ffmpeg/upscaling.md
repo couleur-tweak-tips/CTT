@@ -3,16 +3,26 @@ icon: fontawesome/solid/arrow-up-right-dots
 ---
 
 
-# Why bother upscaling for YouTube?
+# Why bother upscaling for YouTube? {#why}
 
 
 Scaling your video to a larger resolution (e.g `1920x1080`/`1080p` :material-arrow-right: `3840x2160`/4K) tricks YouTube into giving your video more bitrate.
 
 ==This is only useful for YouTube, because it won't make your video look any better than when you're viewing it back in a media player, it'll just <u>looks less compressed/more faithful on YouTube</u>==.
 
-**This should be done at the very last step of every project, right before uploading**. There's only downsides to editing 4K content that's been scaled.
+**This should be done at the very last step of every project, right before uploading**. It's a waste of rendering time to edit 4K content that's been scaled.
 
-## :material-folder-download: Installation
+    
+## Why not just set the project scale to 4K before rendering? {#why-not-nle}
+
+VEGAS Pro (and probably other NLEs) uses the bicubic scaling filter which makes your video a bit blurry, using FFmpeg lets you make sure you're using the right filter
+
+## :custom-voukoder: Why not use Voukoder's zscale? {#why-not-voukoder}
+
+If you can use [Voukoder](../voukoder/index.md), you **should** use it over the CTT Upscaler, since it will export your project and upscale it all at once, which should take > less time and lose less efficiency, learn how to do it [here](../voukoder/configuration.md#upscaling)
+
+
+## :material-folder-download: Installing the CTT Upscaler {#installation}
 
 === "Automatic"
 
@@ -36,27 +46,18 @@ Scaling your video to a larger resolution (e.g `1920x1080`/`1080p` :material-arr
         * Your [Send To folder](../sendto.md)
         * Or saving it wherever and then dragging video(s) onto it
 
-    Your browser might make it a text file e.g `.cmd.txt`, show file extensions in your if explorer if it still opens Notepad when double clicking it.
+    Your browser might make it a text file (e.g `CTT Upscaler.cmd.txt`), [show file extensions](https://www.howtogeek.com/205086/beginner-how-to-make-windows-show-file-extensions/) in the File Explorer if it keeps opening Notepad when double clicking it.
 
-    Smartscreen will always warn you about the batch files you download online. 
+    Smartscreen will always warn you about the batch files you download online, Feel free to inspect the code yourself.
 
 ## Comparison
 
 Here are two videos, one was left as is, the other one stretched to 4K, watch it in fullscreen with the <kbd>Settings</kbd> -> <kbd>Quality</kbd> option maxed out.
 === "1080p"
 
-    <iframe width="688" height="387" src="https://www.youtube.com/embed/ohjz9Kff7lo?color=white" frameborder=0 allowfullscreen></iframe>
+    <iframe width="688" height="387" src="https://www.youtube-nocookie.com/embed/ohjz9Kff7lo?color=white" frameborder=0 allowfullscreen></iframe>
 
     
 === "1080p stretched to 4K"
 
-    <iframe width="688" height="387" src="https://www.youtube.com/embed/-FE9s_acdYw?color=white" frameborder=0 allowfullscreen></iframe>
-
-    
-## **Why not just set the project scale to 4K before rendering?** {#why-not-nle}
-
-VEGAS Pro (and probably other NLEs) uses the bicubic scaling filter which makes your video a bit blurry, using FFmpeg lets you make sure you're using the right filter
-
-## :custom-voukoder: **Why not use Voukoder's zscale?** {#why-not-voukoder}
-
-You ideally **should** use it over the batchscript you can install in this guide, since it will export your project and upscale it all at once, which should take > less time and lose less efficiency, more info on Discord @ <#1022956596768288919>
+    <iframe width="688" height="387" src="https://www.youtube-nocookie.com/embed/-FE9s_acdYw?color=white" frameborder=0 allowfullscreen></iframe>
