@@ -137,9 +137,9 @@
 }
 
 .md-copyright {
-  display: none
+  display:  none !important;
 }
 
 .md-social {
-  margin: auto;
+  margin: auto !important;
 }
