@@ -43,7 +43,7 @@ icon: material/folder-download
 
     This tutorial covers the rest of the installation instructions
 
-    <iframe width="688" height="387" src="https://www.youtube.com/embed/RfPDgoMuSWg?start=20&color=white" frameborder=0 allowfullscreen></iframe>
+    <iframe width="688" height="387" src="https://www.youtube-nocookie.com/embed/RfPDgoMuSWg?start=20&color=white" frameborder=0 allowfullscreen></iframe>
 
     # Manual installation
 
