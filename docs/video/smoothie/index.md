@@ -6,7 +6,7 @@ icon: custom/smoothie
 
 <h1 align="center">
     <!-- yup if i put a line break they're not actually centered =( -->
-    <img src="https://small.fileditchnew.ch/s0/gJlDcKvaPUwFlrRLuDmI.svg" width=100 /> Smoothie
+    <img src="/assets/images/video/smoothie/logo.svg" width=100 /> Smoothie
 </h1>
 <p align="center">
     add motion blur to videos, with granular configuration
