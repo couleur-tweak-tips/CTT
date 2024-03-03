@@ -32,12 +32,12 @@ jobs:
           $env:YES_MAKE_TONS_OF_FOLDERS=1
           ./redirector.ps1
           ./buildMap.ps1
-          
+
           Get-ChildItem -File *.html -Recurse | ForEach-Object {
               $content = Get-Content -Path $_.FullName
 
-              $content = $content -replace '<div class="md-copyright">', '<div class="md-copyright" style="display: none">'
-              $content = $content -replace '<div class="md-social">', '<div class="md-social" style="margin: auto;">'
+              $content = $content -replace 'class="md-copyright">', 'class="md-copyright" style="display: none">'
+              $content = $content -replace 'class="md-social">', 'class="md-social" style="margin: auto;">'
 
               Set-Content -Path $_.FullName -Value $content
           }
