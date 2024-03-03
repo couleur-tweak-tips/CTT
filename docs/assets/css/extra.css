@@ -126,3 +126,12 @@
 .green {
   color: #3dc375;
 }
+
+.md-footer__link {
+  margin-bottom: 0 !important;
+  margin-top: 0.2rem !important;
+}
+
+.md-social, md-copyright {
+  padding: 0 !important
+}
