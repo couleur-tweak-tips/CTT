@@ -357,13 +357,13 @@ Windows Terminal does not behave well with this.
 
 Pre-interpolation uses [RIFE NCNN Vulkan](https://github.com/styler00dollar/VapourSynth-RIFE-ncnn-Vulkan) to do interpolation, in the filter chain it's applied before [interpolation](#interpolation) hence the term "pre-".
 
-It's very slow to use, see how to install the models [here](./installation.md#making-a-send-to-shortcut-and-rife-models)
+It's very slow to use, see how to install the models [here](./installation.md#installing-rife-models)
 
 NCNN is used instead of RIFE for the much smaller dependencies (CUDA is like 5GB °O°).
 
 !!! danger "Some color formats fail to convert and make pre-interp crash"
 
-    Depending on how you configure your colors in [:obs-logo:  OBS' Advanced settings tab](../obs/advanced.md),
+    Depending on how you configure your colors in :obs-logo: [OBS' Advanced settings tab](../obs/advanced.md),
     
     Pre-interp may not work with them, it's currently [an open issue on the repository](https://github.com/couleur-tweak-tips/smoothie-rs/issues/36)
 
