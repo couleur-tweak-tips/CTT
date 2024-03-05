@@ -32,7 +32,7 @@ They don't need much configuration, simply select in the Video pane -> Encoder t
 === "H.264 (NVENC)"
     ![](../../assets/images/video/voukoder/h264-nvenc.png)
 === "HEVC (NVENC)"
-    ![]../..(/assets/images/video/voukoder/h265-nvenc.png)
+    ![](../../assets/images/video/voukoder/h265-nvenc.png)
 === "H.264 (x264)"
     ![](../../assets/images/video/voukoder/x264.png)
 === "HEVC (x265)"
