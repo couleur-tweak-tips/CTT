@@ -1,5 +1,5 @@
 ---
-icon: fontawesome/solid/arrow-up-right-dots
+icon: material/resize
 ---
 
 
