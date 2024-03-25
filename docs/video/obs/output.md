@@ -10,9 +10,9 @@ It's recommended to use the [latest version of OBS](https://github.com/obsprojec
 1. #### Why?
 :   Because there are no benefits to stay on an older version (e.g 25.8.0) of OBS anymore (except if you need compatibility with specific things like old plugins)
 
-    * High fps recording with multi-track audio got fixed
-    * Rumours of duplicated frames with high FPS recording in newer-than-25.0.8 versions have never resurged
-    * There's a bunch of new encoding settings that let you have better efficiency or performance.
+    * High FPS recording with multi-track audio not longer freezes when trying to stop recording
+    * Rumours of duplicated frames with high FPS recording in newer-than-25.0.8 versions have never resurged, probably an urban legend
+    * New output settings allows for more efficient / higher FPS encoding.
 
     If you do have a reason to keep using an old version that hasn't been mentioned (except laziness or procrastination), [let me know](../../contact.md) 
 
@@ -54,7 +54,10 @@ It's recommended to use the [latest version of OBS](https://github.com/obsprojec
         * `Multipass Mode`: <kbd>Two Passes (Full Resolution)</kbd>
 
         :   These two settings considerably affect the encoding speed and efficiency, they've been recently introduced to OBS and I'm not that knowledgeable regarding them.
-        
+
+        * `GPU`: 0
+
+        :   This is the GPU index, only relevant to mess with if you have multiple GPUs
 
     === ":custom-amd: (AMD) AMF"
 
