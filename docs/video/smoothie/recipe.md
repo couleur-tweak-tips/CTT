@@ -153,6 +153,14 @@ Also see [pre-interp](#pre-interp), a slower, more accurate interpolation method
     
     Most people use 23 / 13
 
+`block size`: auto
+
+:   Defines block sizes for block matching algorithm, either 8x8, 16x8, 16x16, 32x16 or 32x32
+
+    Bigger is faster but creates worse frames.
+
+    More info: <https://www.svp-team.com/wiki/Manual:SVPflow> (<kbd>CTRL+F</kbd> "`h: `" to find more info about it)
+
 `use gpu`: no
 
 :   Whether or not to use GPU (video card) alongside CPU to accelerate conversion and improve quality.
