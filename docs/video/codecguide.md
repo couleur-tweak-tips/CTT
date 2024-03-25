@@ -95,3 +95,10 @@ These directly translate to FFmpeg arguments, also add the `4K` macro to add ups
 * **Voukoder**: My unofficial [`Install-Voukoder`](https://github.com/couleur-tweak-tips/TweakList/blob/master/modules/Installers/Install-Voukoder.ps1#L232) function
 
 Tries to stay faithful to the aforementioned settings, also includes `+ Upscale` editions
+
+## Other resources to learn more
+
+<https://trac.ffmpeg.org/wiki/Encode/H.264>
+
+
+<iframe width="688" height="387" src="https://www.youtube-nocookie.com/embed/UKtgpKF2RyM?color=white" frameborder=0 allowfullscreen></iframe>
