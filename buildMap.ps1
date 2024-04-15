@@ -39,7 +39,7 @@ $ret = foreach ($category in $nav) {
 }
 
 Set-Content ./map.md -Value @'
-# [CTT.cx](https://cttt.cx)
+# [CTT.cx](https://ctt.cx)
 '@
 $ret -replace "\.md" -replace "/index" | Add-Content ./map.md
 
