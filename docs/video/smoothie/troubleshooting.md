@@ -18,6 +18,10 @@ Here's a handful of common errors and how to solve them:
 
 :   Run Smoothie by using `launch.cmd` and select your video. Smoothie will stay open and you can read the error. If there's no error message, it's likely a problem with your Send to shortcut</ins>.
 
+#### `Unrecognized option 'stats_period'` { #no-stats-period }
+
+:   Remove `-stats_period 0.15` from your `recipe.ini`'s `[miscellaneous] ffmpeg options:` category because your ffmpeg installation is outdated and does not support updating the stats (`size=     907KiB time=00:00:57.99 bitrate= 128.1kbits/s speed=68.6x`) any faster than default.
+
 #### `Smoothie Recipe parser: setting XYZ has no parent category` { #recipe-parse-error }
 
 :   Double check the syntax of your recipe config file. Make sure you're not using the config from the old [smoothie-py](https://github.com/couleur-tweak-tips/Smoothie) or [blur](https://github.com/f0e/blur).
