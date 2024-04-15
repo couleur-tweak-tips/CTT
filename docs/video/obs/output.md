@@ -20,10 +20,17 @@ It's recommended to use the [latest version of OBS](https://github.com/obsprojec
 
     ##### Recording Settings
 
-    `Recording format`: Fragmented MP4 (.mp4)
+    * `Recording format`: MPEG-4 (.mp4)
 
-    I highly recommend switching from the default to the Fragmented MP4, as it brings the advantages of recording in MKV whilst not having to remux MKV to MP4 for compatibility.
-   
+    :   Unless you're doing lengthy recordings I don't see a point in using containers (as OBS calls it "format") many NLEs still consider to be obscure
+
+
+    ??? "What about Matroska (.MKV) and Fragmented MP4?"
+
+        Fragmented MP4 and (especially) MKV files may not be read properly / recognized by video editors, which requires you to manually remux each one, though if your recordings are important and you can't have them get corrupted upon OBS / your OS crashing, you should use them.
+
+        Fragmented MP4 is notorious to mess up in VEGAS, though remuxing to regular MP4 fixes it. 
+
     In general, NVENC (NVIDIA) is faster than AMF (AMD), which is faster than QuickSync (Intel iGPU), which is faster than x264/5 (CPU)
 
     Regarding `CQP`, `CFR` rate controls: It's inverted compared to CBR, 0 is lossless and 51 is most compressed
@@ -42,6 +49,12 @@ It's recommended to use the [latest version of OBS](https://github.com/obsprojec
                 1. OBS describes low Presets as "Lower Quality" in the context of <u>streaming with CBR in bandwidth-limited scenarios</u>, if used for recording it'll be much more performant to record at the cost of bigger file sizes.
 
             * `Multipass Mode`: Single pass
+            * `Look-ahead`: Unchecked
+            * `Psycho Visual Tuning`: Unchecked
+            * `Max B-frames`: 0
+
+            :   I've had the habit of turning these off / setting them to 0 for high FPS recording, they're probably relevant for streaming / high efficiency recording though.
+
 
         * `Rate Control`: <kbd>CQP</kbd>
 
