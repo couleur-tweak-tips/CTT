@@ -13,7 +13,7 @@ You'll be prompted with the Render Formats (left pane), each having their own co
 
 === ":package: MAGIX (H264|H265)/AAC MP4"
 
-    Choosebetween H.264, H.265 and CPU/HW encoding by reading the [Codec guide](../codecguide.md)
+    Choose between H.264, H.265 and CPU/HW encoding by reading the [Codec guide](../codecguide.md)
 
     ![](../../assets/images/video/voukoder/vegas-magix-format.png)
 
