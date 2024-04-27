@@ -19,7 +19,7 @@ nav:
     - Which codec should I use?: video/codecguide.md
     - Send To: video/sendto.md
 
-    - FFmpeg & LibAV:
+    - FFmpeg scripts:
       - video/ffmpeg/index.md
       - Upscaling: video/ffmpeg/upscaling.md
 
