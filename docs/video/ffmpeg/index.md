@@ -2,12 +2,9 @@
 icon: custom/ffmpeg
 ---
 
-# <!--:custom-ffmpeg:--> FFmpeg & LibAV: an introduction
+# <!--:custom-ffmpeg:--> FFmpeg
 
-FFmpeg is most known for being a tool for handling multimedia (notably <u>A</u>udio & <u>V</u>ideo). It's a swiss army knife when used in scripts. 
-
-It's backbones, LibAV, lets other programs (e.g Voukoder) make use of it's wide capabilities.
-
+FFmpeg is most known for being a tool for handling multimedia (notably <u>A</u>udio & <u>V</u>ideo). It's a swiss army knife when [used in scripts](https://github.com/Thqrn/ffmpeg-scripts). It's [backbones are also available as a library](https://github.com/ffmpeg/ffmpeg) and used by countless programs.
 
 It can do any and all of these at once:
 
