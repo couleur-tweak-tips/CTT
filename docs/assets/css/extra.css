@@ -150,3 +150,19 @@
   color: var(--md-typeset-a-color);
   font-weight: 700;
 }
+
+/* Blurred header on devices which support it */
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+
+  [data-md-color-scheme="default"] .md-header {
+    background-color: hsla(0, 0%, 100%, 0.6);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+  }
+
+  [data-md-color-scheme="slate"] .md-header {
+    background-color: rgba(30, 32, 41, 0.6);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+  }
+}
