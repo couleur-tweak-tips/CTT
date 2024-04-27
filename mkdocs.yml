@@ -64,6 +64,7 @@ nav:
           - OBS VkCapture: video/obs/linux/obs-vkcapture.md
   - Programs:
     - software/index.md
+    - Everything: software/everything.md
     - Scoop: software/scoop.md
     - Winget: software/winget.md
     - Windows Terminal: software/windows-terminal.md
