@@ -184,7 +184,7 @@ Most easily comparable to Reel Smart Motion blur (RSMB), it often creates even m
 
 : Whether or not you wish to use artifact masking, note if artifact masking is disabled in it's category this setting won't matter.
 
-`intensity`: 100
+`amount`: 100
 
 : Strength of the blur, 0 is nothing and 200 is the max.
 
