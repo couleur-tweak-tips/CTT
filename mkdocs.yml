@@ -22,6 +22,7 @@ nav:
     - FFmpeg scripts:
       - video/ffmpeg/index.md
       - Upscaling: video/ffmpeg/upscaling.md
+      - Tmix: video/ffmpeg/tmix.md
 
     - Video cutters:
       - video/cutters/index.md
