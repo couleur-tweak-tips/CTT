@@ -81,9 +81,15 @@ icon: material/folder-download
     * <https://download-directory.github.io/?url=https://github.com/styler00dollar/VapourSynth-RIFE-ncnn-Vulkan/tree/master/models>
 
 === "Linux"
-    
-    **Archlinux**
-    
+
+    !!! note "NOT UPSTREAM"
+        
+        This is not the upstream repo at [couleur-tweak-tips/smoothie-rs](https://github.com/couleur-tweak-tips/smoothie-rs), this is a fork of smoothie that is maintained
+        by hybridkernel at 
+        [hzqki/smoothie-rs](https://github.com/hzqki/smoothie-rs) all bug reports about linux should go to this repo, and not the upstream.
+
+    **Archlinux**    
+
     You can install smoothie-rs on Archlinux by either adding the [smrs-arch-repo](https://gitlab.com/hzqki/smrs-arch-repo) or installing it via the AUR
     
     Repo (Recommended):
