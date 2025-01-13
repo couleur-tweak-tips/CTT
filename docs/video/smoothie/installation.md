@@ -81,14 +81,56 @@ icon: material/folder-download
     * <https://download-directory.github.io/?url=https://github.com/styler00dollar/VapourSynth-RIFE-ncnn-Vulkan/tree/master/models>
 
 === "Linux"
+    
+    **Archlinux**
+    
+    You can install smoothie-rs on Archlinux by either adding the [smrs-arch-repo](https://gitlab.com/hzqki/smrs-arch-repo) or installing it via the AUR
+    
+    Repo (Recommended):
 
-    todo, cargo should be able to compile it
-
-    for arch nerds see the dependencies of <https://aur.archlinux.org/packages/teres>
-
-    * you'll also need <https://aur.archlinux.org/packages/vapoursynth-plugin-vsakarin-git> for frame blending
-    * and <https://aur.archlinux.org/packages/vapoursynth-plugin-rife-ncnn-vulkan-git> for pre-interp
-
+    1. Add `smrs-arch-repo` to your `/etc/pacman.conf`
+    
+    ```toml
+    [smrs-arch-repo]
+    SigLevel = Optional DatabaseOptional
+    Server = https://gitlab.com/hzqki/$repo/-/raw/main/$arch
+    ```
+    
+    2. Install `smoothie-rs-linux-git` through pacman 
+    
+    ```bash
+    pacman -S smoothie-rs-linux-git
+    ```
+    
+    AUR
+    
+    1. Install `smoothie-rs-linux-git` from the AUR
+    
+    ```bash
+    yay -S smoothie-rs-linux-git
+    ```
+    
+    **Other Distros**
+    
+    1. Install [Distrobox](https://distrobox.it/)
+    
+    2. Install Archlinux inside distrobox:
+    
+    ```bash
+    distrobox-create -i archlinux:latest -n smrs
+    ```
+    ```bash
+    distrobox-enter smrs
+    ```
+    Update keyring and packages :D
+    
+    ```bash
+    sudo pacman-key --init
+    sudo pacman -Sy archlinux-keyring
+    sudo pacman -Syu
+    ```
+    Then just follow the Archlinux installation instructions
+    
 <!--
 it'd be cool to be able to opt-in to use invidious instance for vids 
 
