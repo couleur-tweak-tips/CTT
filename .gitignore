@@ -1,3 +1,5 @@
+.ctt.cx-unused
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -69,3 +71,5 @@ ENV/
 # MkDocs documentation
 site*/
 docs/test.md
+overrides/.icons/custom/unused/
+desktop.ini
