@@ -66,6 +66,6 @@ Having to manually open up a third party app each time you want to search is not
 
     I made my own called `Dev` which has search value `ext:ps1;cmd;rs;json;js` for to capture all of the files I use within git repositories
 
-4. You can have extra sorting options by adding more colums, just right clicking any of them: 
+4. You can have extra sorting options by adding more columns, just right clicking any of them: 
 
     ![](../assets/images/software/everything/metadata-sort.png)

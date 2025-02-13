@@ -398,4 +398,4 @@ NCNN is used instead of RIFE for the much smaller dependencies (CUDA is like 5GB
 
 1. Make a copy of `recipe.ini` and name it something else
 2. Make a copy of the shortcut you use Smoothie with
-3. Add `--recipe name.ini` to the arguments (for [Send To shortcuts](./installation.md#making-a-send-to-shortcut-and-rife-models) make sure it's before `-i`, that one must be the last).
+3. Add `--recipe name.ini` to the arguments (for [Send To shortcuts](./installation.md#making-a-send-to-shortcut) make sure it's before `-i`, that one must be the last).

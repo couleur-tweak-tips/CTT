@@ -82,7 +82,7 @@ They're opt-in/out, so you can disable them at your discretion via the [recipe](
         ```
 
 * [`[flowblur]`](./recipe.md#flowblur): [RSMB](https://revisionfx.com/products/rsmb/), After Effects' CC Force Motion Blur
-    * [`[artifact masking]`](./recipe.md#artifact masking): Manually reverting RSMB where it smeared in a video editor with masking tools
+    * [`[artifact masking]`](./recipe.md#artifact-masking): Manually reverting RSMB where it smeared in a video editor with masking tools
     
         ??? info "Mask example"
 
