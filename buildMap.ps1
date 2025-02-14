@@ -12,7 +12,6 @@ function Display ([Hashtable]$Table, [int32]$Depth) {
 
     foreach ($item in $table.GetEnumerator()) {
         
-        # Wait-Debugger
         if ($item.value.keys.length -gt 1) {
             $link = if (-not($item.value.index)) {
                 $item.value | Where-Object { $_ -is [string] }
