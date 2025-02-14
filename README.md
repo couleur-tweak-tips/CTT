@@ -6,8 +6,8 @@ Couleur Tweak Tips (CTT) is a community-driven wiki and Discord hub focused on c
 
 ## Development
 
->[!TIP]
->We recommend using the [Starlight docs](https://starlight.astro.build/) to help you while contributing.
+> [!TIP]
+> We recommend using the [Starlight docs](https://starlight.astro.build/) to help you while contributing.
 
 To get started, you'll need [NodeJS](https://nodejs.org/en) and [pnpm](https://pnpm.io/installation#using-npm). After you have those, you can use the commands below to get started.
 
