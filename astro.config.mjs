@@ -11,6 +11,7 @@ export default defineConfig({
         github: 'https://github.com/couleur-tweak-tips/CTT',
         discord: 'https://discord.com/invite/aPVMJy78Pa',
       },
+      customCss: ['./src/assets/landing.css'],
       sidebar: [
         {
           label: 'Guides',
