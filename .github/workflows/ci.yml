@@ -37,10 +37,8 @@ jobs:
         run: |
           pip install -r requirements.txt
           mkdocs build -f mkdocs.github.yml
-          mv ./CTT/package.json .
-          mv ./CTT/package-lock.json .
           npm ci
-          npm exec -- jampack --nocache ./CTT/site
+          npm exec -- jampack --nocache ./site
           rm -rf node_modules _jampack .cache
           
       - name: Deploy
