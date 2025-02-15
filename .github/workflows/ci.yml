@@ -33,5 +33,16 @@ jobs:
           ./redirector.ps1
           ./buildMap.ps1
 
-      - run: pip install -r requirements.txt
-      - run: mkdocs gh-deploy --force -f mkdocs.github.yml
+      - name: Build
+        run: |
+          pip install -r requirements.txt
+          mkdocs build -f mkdocs.github.yml
+          mv ./CTT/package.json .
+          mv ./CTT/package-lock.json .
+          npm ci
+          npm exec -- jampack --nocache ./CTT/site
+          rm -rf node_modules _jampack .cache
+          
+      - name: Deploy
+        run: |
+          mkdocs gh-deploy --force -f mkdocs.github.yml --dirty
