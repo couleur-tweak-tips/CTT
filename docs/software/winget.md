@@ -9,10 +9,16 @@ The tool is preinstalled on all versions of Windows 11 and somewhat newer versio
 
 If for some reason you don't have it installed, run the following:
 ```powershell
+Install-PackageProvider -Name NuGet -Force | Out-Null
+Install-Module -Name Microsoft.WinGet.Client -Force -Repository PSGallery | Out-Null
+Repair-WinGetPackageManager
+```
+If you uninstalled it before, you can bring it back with this:
+```powershell
 Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.DesktopAppInstaller_8wekyb3d8bbwe
 ```
 
-Updating apps can be somewhat slow due to the manual verification from the moderators. If your favourite app isn't available or hasn't been updated, you can use simple tools like [Komac](https://github.com/russellbanks/Komac) or [WingetCreate](https://github.com/microsoft/winget-create)
+Updating apps can be somewhat slow due to the manual verification from the moderators. If your favourite app isn't available or hasn't been updated, you can use simple tools like [Komac](https://github.com/russellbanks/Komac) or [WingetCreate](https://github.com/microsoft/winget-create) to make updating easier for the winget moderators
 
 
 !!! tip "Don't see what you want?"
