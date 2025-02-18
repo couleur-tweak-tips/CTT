@@ -16,9 +16,7 @@ icon: material/monitor-eye
     There's a few alternatives sources for Linux, though none are as good as Game capture on Windows
 
     * <https://aur.archlinux.org/packages/obs-nvfbc-high-fps-git> (read pinned comments)
-    * <https://github.com/nowrep/obs-vkcapture> (see #usage at the bottom of the page)
-
-    Also see [gpu-screen-recorder](https://git.dec05eba.com/gpu-screen-recorder/about/) if you just want to record games in high FPS
+    * <https://github.com/nowrep/obs-vkcapture> (see [#usage](https://github.com/nowrep/obs-vkcapture?tab=readme-ov-file#usage) at the bottom of the page)
 
 ## :obs-window: [Window Capture](https://obsproject.com/kb/window-capture-sources)
 

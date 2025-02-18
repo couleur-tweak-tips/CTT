@@ -40,7 +40,6 @@ icon: custom/avidemux
 ![](../../assets/images/video/ffmpeg/video-cutters/avidemux/avidemux-ui.png)
 > See more screenshots [here](https://avidemux.sourceforge.net/screenshots.html)
 
-<br>
 
 ## Features
 
@@ -67,7 +66,7 @@ tutorial by [skyler](https://twitter.com/skylerfrags) ([wallpaper](https://githu
 
 If you prefer using the <kbd>I</kbd> and <kbd>O</kbd> keys to set in and out points,
 
-you can create named `settings.json` in the same directory that holds `avidemux.exe`(1)
+you can create named `settings.json` in the same directory that contains `avidemux.exe`(1)
 { .annotate }
 
 1. search it up in your start menu, right click it -> open file location

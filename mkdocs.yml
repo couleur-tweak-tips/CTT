@@ -50,7 +50,6 @@ nav:
 
     - OBS Studio:
         - video/obs/index.md
-        - Installation ↗: video/obs/install.md
         - Docks: video/obs/docks.md
         - Source types: video/obs/sourcetypes.md
         - General: video/obs/general.md
@@ -71,7 +70,7 @@ nav:
     - Windows Terminal: software/windows-terminal.md
     - Visual Studio IDEs: software/visual-studio-ides.md
 
-  - Misc:
+  - Misc.:
     - misc/index.md
     - File sharing: misc/filesharing.md
     - mkdocs: misc/mkdocs.md

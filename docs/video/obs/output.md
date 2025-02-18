@@ -22,18 +22,18 @@ It's recommended to use the [latest version of OBS](https://github.com/obsprojec
 
     * `Recording format`: MPEG-4 (.mp4)
 
-    :   Unless you're doing lengthy recordings I don't see a point in using containers (as OBS calls it "format") many NLEs still consider to be obscure
+    :   Unless you're doing lengthy recordings I don't see a point in using containers (or "format" as OBS calls it) many NLEs still struggle to support
 
 
-    ??? "What about Matroska (.MKV) and Fragmented MP4?"
+    ??? "What about Matroska (.MKV) and Hybrid/Fragmented MP4?"
 
         Fragmented MP4 and (especially) MKV files may not be read properly / recognized by video editors, which requires you to manually remux each one, though if your recordings are important and you can't have them get corrupted upon OBS / your OS crashing, you should use them.
 
         Fragmented MP4 is notorious to mess up in VEGAS, though remuxing to regular MP4 fixes it. 
 
-    In general, NVENC (NVIDIA) is faster than AMF (AMD), which is faster than QuickSync (Intel iGPU), which is faster than x264/5 (CPU)
+    In general, encoding speed fastest to slowest is NVENC (NVIDIA), AMF (AMD), QuickSync (Intel iGPU), then x264/5 (CPU)
 
-    Regarding `CQP`, `CFR` rate controls: It's inverted compared to CBR, 0 is lossless and 51 is most compressed
+    Regarding `CQP` and `CFR` [rate controls](../codecguide.md#rate-controls): It's inverted compared to CBR, 0 is lossless and 51 is most compressed
 
 
     ##### Video Encoder Settings
@@ -56,7 +56,7 @@ It's recommended to use the [latest version of OBS](https://github.com/obsprojec
             :   I've had the habit of turning these off / setting them to 0 for high FPS recording, they're probably relevant for streaming / high efficiency recording though.
 
 
-        * `Rate Control`: <kbd>CQP</kbd>
+        * `Rate Control`: <kbd>CQP</kbd> / <kbd>CQ Level</kbd>
 
         :   Much more adaptive than CBR, which always spits out the same constant bitrate.
 
@@ -91,9 +91,10 @@ It's recommended to use the [latest version of OBS](https://github.com/obsprojec
         Note: there is also some documentation on the OBS Studio's GitHub wiki:
 
         <https://github.com/obsproject/obs-studio/wiki/AMF-HW-Encoder-Options-And-Information>
+
         <https://github.com/obsproject/obs-studio/wiki/AMF-Options>
 
-    === ":custom-intel: (Intel) QSV"
+    === ":simple-intel: (Intel) QSV"
 
         These settings are intended for recording Minecraft at 30FPS to 60FPS on Intel chips from 2020 and older, however with newer Iris XE and Arc iGPUs, you can record at 120FPS with these settings.
 
@@ -195,7 +196,7 @@ It's recommended to use the [latest version of OBS](https://github.com/obsprojec
 
     ##### Description
 
-    Similar to [NVIDIA ShadowPlay](https://www.nvidia.com/en-us/geforce/geforce-experience/shadowplay/), this captures using your recording settings and keeps in RAM only the last <kbd>X</kbd> seconds of what was captured and at any point you can press a hotkey to save it as a video file.
+    Similar to [NVIDIA ShadowPlay](https://www.nvidia.com/en-us/geforce/geforce-experience/shadowplay/), this captures using your canvas using your [recording settings](#recording) and keeps in RAM only the last <kbd>X</kbd> seconds of what was captured and at any point you can press [a hotkey (that is not bound to anything by default)](./hotkeys.md#replay-buffer)  to save it as a video file.
 
     It's an alternative to scrub through hour long recordings / stream VODs looking for important parts, each save will be separated per video file.
 

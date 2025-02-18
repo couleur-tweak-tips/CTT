@@ -14,7 +14,7 @@ icon: material/account-search-outline
 
 * :simple-discord: Discord: `@couleur.` | [352830597778898944](https://discord.id/?prefill=352830597778898944)
 * :simple-telegram: Telegram: [@couleur](https://t.me/couleur)
-* :simple-twitter: Twitter: [@couleurminemen](https://twitter.com/i/user/3296460753)
+* :fontawesome-brands-twitter: Twitter: [@couleurminemen](https://twitter.com/i/user/3296460753)
 * :simple-github: GitHub: [/couleurm](https://github.com/couleurm)
 * :material-email-plus-outline: E-mail: `'couleur{0}riseup.net' -f '@'` in PowerShell
 * :simple-youtube: YouTube: [@couleur](https://youtube.com/Couleur) & [@couleur2](https://youtube.com/@Couleur2)

@@ -85,6 +85,7 @@ $table = @{
     wt                = 'software/windows-terminal'
     windowsterminal   = 'software/windows-terminal'
     renders           = 'video/voukoder'
+    vk                = 'video/voukoder'
     v                 = 'video'
     whichcodec        = 'video/codecguide'
     st                = 'video/sendto'

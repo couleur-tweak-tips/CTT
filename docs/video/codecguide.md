@@ -6,23 +6,29 @@ icon: material/file-video
 # :material-file-video: Choose a suitable codec
 
 
-When modifying videos(1), you are **re-encoding** your video, which often gets you greeted with an overwhelming amount of formats, codecs and a plethora configuration options[¹](https://github.com/couleur-tweak-tips/smoothie-rs/blob/a917cbd61b8bcda73c672fa435c79e231b22fb14/target/encoding_presets.ini#L11-L26)[²](../assets/images/video/vegas-templates.png).
+When creating, exporting videos out of NLEs or running them through scripts/programs, videos, it must(1) go through **re-encoding**, which can be achieved using one out of many encoders, which often come a plethora configuration options[¹](https://github.com/couleur-tweak-tips/smoothie-rs/blob/a917cbd61b8bcda73c672fa435c79e231b22fb14/target/encoding_presets.ini#L11-L26) [²](../assets/images/video/vegas-templates.png).
 { .annotate }
 
-1. This means using (up)scale scripts, [Smoothie](./smoothie/index.md), or exporting a NLE project to a video file, this does not concern LosslessCut.
+1. This does not concern [video cutters](./cutters/index.md).
 
-Think about encoded video data like a tightly-packed suitcase :fontawesome-solid-suitcase:, you need to unpack it into raw data in order to change anything(1) in it, and then re-encode this new data into a codec again.
+Think about encoded video data like a tightly-packed suitcase :fontawesome-solid-suitcase:, you need to unpack it into an succession of images in order to change anything(1)in it, then, to save this modification back to a video file, it needs to be re-encoded again.
 { .annotate }
 
 1.  Not necessarily for particular scenarios: tools like [LosslessCut](https://mifi.no/losslesscut/) can make cuts every I-frame which is where the compression resets and does not need to re-encode the whole video.
 
-The choice depends on your hardware (do you own an NVIDIA GPU?), what you're uploading to (is it compatible with YouTube, Twitter, etc?), 
-how much quality you're ready to lose (lossless means no compression artifacts) and how long you want to wait (can you let your PC render overnight?).
+The choice of a codec depends on:
+
+* your hardware: (do you own an NVIDIA GPU?)
+* what you're editing your footage with (can NLE preview it?) 
+* what you're uploading to: (is it compatible with target platform?), 
+* how much quality are you ready to lose in profit of filesize
+* how fast is your upload speed
+* how long you want to wait (can you let your PC render overnight?).
 
 Each codec has it's own pros and cons:
 
 
-| Features                           |     H.264 / AVC      |                       H.265 / HEVC                       |                                                                           AV1                                                                           |                                               UTVideo                                               |
+|                                    |     H.264 / AVC      |                       H.265 / HEVC                       |                                                                           AV1                                                                           |                                               UTVideo                                               |
 |------------------------------------|:--------------------:|:--------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------:|
 | Fast at encoding[^1]               | :material-check-all: |                     :material-check:                     |                                           :fontawesome-solid-equals: Only fast when encoding with a compatible GPU                                           |                                        :material-check-all:                                         |
 | Filesize/Visual fidelity ratio[^2] | Worst out the bunch  |                   :material-check-all:                   |                                                                  :material-check-all:                                                                   |                                    Lossless,<br>makes huge files                                    |
@@ -37,9 +43,10 @@ Each codec has it's own pros and cons:
 
 ## :fontawesome-solid-microchip: Hardware-accelerated encoding { #hwenc }
 
-You might've also noticed `NVENC`, `AMF` and `QuickSync` being mentioned after H.264, H.265 and AV1, this means the encoding is done on your GPU / iGPU instead of your CPU, this comes with pros/cons:
+You might've also noticed the terms `NVENC`, `AMF` and `QuickSync` being mentioned after H.264, H.265 and AV1, this means the encoding is done on your GPU / iGPU instead of your CPU, this comes with pros and cons:
 <br>
-:material-plus: Faster encoding
+<br>
+:material-plus: Faster encoding, it's processed on a specialized chip
 
 
 :material-plus: Much lower load on the CPU (especially useful when recording while you are playing a game)
@@ -77,11 +84,11 @@ Unless you are recording lossless (HUGE files), you need a way to constrain the 
 **Recording w/ OBS**: `H.264 NVENC` to encode as fast(1) as possible
 { .annotate }
 
-1. Even super fast encoding settings can be lossless, NVENC's `P1` Preset which OBS calls "Low quality" is directed at people streaming with a constrained CBR
+1. Even super fast encoding settings can be lossless, NVENC's `P1` Preset which OBS calls "Low quality" in regard to how small it makes the files, which when encoded in CBR directly determines the quality
 
-**Pre-rendering w/ Smoothie**:  `UTVideo` Decodes as fast as possible for video editing
+**Pre-rendering w/ Smoothie**:  `UTVideo` - to decode the videos as fast as possible when video editing
 
-**Exporting w/ Voukoder**: `H265 NVENC` + Upscaling(1) Whatever video editor which supports Voukoder this is a great middleground
+**Exporting w/ Voukoder**: `H265 NVENC + Upscaling`(1) inside the many video editors which supports Voukoder
 { .annotate }
 
 1. This mentions one of my Voukoder presets that can be installed with my installation script that has an additional filter, which (up)scales to 4K and encode on the fly without needing to encode again with a batch script
@@ -98,7 +105,8 @@ Tries to stay faithful to the aforementioned settings, also includes `+ Upscale`
 
 ## Other resources to learn more
 
-<https://trac.ffmpeg.org/wiki/Encode/H.264>
+* [x266.mov](https://wiki.x266.mov/docs/introduction/prologue): a much more in-depth documentation of codecs
+* <https://trac.ffmpeg.org/wiki/Encode/H.264>
 
 
 <iframe width="688" height="387" src="https://www.youtube-nocookie.com/embed/UKtgpKF2RyM?color=white" frameborder=0 allowfullscreen></iframe>

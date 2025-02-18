@@ -4,19 +4,19 @@ icon: material/movie-cog
 
 # Video cutters vs NLEs
 
-VEGAS, Premiere, After Effects, Davinci Resolve.. all these NLEs re-encode your videos upon exporting your project.
+VEGAS, Premiere, After Effects, Davinci Resolve.. all these NLEs re-encode your videos when exporting your project.
 
-This is because they need to decode it in order to perform the actual "editing" of the video you've fed it.
+This is because they need to decode it in order to perform the actual "editing" of the videos you've fed it.
 
-In specific edgecases that do not require all the bells and whistles of a video editor, video cutters can be a life saver:
+When you need to cut videos and don't need all the bells and whistles of a video editor, video cutters can be a life saver:
 
-| Ops & cons         | NLE re-encoding                                                        | Video cutters                      |
-|--------------------|------------------------------------------------------------------------|------------------------------------|
-| Render times       | Will always be slower                                                  | Lightning fast                     |
-| What can be edited | Literally everything                                                   | You can only cut from point A to B |
-| Format             | Unless encoding in lossless you'll always lose a little bit of quality | Lossless!                          |
+| Ops & cons         | NLE re-encoding                                                        | Video cutters                          |
+|--------------------|------------------------------------------------------------------------|----------------------------------------|
+| Render times       | Will always be slower                                                  | Lightning fast                         |
+| What can be edited | Literally everything                                                   | You can only cut from point A to B     |
+| Format             | Unless encoding in lossless you'll always lose a little bit of quality | No re-encoding, bitstream is untouched |
 
-e.g you have videos with very little parts of them actually relevant (e.g archiving highlights from stream VODs)
+e.g you have videos with a long segments you know you will ever use (e.g archiving highlights from stream VODs)
 
 ### :material-format-list-checks: What video cutters are there?
 

@@ -4,11 +4,11 @@ icon: obs/logo
 ---
 
 ## :material-information-box: Introduction
-[Open Broadcaster Software Studio](https://obsproject.com) is free and open-source software for live streaming and recording.
+[Open Broadcaster Software Studio](https://obsproject.com) is a free and open-source software for live streaming and recording.
 
 ## High FPS recording
 
-A lot of [us](https://discord.gg/CTT) configure our encoder to record as high FPS as we get in-game(1) to then [frame blend](../smoothie/recipe.md#frame-blending) with [Smoothie](../smoothie/index.md).
+A lot of [us](https://discord.gg/CTT) configure the output encoder to record as high FPS as we get in-game(1) to then [frame blend](../smoothie/recipe.md#frame-blending) with [Smoothie](../smoothie/index.md).
 { .annotate}
 
 1. If you get about 600FPS it's recommended to record around 480FPS to accommodate for the variations and eventual drops
@@ -19,9 +19,9 @@ You should install the latest version of OBS from the [official downloads page](
 
 ## Other documentation sources
 
-See OBS' knowledgebase: https://obsproject.com/kb
+See OBS' knowledgebase: <https://obsproject.com/kb>
 
-* Launch (CLI) Parameters: https://obsproject.com/kb/launch-parameters
+* Launch (CLI) Parameters: <https://obsproject.com/kb/launch-parameters>
 
 ## :material-cog: Initial configuration
 

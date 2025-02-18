@@ -4,7 +4,7 @@ icon: custom/voukoder
 
 # What is Voukoder?
 
-Voukoder is a <u>plugin for video editors</u> to adds support for various modern encoders & ffmpeg post processing filters (notably for [Upscaling](../ffmpeg/upscaling.md))
+Voukoder is a plugin NLEs that lets you export using ffmpeg encoders and filters (notably for [Upscaling](../ffmpeg/upscaling.md))
 
 
 The currently documented Voukoder plugins on [ctt.cx](#) are:
@@ -14,20 +14,13 @@ The currently documented Voukoder plugins on [ctt.cx](#) are:
 * :custom-after-effects-og: Adobe After Effects
 * <div class="annotate" markdown>:custom-resolve: DaVinci Resolve <u>Studio(1)</u></div>
 
-    1. DaVinci Resolve Studio is required <br><br> <u>The free version does not support plugins!</u>
+    1. The paid DaVinci Resolve 'Studio' edition is required <br><br> <u>The free version does not support plugins!</u>
 
 # Installation
 
-I have made a PowerShell script which automates the following:
-
-* Install and/or updates Voukoder Core
-* Scans for open video editors to install a connector to
-* Prompts you with a list of export templates to import
-
-=== ":custom-pwsh2: Automatic"
+=== ":custom-pwsh: Automatic"
 
     Open PowerShell and paste in the following command
-
 
     ```PowerShell
     iex(irm tl.ctt.cx);Install-Voukoder
@@ -38,7 +31,7 @@ I have made a PowerShell script which automates the following:
     1. Scan for an active Voukoder Core installation
         * If it is not up to date / installed, download and run the latest installer passively
     2. Look for video editor process names
-        * If there is no connector for it installed, download and run the latest installer with automatic connection
+        * If there is no connector for it installed, download and run the latest installer with NLE installation directory
     3. Display a list of render templates to import
 
     <iframe width="688" height="387" src="https://www.youtube-nocookie.com/embed/BBp2PnmRHmk?color=white" frameborder=0 allowfullscreen></iframe>
@@ -49,7 +42,8 @@ I have made a PowerShell script which automates the following:
 
     You must <u>first install the Voukoder Classic Core</u>, only after will you install a connector which acts as the NLE-specific plugin.
 
-    See <https://www.voukoder.org/forum/thread/783> for download links
+    https://github.com/Vouk/voukoder/releases
+    https://github.com/Vouk/voukoder-connectors
 
     ## Installing the Connector {#install-connector}
 

@@ -1,7 +1,6 @@
 ---
 icon: custom/losslesscut
 ---
-
 <div class="grid cards" markdown>
 
 -   # :custom-losslesscut: LosslessCut
@@ -13,7 +12,7 @@ icon: custom/losslesscut
     [:octicons-code-16:](https://github.com/mifi/lossless-cut/tree/HEAD){ .card-link title="Source Code" }
     [:material-heart:](https://mifi.no/thanks){ .card-link title="Support" }
 
-    === ":simple-windowsxp:{.archblue} Windows"
+    === ":fontawesome-brands-windows:{ style="color: #00BCF2" } Windows"
 
         Mifi distributes Lossless-Cut as a portable 7-Zip archive
 
