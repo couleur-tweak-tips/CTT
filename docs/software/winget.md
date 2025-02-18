@@ -10,7 +10,7 @@ The tool is preinstalled on all versions of Windows 11 and somewhat newer versio
 If for some reason you don't have it installed, run the following:
 ```powershell
 Install-PackageProvider -Name NuGet -Force | Out-Null
-Install-Module -Name Microsoft.WinGet.Client -Force -Repository PSGallery | Out-Null
+Install-Module -Name Microsoft.WinGet.Client -Force -Repository PSGallery -Scope AllUsers | Out-Null
 Repair-WinGetPackageManager
 ```
 If you uninstalled it before, you can bring it back with this:
