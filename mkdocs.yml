@@ -72,9 +72,13 @@ nav:
 
   - Misc.:
     - misc/index.md
+    - Browser extensions: misc/browser-extensions.md
+    - Keyboard shortcuts: misc/keyboard-shortcuts.md
     - File sharing: misc/filesharing.md
     - mkdocs: misc/mkdocs.md
     - yt-dlp: misc/yt-dlp.md
+    - Writing Resources: misc/writing-resources.md
+    - Linux Resources: misc/linux-resources.md
 
 not_in_nav:
   alita.md
