@@ -15,7 +15,31 @@ A lot of [us](https://discord.gg/CTT) configure the output encoder to record as 
 
 ## :material-package-down: Installing OBS
 
-You should install the latest version of OBS from the [official downloads page](https://obsproject.com/download). This page provides multiple sources you can install it from.
+You can find the installer / a portable zip in the [official downloads page](https://obsproject.com/download)
+
+=== "Windows"
+
+    * WinGet: `winget install -e --id OBSProject.OBSStudio`
+    * Scoop: `scoop bucket add extras; scoop install extras/obs-studio`
+    * Chocolatey: `choco install obs-studio`
+
+=== "Linux"
+
+    * Flathub (recommended): `flatpak install flathub com.obsproject.Studio`
+    * Arch-based distros: `pacman -S obs-studio`
+    * Ubuntu-based distros (copied from OBS download page):
+      ```bash
+      sudo add-apt-repository ppa:obsproject/obs-studio
+      sudo apt update
+      sudo apt install ffmpeg obs-studio
+      ```
+
+=== "macOS"
+
+    !!! warning "Unsupported"
+        At the moment, OBS settings for macOS aren't considered in the documentation.
+
+    * Homebrew: `brew install --cask obs`
 
 ## Other documentation sources
 
