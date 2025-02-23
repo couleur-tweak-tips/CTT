@@ -86,7 +86,7 @@ icon: material/folder-download
         
         This is not the upstream repo at [couleur-tweak-tips/smoothie-rs](https://github.com/couleur-tweak-tips/smoothie-rs), this is a fork of smoothie that is maintained
         by hybridkernel at 
-        [hzqki/smoothie-rs](https://github.com/hzqki/smoothie-rs) all bug reports about linux should go to this repo, and not the upstream.
+        [hzqkii/smoothie-rs](https://github.com/hzqkii/smoothie-rs) all bug reports about linux should go to this repo, and not the upstream.
 
     **Archlinux**    
 
