@@ -137,6 +137,14 @@ icon: material/folder-download
     ```
     Then just follow the Archlinux installation instructions
     
+    **10 bit video support / GPU Acceleration**
+    
+    You need to install the opencl drivers for your platform
+
+    - Nvidia: `opencl-nvidia` on ArchLinux
+    - AMD: `rocm-opencl-runtime` on ArchLinux
+    - Intel: `intel-compute-runtime` on ArchLinux
+    
 <!--
 it'd be cool to be able to opt-in to use invidious instance for vids 
 
