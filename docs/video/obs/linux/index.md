@@ -3,6 +3,8 @@ description: OBS configuration for Linux
 icon: simple/linux
 ---
 
+Also see dec05eba's [gpu-screen-recorder](https://git.dec05eba.com/gpu-screen-recorder/about/) if you just want to record games in high FPS without using the rest of OBS' features
+
 # :material-linux: Linux OBS Configuration
 
 On OBS for Linux, there's not much options by default for high FPS or otherwise low resource recording like Windows. This is due to inefficient capture methods:

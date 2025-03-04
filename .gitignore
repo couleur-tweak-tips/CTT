@@ -1,3 +1,6 @@
+.ctt.cx-unused
+.jampack
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -21,7 +24,7 @@ node_modules/
 parts/
 sdist/
 var/
-package*.json
+# package*.json
 *.egg-info/
 .installed.cfg
 *.egg
@@ -69,3 +72,5 @@ ENV/
 # MkDocs documentation
 site*/
 docs/test.md
+overrides/.icons/custom/unused/
+desktop.ini

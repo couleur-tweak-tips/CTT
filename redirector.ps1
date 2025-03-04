@@ -79,11 +79,35 @@ foreach ($filepath in $mdFiles.FullName) {
 }
 
 $table = @{
-    sm              = "video/smoothie"
-    obsvkcapture    = "video/obs/linux/obs-vkcapture"
-    vkcapture       = "video/obs/linux/obs-vkcapture"
-    wt              = 'software/windows-terminal'
-    windowsterminal = 'software/windows-terminal'
+    sm                = "video/smoothie"
+    obsvkcapture      = "video/obs/linux/obs-vkcapture"
+    vkcapture         = "video/obs/linux/obs-vkcapture"
+    wt                = 'software/windows-terminal'
+    windowsterminal   = 'software/windows-terminal'
+    renders           = 'video/voukoder'
+    vk                = 'video/voukoder'
+    v                 = 'video'
+    whichcodec        = 'video/codecguide'
+    st                = 'video/sendto'
+    upscaling         = 'video/ffmpeg/upscaling'
+    llc               = "video/cutters/losslesscut"
+    'lossless-cut'    = "video/cutters/losslesscut"
+    whysm             = "video/smoothie/usecases"
+    whysmoothie       = "video/smoothie/usecases"
+    svb               = "video/smoothie/smoothievsblur"
+    'smoothie-rs'     = "video/smoothie"
+    'smoothiers'      = "video/smoothie"
+    'obs-studio'      = "video/obs"
+    'obsstudio'       = "video/obs"
+    'aftereffects'    = "video/voukoder/after-effects"
+    'ae'              = "video/voukoder/after-effects"
+    'premiere-pro'    = "video/voukoder/premiere"
+    'vegas-pro'       = "video/voukoder/vegas"
+    'premierepro'     = "video/voukoder/premiere"
+    'vegaspro'        = "video/voukoder/vegas"
+    'davinci'         = "video/voukoder/resolve"
+    'davinciresolve'  = "video/voukoder/resolve"
+    'davinci-resolve' = "video/voukoder/resolve"
 }
 
 foreach ($key in [string[]]$table.keys) {

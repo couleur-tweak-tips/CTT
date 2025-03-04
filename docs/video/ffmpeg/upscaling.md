@@ -6,9 +6,9 @@ icon: material/resize
 # Why bother upscaling for YouTube? {#why}
 
 
-Scaling your video to a larger resolution (e.g `1920x1080`/`1080p` :material-arrow-right: `3840x2160`/4K) tricks YouTube into giving your video more bitrate.
+Scaling your video to a larger resolution (e.g `1920x1080`/`1080p` :material-arrow-right: `3840x2160`/4K) tricks YouTube into giving your video more bitrate, even though you're not actually adding any detail.
 
-==This is only useful for YouTube, because it won't make your video look any better than when you're viewing it back in a media player, it'll just <u>looks less compressed/more faithful on YouTube</u>==.
+==This is only useful for YouTube, it won't make your video look any better than when you're viewing it back in a media player, it'll just <u>look less worse than the original file</u>==.
 
 **This should be done at the very last step of every project, right before uploading**. It's a waste of rendering time to edit 4K content that's been scaled.
 
@@ -17,10 +17,9 @@ Scaling your video to a larger resolution (e.g `1920x1080`/`1080p` :material-arr
 
 VEGAS Pro (and probably other NLEs) uses the bicubic scaling filter which makes your video a bit blurry, using FFmpeg lets you make sure you're using the right filter
 
-## :custom-voukoder: Why not use Voukoder's zscale? {#why-not-voukoder}
+## :custom-voukoder: Voukoder zscale {#why-not-voukoder}
 
-If you can use [Voukoder](../voukoder/index.md), you **should** use it over the CTT Upscaler, since it will export your project and upscale it all at once, which should take > less time and lose less efficiency, learn how to do it [here](../voukoder/configuration.md#upscaling)
-
+If you're exporting from [Voukoder](../voukoder/index.md) you can also add an upscale filter. Compared to exporting and using an upscale script, it exports and upscales a single encode, which should take less time and lose less quality, learn how to do it [here](../voukoder/configuration.md#upscaling)
 
 ## :material-folder-download: Installing the CTT Upscaler {#installation}
 

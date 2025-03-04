@@ -5,7 +5,7 @@ icon: material/video-box
 
 # <!--:material-video-box:--> Introduction
 
-This category is dedicated to document optimal configurations of programs for creating video content (optionally with [high quality motion blur](./smoothie/index.md)) and help you forge your own personal production workflow.
+This category is dedicated to document optimal configurations of programs for creating video content (with a big focus on [high quality motion blur](./smoothie/index.md) if that's your thing) and help you forge your own personal production workflow.
 
 ## :material-book: Definitions
 
@@ -20,12 +20,6 @@ Video editors such as Vegas Pro and Adobe Premiere Pro have these features built
 
 Video interpolation is a video processing technique that creates new frames between existing ones, effectively increasing the video's FPS using algorithms or AI.
 
-[RIFE](https://github.com/megvii-research/ECCV2022-RIFE) and the [SVP](https://www.svp-team.com) algorithm are commonly implemented into frame blending applications to interpolate.
+Notable ones are [RIFE](https://github.com/megvii-research/ECCV2022-RIFE) and the [SVP](https://www.svp-team.com), used in [blur and Smoothie](./smoothie/smoothievsblur.md)
 
-It generates frames from the data it has, and the higher the input FPS, the smaller the window between the two points are, which means more FPS the better.
-
-### :material-file-video-outline: Video encoding and decoding
-
-Video encoding is the process of converting one format (e.g. the raw visual data captured during recording) into a digital codec, with decoding converting videos into a format that can be displayed and viewed on a screen.
-
-A video codec is software or hardware that compresses and decompresses digital video to make file sizes smaller and make storage and distribution of videos easier.
+It generates frame(s) in the timespan between two existing frames, and the higher the input FPS, the smaller the time window between the two points are, which means the higher FPS the source the less artifacts.

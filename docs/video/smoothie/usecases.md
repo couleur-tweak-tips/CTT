@@ -67,7 +67,7 @@ Instead of:
 Consider:
 
 * Configure Smoothie like so:
-    * Add your favorite [LUT](./recipe.md#lut) / configure the [color grading](./recipe.md#color-grading)
+    * Add your favorite [LUT](./recipe.md#LUT) / configure the [color grading](./recipe.md#color-grading)
     * Turn on [frame blending](./recipe.md#frame-blending)
     <!-- * In the [output enc args](./recipe.md#output) add `4K` to (up)scale to 4K -->
 * Run Smoothie

@@ -2,9 +2,15 @@
 icon: custom/ffmpeg
 ---
 
+This section contains scripts for you that wrap certain capabilites of FFmpeg so you don't need to learn how to use it FFmpeg from the command line
+
 # <!--:custom-ffmpeg:--> FFmpeg
 
-FFmpeg is most known for being a tool for handling multimedia (notably <u>A</u>udio & <u>V</u>ideo). It's a swiss army knife when [used in scripts](https://github.com/Thqrn/ffmpeg-scripts). It's [backbones are also available as a library](https://github.com/ffmpeg/ffmpeg) and used by countless programs.
+FFmpeg is a solution for converting, transcoding, editing audio and video.
+
+It's CLI tools `ffmpeg`, `ffprobe` and `ffplay` are used [in many scripts](https://github.com/Thqrn/ffmpeg-scripts). 
+
+It's also [available as a library](https://github.com/ffmpeg/ffmpeg) and used by countless programs.
 
 It can do any and all of these at once:
 
@@ -38,7 +44,7 @@ And [a lot, a lot of other useful stuff](https://ffmpeg.org/ffmpeg-all.html)
 
 === "Linux"
 
-    You can use your favorite manager
+    You can use your favorite package manager
 
     todo: make content tabs for all package manager commands
 
@@ -51,7 +57,3 @@ There are three main "[fftools](https://git.ffmpeg.org/gitweb/ffmpeg.git/tree/HE
 * `ffplay`: A video player that makes use of ffmpeg's decoding abilities
 * `ffprobe`: Probing tools to gather information on a video/audio file's formats and specifications
 
-## Scripts
-
-This section contains scripts for you to use for specific tasks so you don't need (though we recommend) to learn how to use the CLI and FFmpeg
-    

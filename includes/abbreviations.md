@@ -1,8 +1,8 @@
 *[free and open-source]: Something that is free as in price and freedom, with publicly avalaible and modifiable source code.
 
-*[FOSS]: Free and Open Source Software: Something that is free as in price and freedom, with publicly avalaible and modifiable source code.
+*[FOSS]: Free and Open Source Software: Something that is free as in price and freedom, with publicly available and modifiable source code.
 
-*[open-source]: Something that is free in price with publicly avalaible source code. Not necessarily free in rights.
+*[open-source]: Something that is free in price with publicly available source code. Not necessarily free in rights.
 
 *[RIFE]: An AI video interpolation that is slower, but generally more accurate
 
@@ -43,3 +43,4 @@
 *[iGPU]: A CPU's integrated graphics chip, less powerful than desktop counterparts, most commonly used in laptops
 
 *[NLE]: Non linear (video) editor, this is a group term for VEGAS, Premiere, After Effects, Resolve, FFmpeg. . .
+*[NLEs]: Non linear (video) editor, this is a group term for VEGAS, Premiere, After Effects, Resolve, FFmpeg. . .

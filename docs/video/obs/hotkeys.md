@@ -2,7 +2,7 @@
 icon: obs/hotkeys
 ---
 
-!!! info "All the keybinds on this page are what I've set, <u>OBS has no default keybinds</u>"
+!!! info "All the keybinds on this page are recommended ones, <u>OBS has no default keybinds</u>"
 
 If you put the same keybind on a start X and stop X / enable X and disable X it will work like a toggle.
 
@@ -13,7 +13,7 @@ If you put the same keybind on a start X and stop X / enable X and disable X it 
 
 * `Reset Stats`: <kbd>CTRL+SHIFT</kbd>
 
-:   Very underrated, when alt-tabbing there's always a few frames that drop, I like to reset it so I can check if it's above 0, instead of trying to remember how much there was before. 
+:   When alt-tabbing there's always a few frames that drop, I like to reset it so I can check if it's above 0, instead of trying to remember how much there was before. 
 
 
 ## Replay Buffer

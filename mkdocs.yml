@@ -50,7 +50,6 @@ nav:
 
     - OBS Studio:
         - video/obs/index.md
-        - Installation ↗: video/obs/install.md
         - Docks: video/obs/docks.md
         - Source types: video/obs/sourcetypes.md
         - General: video/obs/general.md
@@ -71,11 +70,15 @@ nav:
     - Windows Terminal: software/windows-terminal.md
     - Visual Studio IDEs: software/visual-studio-ides.md
 
-  - Misc:
+  - Misc.:
     - misc/index.md
+    - Browser extensions: misc/browser-extensions.md
+    - Keyboard shortcuts: misc/keyboard-shortcuts.md
     - File sharing: misc/filesharing.md
     - mkdocs: misc/mkdocs.md
     - yt-dlp: misc/yt-dlp.md
+    - Writing Resources: misc/writing-resources.md
+    - Linux Resources: misc/linux-resources.md
 
 not_in_nav:
   alita.md
