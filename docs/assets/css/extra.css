@@ -165,8 +165,13 @@
     -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
   }
+}
 
 :root {
   --md-nav-icon--next:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><ellipse opacity="0.1" ry="10" rx="10" cy="12" cx="12"/><path d="M8.59 16.58 13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>');
 }
+@media screen and (max-width: 76.2344em) {
+  .md-nav__link .md-ellipsis {
+    text-decoration: underline;
+  }
 }
