@@ -52,7 +52,7 @@ It's recommended to use the [latest version of OBS](https://github.com/obsprojec
             * `Look-ahead`: Unchecked
             * `Psycho Visual Tuning`: Unchecked
             * `Max B-frames`: 0
-            * `Keyframe Interval: 0 (auto)
+            * `Keyframe Interval`: 0 (auto)
 
             :   I've had the habit of turning these off / setting them to 0 for high FPS recording, they're probably relevant for streaming / high efficiency recording though.
 
