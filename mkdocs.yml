@@ -64,11 +64,16 @@ nav:
           - OBS VkCapture: video/obs/linux/obs-vkcapture.md
   - Programs:
     - software/index.md
-    - Everything: software/everything.md
-    - Scoop: software/scoop.md
-    - Winget: software/winget.md
-    - Windows Terminal: software/windows-terminal.md
-    - Visual Studio IDEs: software/visual-studio-ides.md
+    - Utilities: software/utilities.md
+    - Quality of Life: software/qol.md
+    - Windows UI: software/windows-ui.md
+    - Hall of Fame:
+      - Everything: software/everything.md
+      - Espanso: software/espanso.md
+      - Scoop: software/scoop.md
+      - Winget: software/winget.md
+      - Windows Terminal: software/windows-terminal.md
+      - Visual Studio IDEs: software/visual-studio-ides.md
 
   - Misc.:
     - misc/index.md

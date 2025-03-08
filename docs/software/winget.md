@@ -1,3 +1,7 @@
+---
+icon: material/package-down
+---
+
 # [Winget](https://learn.microsoft.com/en-us/windows/package-manager/)
 
 Microsoft' command-line package manager for Windows

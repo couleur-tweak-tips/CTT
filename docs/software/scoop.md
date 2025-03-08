@@ -1,10 +1,13 @@
+---
+icon: custom/scoop
+---
 # [Scoop](https://scoop.sh/)
 
 A command-line program installer for Windows
 
 * unlike Chocolatey it does not require you to run it as admin.
-* unlike Winget you can install your own programs
-* All apps are contained in `%USERPROFILE%\Scoop`{ data-clipboard-text="%USERPROFILE%\Scoop" } folder (per default, I recommend [installing on a non-windows drive](https://github.com/ScoopInstaller/Install#advanced-installation))
+* unlike Winget you can install [your own programs](https://github.com/ScoopInstaller/Scoop/wiki/Buckets)
+* All apps are contained in `%USERPROFILE%\Scoop`{ data-clipboard-text="%USERPROFILE%\Scoop" } folder (per default, I recommend [installing on a second drive](https://github.com/ScoopInstaller/Install#advanced-installation))
 * All software you install is in a portable factor (except the ones that end in -np, **n**on **p**ortable)
 
 Installing it is as easy as pasting this in PowerShell:

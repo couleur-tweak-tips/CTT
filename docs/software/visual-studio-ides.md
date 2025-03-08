@@ -1,12 +1,15 @@
+---
+icon: material/microsoft-visual-studio-code
+---
 # Microsoft Visual Studio IDEs
 
 There are three types of IDEs:
 
-* :simple-visualstudiocode: [Visual Studio Code](https://code.visualstudio.com/Download):
+* :material-microsoft-visual-studio-code: [Visual Studio Code](https://code.visualstudio.com/Download):
     * Partly open-source
     * Most popular IDE
 * :simple-vscodium: [VS Codium](https://vscodium.com): 
-    * Unofficial FOSS fork with telemetry removed
+    * Compiled version of VSCode without telemetry 
     * supports extensions, though it uses a [different store](https://open-vsx.org/)
 
 * :material-microsoft-visual-studio: Visual Studio: Specialized in C/C++/C# programming and debugging
