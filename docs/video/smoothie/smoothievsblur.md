@@ -65,8 +65,12 @@ since [beta v1.92](https://github.com/f0e/blur/releases) a lot of the features t
 
 * February 2022: another developer named Anima made teres, a rewrite of blur in Rust
 
-* January 2023: Seeing teres I made smoothie-rs, deprecating the original Smoothie, now called smoothie-py
+* January 2023: Seeing teres I made smoothie-rs, deprecating the original Smoothie, renamed to smoothie-py
+
+* April 2024: First egui source code was pushed in the smoothie-rs repository
+
+* January 2025: Hqzki/hybridkernel made smoothie-go because « he felt like it »
 
 Today blur's new beta makes it's internals more similar to Smoothie than teres was to blur.
 
-teres' main advantage is that it's available in the [Arch user repository](https://repology.org/project/teres/versions).
+~~teres' main advantage is that it's available in the [Arch user repository](https://repology.org/project/teres/versions).~~  [smoothie-rs now also is](https://aur.archlinux.org/packages?K=smoothie-rs)
