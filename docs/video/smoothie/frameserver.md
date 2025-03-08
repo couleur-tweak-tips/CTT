@@ -8,9 +8,7 @@ icon: material/server-network
 
 !!! warning "Not suitable for most people"
 
-    Because of bottlenecks I've yet to discover this
-
-    also I forgot if I shipped Smoothie with AviSource, place [this DLL](https://github.com/vapoursynth/vs-avisource-obsolete/releases/tag/R1) in /bin/vapoursynth64/plugins/
+    Because of how slow it can be I can't recommend it, give it a try if it fits a niche edge case
 
 DebugMode FrameServer lets your video editor export projects as a virtual uncompressed AVI file which blur and Smoothie can use as input, effectively exporting indirectly to it.
 
