@@ -18,6 +18,9 @@ icon: custom/smoothie
     <a href="https://www.youtube.com/playlist?list=PLrsLsEZL_o4M_yTqZGwN5cM5ZxJTqkWkZ">
         <img src="https://img.shields.io/badge/Demo%20Playlist-FF0000?logo=youtube" alt="Demo Playlist" />
     </a>
+    <a href="https://github.com/couleur-tweak-tips/SmoothieInstaller/releases/latest/download/SmoothieInstaller.exe">
+        <img src="https://img.shields.io/badge/Download%20(Installer.exe)-8A2BE2" alt="Download" />
+    </a>
     <a href="https://github.com/couleur-tweak-tips/smoothie-rs/releases/latest/download/smoothie-rs-nightly.zip">
         <img src="https://img.shields.io/badge/Download%20(.zip)-8A2BE2" alt="Download" />
     </a>
