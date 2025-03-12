@@ -45,7 +45,7 @@ nav:
       - VEGAS Pro: video/voukoder/vegas.md
       - Premiere Pro: video/voukoder/premiere.md
       - After Effects: video/voukoder/after-effects.md
-      - Davinci Resolve: video/voukoder/resolve.md
+      - DaVinci Resolve: video/voukoder/resolve.md
 
 
     - OBS Studio:
@@ -74,6 +74,7 @@ nav:
       - Winget: software/winget.md
       - Windows Terminal: software/windows-terminal.md
       - Visual Studio IDEs: software/visual-studio-ides.md
+      - yt-dlp: software/yt-dlp.md
   - Games:
     - games/index.md
     - Minecraft:
@@ -96,7 +97,6 @@ nav:
     - Keyboard shortcuts: misc/keyboard-shortcuts.md
     - File sharing: misc/filesharing.md
     - mkdocs: misc/mkdocs.md
-    - yt-dlp: misc/yt-dlp.md
     - Writing Resources: misc/writing-resources.md
     - Linux Resources: misc/linux-resources.md
 
