@@ -44,3 +44,6 @@
 
 *[NLE]: Non linear (video) editor, this is a group term for VEGAS, Premiere, After Effects, Resolve, FFmpeg. . .
 *[NLEs]: Non linear (video) editor, this is a group term for VEGAS, Premiere, After Effects, Resolve, FFmpeg. . .
+
+*[JRE]:  Java Runtime Environment, a program that (amongst other things) let you interpret and run jar files
+*[JREs]: Java Runtime Environment, a program that (amongst other things) let you interpret and run jar files
