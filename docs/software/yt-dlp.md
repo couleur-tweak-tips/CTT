@@ -1,5 +1,5 @@
 ---
-icon: material/youtube
+icon: custom/yt-dlp
 ---
 
 # yt-dlp
