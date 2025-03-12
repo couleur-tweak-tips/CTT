@@ -91,7 +91,7 @@ Only keep what you actually care about (trim out promoted posts, Topics, Who to 
 [Chrome Store](https://chrome.google.com/webstore/detail/control-panel-for-twitter/kpmjjdhbcfebfjgdnpjagcndoelnidfj)
 | [Mozilla Addons](https://addons.mozilla.org/firefox/addon/control-panel-for-twitter/)
 
-### :simple-curseforge: :material-arrow-right: :simple-modrinth: **Modrinthify**
+### :simple-curseforge: :material-arrow-right: :simple-modrinth:{.mr} **Modrinthify**
 
 Redirects curseforge minecraft mod/pack project pages to Modrinth if found
 
@@ -207,6 +207,8 @@ yf to copy a link to clipboard
 [Chrome Store](https://chromewebstore.google.com/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb)
 | [Mozilla Addons](https://addons.mozilla.org/en-US/firefox/addon/vimium-ff/)
 
+[See more vim keyboard extensions](https://github.com/erikw/vim-keybindings-everywhere-the-ultimate-list?tab=readme-ov-file#web-browsers)
+
 For Firefox there's also [Vimium C](https://addons.mozilla.org/en-US/firefox/addon/vimium-c/) or [vim-vixen](https://addons.mozilla.org/en-US/firefox/addon/vim-vixen/), see if you prefer it compared to Vimium FF
 
 ### Wappalyzer
@@ -222,4 +224,3 @@ Lists all video sources on a page, UI is in chinese
 
 [Chrome Store](https://chrome.google.com/webstore/detail/jfedfbgedapdagkghmgibemcoggfppbb)
 | [Mozilla Addons](https://addons.mozilla.org/addon/cat-catch/)
-
