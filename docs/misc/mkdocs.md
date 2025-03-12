@@ -4,7 +4,6 @@ icon: simple/materialformkdocs
 
 ## MkDocs Material Cheatsheet
 
-
 === ":material-video-box: [`video hotlink`]()"
     <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Video>
     ```html
@@ -37,13 +36,14 @@ List of cool mkdocs material sites I found that use [:simple-materialformkdocs: 
 * [PSRule](https://microsoft.github.io/PSRule/v2/)
 * [MkDocs Macros Plugin](https://mkdocs-macros-plugin.readthedocs.io/en/latest/)
 
-## Documentation frameworks 
+## Documentation frameworks
 
 * [Starlight](https://starlight.astro.build/){ target=_blank }: documentation framework, built by the same people the [Astro](https://astro.build){ target=_blank } web framework
 * [repair.wiki](https://repair.wiki/w/Main_Page): whatever they use it looks cool :thumbsup:
 * [sxcu.net/api/docs](https://sxcu.net/api/docs): same deal, instant nav :scream: :scream:
-
+* [vale.rocks/posts](https://vale.rocks/posts): that progress bar cool asf
 
 ## cool wording
 
 * <https://docs.cryptpad.org/en/how_to_contribute.html>{ target=_blank }
+
