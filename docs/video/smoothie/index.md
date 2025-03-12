@@ -19,17 +19,18 @@ icon: custom/smoothie
         <img src="https://img.shields.io/badge/Demo%20Playlist-FF0000?logo=youtube" alt="Demo Playlist" />
     </a>
     <a href="https://github.com/couleur-tweak-tips/SmoothieInstaller/releases/latest/download/SmoothieInstaller.exe">
-        <img src="https://img.shields.io/badge/Download%20(Installer.exe)-8A2BE2" alt="Download" />
+        <img src="https://img.shields.io/badge/Download%20Installer-8A2BE2" alt="Download" />
     </a>
     <a href="https://github.com/couleur-tweak-tips/smoothie-rs/releases/latest/download/smoothie-rs-nightly.zip">
-        <img src="https://img.shields.io/badge/Download%20(.zip)-8A2BE2" alt="Download" />
+        <img src="https://img.shields.io/badge/Download%20Portable%20zip-8A2BE2" alt="Download" />
     </a>
     <a href="https://github.com/couleur-tweak-tips/TweakList/blob/master/LICENSE">
         <img src="https://img.shields.io/github/license/couleur-tweak-tips/TweakList.svg" alt="License" />
     </a>
 </p>
 
----
+![](/assets/images/video/smoothie/smoothie-gui.webp){ align=right width=200}
+
 
 ## What is Smoothie?
 
@@ -95,15 +96,24 @@ They're opt-in/out, so you can disable them at your discretion via the [recipe](
 
 * [`[pre-interp]`](./recipe.md#pre-interp): [Flowframes](https://nmkd.itch.io/flowframes) / [RIFE](https://github.com/megvii-research/ECCV2022-RIFE)
 * [`[output]`](./recipe.md#output): Transcoding with [FFmpeg (`-vcodec <...>`)](https://ffmpeg.org/ffmpeg-all.html#Main-options)
-        * [Upscaling to `4K`](../ffmpeg/upscaling.md)
+* [Upscaling to `4K`](../ffmpeg/upscaling.md)
 
 
 ## How to use Smoothie
 
-You can configure your "recipe" (config) by modifying `recipe.ini`, all settings are explained [here](./recipe.md)
+Launching Smoothie from the start menu gives you two options:
 
-It does not have an interface as it is a [CLI tool](https://en.wikipedia.org/wiki/Command-line_interface) but there are tons of wrappers so you never have to open a terminal and type anything yourself:
+* Drag and drop video(s) on the window
+* Click `render` for a file browser dialog
 
-1. You can feed your videos directly via [SendTo](../sendto.md) ![Send To folder](../../assets/images/video/smoothie/smoothiesendto.png){ width="450" }
+It will ignore non-video files, if you need to go through a whole folder don't fret to `CTRL+A`
 
-2. Or select your videos in a file picker dialog by running [`Launch.cmd`](https://github.com/couleur-tweak-tips/smoothie-rs/blob/5bedf4ff231fd56832deacf4e32c5eb9f640c004/.github/workflows/shipper.ps1#L22) ![Launch.cmd preview](../../assets/images/video/smoothie/launch.png)
+You can  configure your "recipe" (config) using the GUI, or by modifying the `recipe.ini` file, all settings are explained [here](./recipe.md)
+
+It can be used in scripts with it's extensive [CLI arguments](./cli.md)
+
+You can also feed your videos directly via [SendTo](../sendto.md) ![Send To folder](../../assets/images/video/smoothie/smoothiesendto.png){ width="450" }
+
+If you don't like having to click render in the gui and want a file picker dialog straight away, make a shortcut in the start menu (`%APPDATA%\Microsoft\Windows\Start Menu\Programs`) and add ` --tui` in the target,
+
+![Launch.cmd preview](../../assets/images/video/smoothie/launch.png)

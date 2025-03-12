@@ -7,7 +7,7 @@ icon: material/folder-download
 
 ## Dependencies
 
-* [FFmpeg](https://ffmpeg.org), must be present in PATH, see how to install it [here](../ffmpeg/index.md#installation)
+* [FFmpeg](https://ffmpeg.org), must be present in PATH or smoothie-rs' directory, see how to install it [here](../ffmpeg/index.md#installation)
     * Smoothie also makes use of [ffprobe](https://ffmpeg.org/ffprobe.html#Description) and [ffplay](https://ffmpeg.org/ffplay.html#Description), which should be included with your install
 
 <div class="annotate" markdown>* Video files to use it with (1)</div>
@@ -16,10 +16,10 @@ icon: material/folder-download
 
 ??? info "VapourSynth dependencies"
 
-    Note: These are already provided with the .ZIP for Windows users
+    Note: These are already provided with the .ZIP for Windows users, [created in VSBundler](https://github.com/couleurm/VSBundler)
 
-    * [VapourSynth Classic](https://github.com/AmusementClub/vapoursynth-classic)
-    * [Python 3.10.9](https://python.org)
+    * [VapourSynth](https://github.com/vapoursynth/vapoursynth)
+    * [Python](https://python.org)
 
     Plugins:
 
@@ -41,11 +41,20 @@ icon: material/folder-download
 
 === "Windows"
 
-    This tutorial covers the rest of the installation instructions
+    ## Automatic Installer
+
+    [Click here to download the latest version  of the smoothie intaller](https://github.com/couleur-tweak-tips/SmoothieInstaller/releases/latest/download/SmoothieInstaller.exe)
+
+    It does the following:
+    - Downloads Smoothie and FFmpeg to `%APPDATA%\Smoothie`
+    - Installs Visual C++ Redistributables
+    - Makes a shortcut in the Start Menu and Send To
+
+    ## Manual installation
+
+    This tutorial covers the manual installation instructions of Smoothie and the RIFE models (there are no automatic RIFE model installers currently)
 
     <iframe width="688" height="387" src="https://www.youtube-nocookie.com/embed/RfPDgoMuSWg?start=20&color=white" frameborder=0 allowfullscreen></iframe>
-
-    # Manual installation
 
 
     Smoothie comes in a portable zip file(1), download the latest version [here](https://github.com/couleur-tweak-tips/smoothie-rs/releases).
@@ -82,12 +91,23 @@ icon: material/folder-download
 
 === "Linux"
 
+    Hqzkii maintains [`smoothie-rs-linux-git`](https://aur.archlinux.org/packages/smoothie-rs-linux-git) in the AUR
+
     todo, cargo should be able to compile it
 
     for arch nerds see the dependencies of <https://aur.archlinux.org/packages/teres>
 
     * you'll also need <https://aur.archlinux.org/packages/vapoursynth-plugin-vsakarin-git> for frame blending
     * and <https://aur.archlinux.org/packages/vapoursynth-plugin-rife-ncnn-vulkan-git> for pre-interp
+
+=== "macOS"
+
+    For non developers: there's no user friendly package for it yet.
+
+    It is theoretically possible to install VapourSynth with [Homebrew](https://brew.sh) and compile every plugins (spritzer's done it before) but there's no one maintaining these packages yet.
+
+    There's [a few of them already present](https://duckduckgo.com/?q=%22vapoursynth%22%20site%3Aformulae.brew.sh) for you to get an idea if you wanna get started
+
 
 <!--
 it'd be cool to be able to opt-in to use invidious instance for vids 
