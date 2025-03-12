@@ -57,7 +57,7 @@ It's recommended to use the [latest version of OBS](https://github.com/obsprojec
             :   I've had the habit of turning these off / setting them to 0 for high FPS recording, they're probably relevant for streaming / high efficiency recording though.
 
 
-        * `Rate Control`: <kbd>CQP</kbd> / <kbd>CQ Level</kbd>
+        * `Rate Control`: <kbd>CQP</kbd> / <kbd>CQ Level</kbd> / <kbd>Constant QP</kbd>
 
         :   Much more adaptive than CBR, which always spits out the same constant bitrate.
 
