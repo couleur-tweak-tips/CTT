@@ -74,6 +74,21 @@ nav:
       - Winget: software/winget.md
       - Windows Terminal: software/windows-terminal.md
       - Visual Studio IDEs: software/visual-studio-ides.md
+  - Games:
+    - games/index.md
+    - Minecraft:
+      - Packs: games/minecraft/packs.md
+      - Mods:
+        - games/minecraft/1.7.10.md
+        - 1.8.9 ↗: games/minecraft/1.8.9.md
+        - Modern ↗: games/minecraft/modern.md
+      - Configuration:
+        - Sodium: games/minecraft/sodium.md
+        - Optifine: games/minecraft/optifine.md
+        - Lunar Client: games/minecraft/lunarclient.md
+        - CheatBreaker: games/minecraft/cheatbreaker.md
+        - Prism Launcher: games/minecraft/prismlauncher.md
+        
 
   - Misc.:
     - misc/index.md
