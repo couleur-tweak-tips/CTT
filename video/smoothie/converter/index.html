@@ -1,0 +1,54 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>blur → smoothie</title>
+    <style>body{color:#d3d3d3;background-color:#1e2029;justify-content:center;align-items:center;width:auto;height:auto;margin-top:1vh;font-family:Arial,sans-serif}h1{text-align:center}hr{border:3px solid #7e56c2;border-radius:3px}p{text-align:center;font-size:24px;font-weight:700}ul{text-align:center;padding:0;list-style-type:none}ul li{margin-bottom:2px}a{color:#a47bea;text-decoration:none}a:hover{color:#6e2ce0}input[type=checkbox]{appearance:none;cursor:pointer;background-color:#3a3752;border:2px solid #7e56c2;border-radius:5px;outline:none;width:20px;height:20px;margin-right:5px}input[type=checkbox]:checked{background-color:#7e56c2}label[for=fullRecipe]{cursor:pointer;vertical-align:6px;font-weight:700}button{cursor:pointer;color:#fff;background-color:#7e56c2;border:none;border-radius:5px;padding:10px 15px;font-size:14px;transition:background-color .3s}button:hover{background-color:#6e2ce0}textarea{resize:none}@media (max-width:768px){#container{flex-direction:column;display:flex}}#container{justify-content:center;align-items:center;width:auto;padding:5px;display:flex}#input,#output{color:#fff;background-color:#3a3752;border:5px solid #3a3752;border-radius:15px;margin-top:6px;font-family:Consolas,monospace!important;box-shadow:0 .75rem 1.5rem #00000017!important}#input{margin-top:15px}#input:hover,#output:hover{transition:transform .2s ease-in-out;transform:scale(1.02)}#left,#right{justify-content:center;margin-top:5px;padding:5px}</style>
+</head>
+
+<body>
+    <h1>
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/f0e/blur?tab=readme-ov-file#config-settings-explained">blur config</a>
+        to
+        <a rel="noopener noreferrer" href="https://ctt.cx/recipe">smoothie recipe</a>
+        converter
+    </h1>
+
+    <hr id="hrTop">
+    <p>related resources:</p>
+    <ul>
+        <li><a target="_blank" rel="noopener noreferrer" href="../smoothievsblur">blur config vs. sm recipe
+                reference</a></li>
+        <li><a target="_blank" rel="noopener noreferrer" href="../recipe">recipe reference</a></li>
+        <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/gem-storm/configtool">CLI
+                alternative</a></li>
+        <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/couleur-tweak-tips/smoothie-rs/blob/main/target/recipe.ini">default smoothie
+                recipe</a></li>
+    </ul>
+    <hr id="hrBottom">
+
+    <div id="container">
+        <div id="left">
+            <input type="checkbox" id="fullRecipe">
+            <label for="fullRecipe">Return full* recipe</label>
+            <br>
+
+            <textarea placeholder="Paste your .blur-config.cfg here..." id="input" autocorrect="off" spellcheck="false" oninput="updateOutput()" autofocus="" rows="55" cols="40"></textarea>
+        </div>
+        <div id="right">
+
+            <button type="button" id="copyout" onclick="Copy()">Copy</button>
+            <br>
+            <textarea disabled="" id="output" autocorrect="off" spellcheck="false" rows="55" cols="40"></textarea>
+        </div>
+    </div>
+    <p>*In the sense of all of the equivalent filters available with blur</p>
+
+    <script>function parseBlur(t){let n=t.split(`
+`),e="undefined",a={};return n.forEach(r=>{if(r.startsWith("- ")&&r.length>=3)e=r.slice(2).trim(),a[e]={};else if(r.includes(":")){result=r.match(/^([^:]+):(.*)$/);let i=result[1].trim(),l=result[2].trim();a[e][i]=l}}),a}function blurDefaultToRecipe(t,n){if(t[n]=="default")switch(n){case"interpolation speed":return"medium";case"interpolation tuning":return"weak";case"interpolation algorithm":return"13";case"interpolation block size":return"8";default:throw new Error(`Invalid default value query '${n}'`)}else return t[n]}function toSmoothie(t,n){let e={};if(e["frame blending"]={},e["frame blending"].enabled=t.blur.blur||"enabled",e["frame blending"].fps=t.blur["blur output fps"]||"60",e["frame blending"].intensity=t.blur["blur amount"]||"1.0",e["frame blending"].weighting=t.blur["blur weighting"]||"equal",e.interpolation={},e.interpolation.enabled=t.interpolation.interpolate||"true",e.interpolation.fps=t.interpolation["interpolated fps"],e.interpolation.speed=blurDefaultToRecipe(t["advanced interpolation"],"interpolation speed"),e.interpolation.tuning=blurDefaultToRecipe(t["advanced interpolation"],"interpolation tuning"),e.interpolation.algorithm=blurDefaultToRecipe(t["advanced interpolation"],"interpolation algorithm"),e.interpolation["use gpu"]=t["advanced rendering"].gpu,["0",null,void 0].includes(t["advanced interpolation"]["interpolation mask area"])||(e.interpolation.area=t["advanced interpolation"]["interpolation mask area"]),e.output={},e.output.process="ffmpeg",t["advanced rendering"]["custom ffmpeg filters"].trim()!="")e.output["enc args"]=t["advanced rendering"]["custom ffmpeg filters"];else switch(t["advanced rendering"]["gpu type (nvidia/amd/intel)"]){case"nvidia":{e.output["enc args"]="H264 NVENC";break}case"amd":{e.output["enc args"]="H264 AMF";break}case"intel":{e.output["enc args"]="H264 QUICKSYNC";break}default:{e.output["enc args"]="H264 CPU";break}}(n||[t.timescale["input timescale"],t.timescale["output timescale"]].every(r=>r!="1"))&&(e.timescale={},e.timescale.enabled="true",e.timescale.in=t.timescale["input timescale"],e.timescale.out=t.timescale["output timescale"]),(n||[t.filters.brightness,t.filters.saturation,t.filters.contrast].every(r=>r!="1"))&&(e["color grading"]={},e["color grading"].enabled="true",e["color grading"].brightness=t.filters.brightness,e["color grading"].saturation=t.filters.saturation,e["color grading"].contrast=t.filters.contrast);let a="";for(let r in e){a+=`
+
+[`+r+"]";for(let i in e[r])a+=`
+`+i+": "+e[r][i]}return a.substring(2)}function updateOutput(){let t=document.getElementById("input").value,n="";t?(document.getElementById("copyout").disabled=!1,n=toSmoothie(parseBlur(t),document.getElementById("fullRecipe").checked)):document.getElementById("copyout").disabled=!0,document.getElementById("output").value=n}function Copy(){navigator.clipboard.writeText(document.getElementById("output").value),history.back()}document.getElementById("fullRecipe").addEventListener("change",function(){updateOutput()}),updateOutput(),window.addEventListener("DOMContentLoaded",t=>{function n(){const e=document.getElementById("left").offsetWidth,a=document.getElementById("right").offsetWidth,r=document.getElementById("hrTop"),i=document.getElementById("hrBottom"),l=e+a;r.style.width=l+"px",i.style.width=l+"px"}n(),window.addEventListener("resize",n)});
+</script>
+
+
+</body></html>
