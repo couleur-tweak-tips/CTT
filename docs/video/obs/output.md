@@ -31,7 +31,7 @@ It's recommended to use the [latest version of OBS](https://github.com/obsprojec
 
         Fragmented MP4 is notorious to mess up in VEGAS, though remuxing to regular MP4 fixes it. 
 
-    In general, encoding speed fastest to slowest is NVENC (NVIDIA), AMF (AMD), QuickSync (Intel iGPU), then x264/5 (CPU)
+    In general, encoding speed from fastest to slowest is NVENC (NVIDIA), AMF (AMD), QuickSync (Intel iGPU), then x264/5 (CPU)
 
     Regarding `CQP` and `CFR` [rate controls](../codecguide.md#rate-controls): It's inverted compared to CBR, 0 is lossless and 51 is most compressed
 
@@ -40,38 +40,56 @@ It's recommended to use the [latest version of OBS](https://github.com/obsprojec
 
     === ":simple-nvidia: (NVIDIA) NVENC"
 
-        !!! abstract "High FPS recording configuration"
+        !!! abstract "Note for File Size Efficiency"
 
-            If you want to record in 120+FPS you're advised to configure the following:
+            The settings provided here are specifically for high framerate recoring, which prefer performance over low file sizes. If file sizes are an issue, consider making the following changes:
 
-            * <div class="annotate" markdown>`Preset`: P1 - P4(1)</div>
+            * <div class="annotate" markdown>`Preset`: P2 - P7(1)</div>
 
-                1. OBS describes low Presets as "Lower Quality" in the context of <u>streaming with CBR in bandwidth-limited scenarios</u>, if used for recording it'll be much more performant to record at the cost of bigger file sizes.
+                1. This setting does not impact quality when using CQP, only the efficiency of quality to file size. Quality is only impacted when using contrained-bitrate rate control modes such as CBR or VBR, making it ideal for streaming.
 
-            * `Multipass Mode`: Single pass
-            * `Look-ahead`: Unchecked
-            * `Psycho Visual Tuning`: Unchecked
+            * `Multipass Mode`: Two Passes (Quarter Resolution)
+            * `Look-ahead`: Checked
+            * `Psycho Visual Tuning`: Checked
             * `Max B-frames`: 0
-            * `Keyframe Interval`: 0 (auto)
+            * `Keyframe Interval`: 0 s (auto)
 
-            :   I've had the habit of turning these off / setting them to 0 for high FPS recording, they're probably relevant for streaming / high efficiency recording though.
+            :   Adjust as needed to achieve desired file size without encoding lag.
 
+
+        * `Rescale Output`: <kbd>Disabled</kbd>
 
         * `Rate Control`: <kbd>CQP</kbd> / <kbd>CQ Level</kbd> / <kbd>Constant QP</kbd>
 
-        :   Much more adaptive than CBR, which always spits out the same constant bitrate.
+        :   Minimal performance impact without compromising on quality since CQP does not target a certain bitrate like CBR/VBR do.
 
         * `CQ Level`: <kbd>18</kbd>
 
-        * `Preset`: <kbd>P7: Slowest (Best Quality)</kbd>
+        :   Can be slightly raised or lowered, but 18 is the best balance between visually lossless and huge files. There is essentially no point in going below it, as quality is not measurably increased.
 
-        * `Multipass Mode`: <kbd>Two Passes (Full Resolution)</kbd>
+        * `Keyframe interval`: <kbd>0 s</kbd>
 
-        :   These two settings considerably affect the encoding speed and efficiency, they've been recently introduced to OBS and I'm not that knowledgeable regarding them.
+        * `Preset`: <kbd>P1: Slowest (Best Quality)</kbd>
 
-        * `GPU`: 0
+        :   Does not impact quality when using CQP. Higher values give smaller file sizes at the cost of performance.
 
-        :   This is the GPU index, only relevant to mess with if you have multiple GPUs
+        * `Tuning`: <kbd>High Quality</kbd>
+
+        * `Multipass Mode`: <kbd>Single Pass</kbd>
+
+        :   Using any other option massively reduces performance.
+
+        * `Profile`: <kbd>baseline</kbd>
+
+        :   Slightly increased performance over high and main at the cost of larger files.
+
+        * `Look-ahead`: Unchecked; `Adaptive Quantization`: Unchecked
+
+        :   Only useful when targeting a bitrate (VBR, CBR), but huge performance impacts. Unnecessary for CQP.
+
+        * `B-Frames`: <kbd>0</kbd>
+
+        :   Automatic, though they're only even used if you're not using the baseline profile.
 
     === ":custom-amd: (AMD) AMF"
 
@@ -154,17 +172,24 @@ It's recommended to use the [latest version of OBS](https://github.com/obsprojec
 
         * `Rate Control`: <kbd>CBR</kbd>
 
-        * `Bitrate`: Depends on platform and upload bandwidth
-
-        :   See links above
+        * `Bitrate`: Depends on platform and upload bandwidth, typically between 8000-1000 kbps but see links above.
 
         * `Preset`: <kbd>P7: Slowest (Best Quality)</kbd>
 
         :   That'll provide the most efficient encoding for the given bandwidth
 
-        * `Multipass Mode`: <kbd>Two Passes (Full Resolution)</kbd>
+        * `Multipass Mode`: <kbd>Two Passes (Quarter Resolution)</kbd>
+             ///////////////////////
 
-        :   These two settings considerably affect the encoding speed and efficiency, they've been recently introduced to OBS and I'm not that knowledgeable regarding them.
+        * `Keyframe interval`: <kbd>0 s</kbd>
+
+        * `Tuning`: <kbd>High Quality</kbd>
+
+        * `Profile`: <kbd>high</kbd>
+
+        * `Look-ahead`: Checked; `Adaptive Quantization`: Checked
+
+        * `B-Frames`: <kbd>4</kbd>
 
         <iframe width="688" height="387" src="https://www.youtube-nocookie.com/embed/uAqLJ3sxudU?color=white" frameborder=0 allowfullscreen></iframe>
 

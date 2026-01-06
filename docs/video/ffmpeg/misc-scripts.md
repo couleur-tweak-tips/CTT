@@ -147,6 +147,8 @@ summary {
 
     See Frost's audio scripts: https://github.com/Thqrn/ffmpeg-scripts/
 ??? quote "tmix"
+
+    https://github.com/Thqrn/ffmpeg-scripts/blob/main/video%20resampler.bat
 ??? quote "Cut from point a to b"
 
     You can use [`-ss` and `-to`](https://ffmpeg.org/ffmpeg-all.html#Main-options), but you should really use a [cutter](../cutters/index.md)

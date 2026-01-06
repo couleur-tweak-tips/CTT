@@ -147,11 +147,16 @@ Also see [pre-interp](#pre-interp), a slower, more accurate interpolation method
 
 :   Sets the algorithm. Taken from same docs:
 
-    * `2` - This makes strong predictions which can be useful for cartoons but can also leave big artifacts.
-    * `13` - This is the most intelligent algorithm since it masks many artifacts, but it is not as smooth as 23.
-    * `23` - This is the smoothest algorithm, but it does not have the artifact masking that 13 has.
+
+
+    * `1` - Not recommended. Sharp picture, no blending, but moves pixels from previous frame to next using only data from previous frames.
+    * `2` - Only recommended for 2D animation. Like 1 but uses the next frame too.
+    * `11` - Almost as good as 13; uses a time-weighted blend of both forward and backward vectors.
+    * `13` - Best option for low framerate input. 11 but with a dynamic median. Minimal artifacting, but halos can appear around moving objects.
+    * `21` - 11 but with masking, which can reduce halos.
+    * `23` - "Smoothest" but can cause slight artifacts. 21 but with extra data from adjacent frames.
     
-    Most people use 23 / 13
+    Most people use 23 / 13.
 
 `block size`: auto
 
