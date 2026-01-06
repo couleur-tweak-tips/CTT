@@ -46,7 +46,7 @@ It's recommended to use the [latest version of OBS](https://github.com/obsprojec
 
             * <div class="annotate" markdown>`Preset`: P2 - P7(1)</div>
 
-                1. This setting does not impact quality when using CQP.
+                1. This setting does not impact quality when using CQP, only the efficiency of quality to file size. Quality is only impacted when using contrained-bitrate rate control modes such as CBR or VBR, making it ideal for streaming.
 
             * `Multipass Mode`: Two Passes (Quarter Resolution)
             * `Look-ahead`: Checked
@@ -61,7 +61,7 @@ It's recommended to use the [latest version of OBS](https://github.com/obsprojec
 
         * `Rate Control`: <kbd>CQP</kbd> / <kbd>CQ Level</kbd> / <kbd>Constant QP</kbd>
 
-        :   Provides the highest quality without sacrificing performance.
+        :   Minimal performance impact without compromising on quality since CQP does not target a certain bitrate like CBR/VBR do.
 
         * `CQ Level`: <kbd>18</kbd>
 
