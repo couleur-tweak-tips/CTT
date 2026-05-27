@@ -50,7 +50,7 @@ It's recommended to use the [latest version of OBS](https://github.com/obsprojec
 
             * `Multipass Mode`: Single pass
             * `Look-ahead`: Unchecked
-            * `Psycho Visual Tuning`: Unchecked
+            * `Adaptive Quantization`: Unchecked
             * `Max B-frames`: 0
             * `Keyframe Interval`: 0 (auto)
 
