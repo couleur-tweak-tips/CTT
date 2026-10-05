@@ -130,9 +130,10 @@ theme:
   
   features:
     # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#setting-up-navigation
-    - navigation.instant
+    # navigation.instant is NOT compatible with i18n language switching, keep both disabled
+    # - navigation.instant
     # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation#progress-indicator
-    - navigation.instant.progress
+    # - navigation.instant.progress
     - navigation.path
     # This breaks navigation.expand at the moment
     # - navigation.prune
@@ -207,6 +208,66 @@ plugins:
 
   # https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-search
   - search
+
+  # https://github.com/ultrabug/mkdocs-static-i18n — zh pages are <name>.zh.md next to the English source; built under /zh/
+  # keep in sync with mkdocs.github.yml (INHERIT replaces the whole plugins list)
+  - i18n:
+      docs_structure: suffix
+      fallback_to_default: true
+      reconfigure_material: true
+      reconfigure_search: true
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+        - locale: zh
+          name: 中文
+          build: true
+          nav_translations:
+            About CTT: 关于 CTT
+            Contributing: 参与贡献
+            Contact: 联系方式
+            Credits: 致谢
+            Video: 视频
+            Which codec should I use?: 我该选哪种编解码器？
+            FFmpeg scripts: FFmpeg 脚本
+            Upscaling: 超分辨率
+            Misc. scripts: 杂项脚本
+            Video cutters: 视频剪切工具
+            Installation: 安装
+            Use cases examples: 使用场景示例
+            Recipe configuration: 配方配置
+            Troubleshooting: 故障排除
+            Command line arguments: 命令行参数
+            Frameserver rendering: Frameserver 渲染
+            Configuration: 配置
+            Docks: 停靠窗格
+            Source types: 来源类型
+            General: 常规
+            Output: 输出
+            Audio: 音频
+            Hotkeys: 快捷键
+            Advanced: 高级
+            Programs: 软件
+            Utilities: 实用工具
+            Quality of Life: 生活质量
+            Hall of Fame: 名人堂
+            Package Managers: 包管理器
+            OS: 操作系统
+            ISOs: ISO 镜像
+            Windows resources: Windows 资源
+            Keyboard shortcuts ↗: 键盘快捷键 ↗
+            Keyboard shortcuts: 键盘快捷键
+            Linux Resources: Linux 资源
+            Android: 安卓
+            Games: 游戏
+            Packs: 资源包
+            Mods: 模组
+            Misc.: 杂项
+            Browser extensions: 浏览器扩展
+            File sharing: 文件分享
+            Writing Resources: 写作资源
 
   # makes image enlarge on click https://blueswen.github.io/mkdocs-glightbox/
   - glightbox:
